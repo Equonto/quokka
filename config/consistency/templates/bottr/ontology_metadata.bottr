@@ -1,0 +1,44 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix ottr:   <http://ns.ottr.xyz/0.4/> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/>.
+@prefix rstr: <http://tpl.ottr.xyz/owl/restriction/0.1/>.
+@prefix o-docttr: <http://tpl.ottr.xyz/p/docttr/0.1/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix listpl: <http://rds.posccaesar.org/ontology/lis14/tpl/0.1/> .
+@prefix reqtpl: <http://w3id.org/requirement-ontology/tpl/0.1/> .
+@prefix rdl: <http://rds.posccaesar.org/ontology/plm/rdl/> .
+@prefix plmtpl: <http://rds.posccaesar.org/ontology/plm/tpl/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ex: <http://example.org/> .
+@prefix ont: <http://data.grundfos.com/ontology/pump/ont/> .
+@prefix ido-tpl: <http://example.com/ido/> .
+@prefix ido: <http://example.com/ido/ontology/> .
+@prefix lis:<http://rds.posccaesar.org/ontology/lis14/rdl/> .
+
+[] a ottr:InstanceMap ; 
+ ottr:source [ a ottr:H2Source ] ; 
+  ottr:query """
+select ontology, versionInfo, title, description, seeAlso, imports
+from CSVREAD('staging/ontology-metadata.csv')
+""" ;
+ottr:template o-owl-dec:Ontology ;
+ottr:argumentMaps (
+  [ ottr:type ottr:IRI ] #  ?ontology non-blank
+  [ ottr:type xsd:string ] #  ?versionInfo optional non-blank
+  [ ottr:type xsd:string ] #  ?title optional non-blank
+  [ ottr:type xsd:string ] #  ?description optional non-blank
+  [ ottr:type (rdf:List ottr:IRI ) ] #  ?seeAlso optional
+  [ ottr:type (rdf:List ottr:IRI ) ] #  ?imports optional
+) .

@@ -1,0 +1,38 @@
+{
+  "template": "{question}",
+  "messages": [
+    {
+      "role": "system",
+      "content": [
+        "You are a text tagging assistant for maintenance tasks.",
+        "Respond with a comma separated list of {n-gram \\ tag} tuples.",
+        "The tags are:",
+        "ACTIVITY: the primary action(s) performed by a human in the task. Is usually one word (i.e. replace, check).",
+        "ITEM: equipment and parts (i.e. truck, switch, pan filter) that are being worked on in the task.",
+        "TOOL: a piece of tooling required for completing the task (i.e. small paint brush).",
+        "OBSERVATION: an observe state (i.e. leaking, corrosion, rotating, damage).",
+        "LOCATION: a position or area (i.e. right side, bottom, end, entrance).",
+        "If a token or n-gram doesn't match any tag, don't include a tag for it in the output list.",
+        "Here are some examples:",
+        "Q: Use a 3/8'' socket to remove the bolt.",
+        "A: [{3/8'' socket \\ TOOL},{remove \\ ACTIVITY},{bolt \\ ITEM}]",
+        "Q: Start by lightly taping down the bucket with painters tape - this allows the bucket to be held up and allow the rest of the taping easier to do",
+        "A: [{taping \\ ACTIVITY},{bucket \\ ITEM},{painters tape \\ TOOL},{held up \\ OBSERVATION}]",
+        "Q: Vaccum floorboard to remove debris or dirt.",
+        "A: [{vaccum \\ ACTIVITY},{floorboard \\ ITEM},{remove \\ ACTIVITY},debris \\ OBSERVATION},{dirt \\ OBSERVATION}]",
+        "Q: Visually inspect the pump and piping for damage, wear and corrosion.",
+        "A: [{inspect \\ ACTIVITY},{pump \\ ITEM},{piping \\ MAINTAINABLE_ITEM},{damage \\ OBSERVATION},{wear \\ OBSERVATION},{corrosion \\ OBSERVATION}]",
+        "Q: Check left side for damage and rust",
+        "A: [{check \\ ACTIVITY},{left side \\ LOCATION},{damage \\ OBSERVATION},{rust \\ OBSERVATION}]"
+      ]
+    },
+    {
+      "role": "user",
+      "content": ["Q: {question}"]
+    },
+    {
+      "role": "assistant",
+      "content": ["A:"]
+    }
+  ]
+}

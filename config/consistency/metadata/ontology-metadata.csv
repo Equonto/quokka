@@ -1,0 +1,2 @@
+id,ontname,ontology,versionInfo,title,description,seeAlso,imports
+10,procedure_ontology_application,http://example.org/ontology/procedure_ontology_application,0.0.1,,,,"http://www.example.org/static-procedure-ontology/1.0.0"

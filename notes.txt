@@ -1,0 +1,78 @@
+
+# python 
+https://realpython.com/python-typer-cli/#set-up-the-working-environment
+source venv/bin/activate
+print requirements txt: pip3 freeze > requirements.txt
+install requirements: pip install -r requirements.txt
+
+package: pyinstaller --onefile src/ConsoleApp.py
+
+cd python_implementation
+
+kill $(lsof -t -i:3000)
+requires rdflib 6.1.1
+
+
+[{ 
+  "procedure_id": "PROC_001",
+  "procedure_name": "Pump Service",
+  "steps": [
+    {   
+        "step_id": 1,
+        "step_text": "Top up the oil in the chamber",
+        "maintainable_item": "Pump",
+        "resources": {
+            "tools": [{
+              "id": "TOOL_1001",
+              "name": "2mm spanner"
+            }],
+            "materials": [],
+            "permits": [],
+            "qualifications": [],
+            "components": []
+        },
+        "hazards": [],
+        "children": [
+            {
+                "step_id": 1.1,
+                "step_text": "Open the chamber",
+                "maintainable_item": "Pump",
+                "resources": {
+                    "tools": [],
+                    "materials": [],
+                    "permits": [],
+                    "qualifications": [],
+                    "components": []
+                },
+                "hazards": []
+            },
+            {
+                "step_id": 1.2,
+                "step_text": "Fill the chamber with oil",
+                "maintainable_item": "Pump",
+                "resources": {
+                    "tools": [],
+                    "materials": [],
+                    "permits": [],
+                    "qualifications": [],
+                    "components": []
+                },
+                "hazards": []
+            }
+        ]
+    },
+    {   
+        "step_id": 2,
+        "step_text": "Check that the engine runs smoothly",
+        "maintainable_item": "Pump",
+        "resources": {
+            "tools": [],
+            "materials": [],
+            "permits": [],
+            "qualifications": [],
+            "components": []
+        },
+        "hazards": []
+    }
+]
+}]

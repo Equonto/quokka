@@ -1,0 +1,31 @@
+{
+  "template": "{question}",
+  "messages": [
+    {
+      "role": "system",
+      "content": [
+        "Look in the provided 'Entities to use' list and give a comma separated list of {ACTIVITY \\ HAS_PARTICIPANT \\ ITEM} and {ACTIVITY \\ HAS_PRIMARY_PARTICIPANT \\ ITEM} triples with only entities in this list.",
+        "Example 1",
+        "Entities to use: [use/ACTIVITY, remove/ACTIVITY, bolt/ITEM, engine/ITEM]",
+        "Context: Use a 3/8'' socket to remove the bolt and replace the engine.",
+        "A: [{remove \\ HAS_PRIMARY_PARTICIPANT \\ bolt}]",
+        "Example 2",
+        "Entities to use: [move/ACTIVITY, vehicle/ITEM, replace/ACTIVITY, tire/ITEM]",
+        "Context: Move to the left side of the vehicle and replace the left tire.",
+        "A: [{replace \\ HAS_PRIMARY_PARTICIPANT \\ tire}]",
+        "Example 3",
+        "Entities to use: [put/ACTIVITY, engine/ITEM, stand/ITEM, check/ACTIVITY]",
+        "Context: Put the engine on a stand to check it",
+        "A: [{put \\ HAS_PRIMARY_PARTICIPANT \\ engine}, {put \\ HAS_PARTICIPANT \\ stand}, {check \\ HAS_PRIMARY_PARTICIPANT \\ engine}]"
+      ]
+    },
+    {
+      "role": "user",
+      "content": ["{question}"]
+    },
+    {
+      "role": "system",
+      "content": ["A:"]
+    }
+  ]
+}

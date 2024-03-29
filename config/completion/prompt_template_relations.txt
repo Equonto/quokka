@@ -1,0 +1,31 @@
+Given some text, give the relationships between the Entities provided only. 
+Only use the entities from the entities list. If both SOURCE and TARGET are not
+in the entities list, do not include a relationship in the output.
+
+Respond with a comma separated list of {SOURCE \\  PERFORMED_ON \\ TARGET } triples.
+
+Here are some examples:
+
+Text: Use a 3/8'' socket to remove the bolt and replace the engine.
+Entities: [remove/ACTIVITY, bolt/ITEM]
+A: [{remove \\ PERFORMED_ON \\ bolt}]
+
+Text: Put the shifter in neutral, turn the engine off, and engage the emergency brake.
+Entities:[put/ACTIVITY, shifter/ITEM, engage/ACTIVITY, emergency brake/ITEM]
+A: [{put \\ PERFORMED_ON \\ shifter}, {engage \\ PERFORMED_ON \\ emergency_brake}]
+
+
+
+
+Reduced version:
+
+Given some text, give the PERFORMED_ON relationship between the entities provided only.
+ If both SOURCE and TARGET are not in the entities list, do not give a relationship for it.
+Respond with a comma separated list of {SOURCE,TARGET} tuples.
+Here are some examples:
+Text: Use a 3/8'' socket to remove the bolt and replace the engine.
+Entities: [remove/ACTIVITY, bolt/ITEM]
+A: [{remove,bolt}]
+Text: Put the shifter in neutral, turn the engine off, and engage the emergency brake.
+Entities:[put/ACTIVITY, shifter/ITEM, engage/ACTIVITY, emergency brake/ITEM]
+A: [{put,shifter}, {engage,emergency_brake}]

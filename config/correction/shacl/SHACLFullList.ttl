@@ -1,0 +1,134 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ompd: <http://www.example.org/static-procedure-ontology#>
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
+@prefix proc: <http://example.org/ontology/procedure_ontology_application#>
+
+proc:NoTasksInProcShape
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceProcedureProcess ; 
+    sh:property [           
+        sh:path ompd:hasDirectActivityPart ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.
+
+proc:OrphanedTask 
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceTask ; 
+    sh:property [           
+        sh:path ompd:directActivityPartOf ;    
+        sh:minCount 1 ;
+        sh:or (
+         [
+           sh:class ompd:MaintenanceTask  ]
+         [
+           sh:class ompd:MaintenanceProcedureProcess  ]
+        )
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.
+
+proc:AmbiguousActivityItemPair
+  a sh:NodeShape ;
+    sh:targetClass proc:AtomicAction ;
+    sh:property [           
+        sh:path proc:hasPrimaryParticipant;    
+        sh:maxCount 1 ;
+    ] ;
+    sh:closed false;
+.
+
+
+proc:ActivityWithNoItem 
+  a sh:NodeShape ;
+    sh:targetClass proc:AtomicAction ;
+    sh:property [           
+        sh:path proc:hasPrimaryParticipant ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+.
+
+
+proc:NotAMaintenanceTaskShape a sh:NodeShape ;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:select """
+    PREFIX ompd: <http://www.example.org/static-procedure-ontology#> 
+    SELECT ?this 
+    WHERE { 
+        ?this a ompd:MaintenanceTask . 
+        FILTER NOT EXISTS {
+            ?something ompd:directActivityPartOf ?this 
+        }
+    }""" ;
+  ] ;
+  sh:property [
+    sh:path proc:hasAtomicAction;
+    sh:minCount 1 ;
+  ] .
+
+proc:TaskWithoutSequence a sh:NodeShape ;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:select """
+    PREFIX ompd: <http://www.example.org/static-procedure-ontology#> 
+    SELECT ?this
+    WHERE {
+    ?this a ompd:MaintenanceTask .
+    ?this ompd:directActivityPartOf ?parent .
+    {
+        SELECT ?parent (COUNT(?this) AS ?taskCount)
+        WHERE {
+            ?this a ompd:MaintenanceTask .
+            ?this ompd:directActivityPartOf ?parent .
+    }
+    GROUP BY ?parent
+    HAVING (COUNT(?this) > 1)
+  }
+}""" ;
+  ] ;
+sh:or (
+		[
+			sh:path lis:before ;
+			sh:minCount 1 ;
+		]
+		[
+			sh:path lis:after ;
+			sh:minCount 1 ;
+		]
+) .
+
+proc:UnknownActivity a sh:NodeShape ;
+sh:targetClass ompd:MaintenanceTask ;
+sh:closed false;
+sh:sparql [
+  sh:message "Task has activity that is not registered in the Activity Ontology: {?activity}.";
+  sh:select """
+    PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+    PREFIX ann:<http://www.industrialontologies.org/IOFAnnotationVocabulary/> 
+    PREFIX proc:<http://example.org/ontology/procedure_ontology_application#> 
+    PREFIX  ompd: <http://www.example.org/static-procedure-ontology#> 
+    SELECT $this ?activity
+    WHERE { 
+      $this proc:hasAtomicAction ?activity .
+      ?activity a proc:AtomicAction . 
+      ?activity rdfs:label ?activity_name . 
+      FILTER NOT EXISTS {
+          ?act rdfs:subClassOf* <http://purl.obolibrary.org/obo/BFO_0000015> . 
+          ?act ann:synonym ?activity_name .  
+      }
+      FILTER NOT EXISTS {
+          ?act rdfs:subClassOf* <http://purl.obolibrary.org/obo/BFO_0000015> . 
+          ?act rdfs:label ?activity_name .  
+      }
+    }""" ;
+  ] ;

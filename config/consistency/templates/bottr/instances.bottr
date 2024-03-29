@@ -1,0 +1,227 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix ottr:   <http://ns.ottr.xyz/0.4/> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/>.
+@prefix rstr: <http://tpl.ottr.xyz/owl/restriction/0.1/>.
+@prefix o-docttr: <http://tpl.ottr.xyz/p/docttr/0.1/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix listpl: <http://rds.posccaesar.org/ontology/lis14/tpl/0.1/> .
+@prefix reqtpl: <http://w3id.org/requirement-ontology/tpl/0.1/> .
+@prefix rdl: <http://rds.posccaesar.org/ontology/plm/rdl/> .
+@prefix plmtpl: <http://rds.posccaesar.org/ontology/plm/tpl/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ex: <http://example.org/> .
+@prefix ont: <http://data.grundfos.com/ontology/pump/ont/> .
+@prefix ido-tpl: <http://example.com/ido/> .
+@prefix ido: <http://example.com/ido/ontology/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix ompd-tpl: 	  <http://www.example.org/static-procedure-ontology/tpl/> .
+@prefix ompd: 	  <http://www.example.org/static-procedure-ontology#> .
+@prefix proc: 	  <http://example.org/ontology/procedure_ontology_application#> .
+@prefix act: 	  <http://www.semanticweb.org/maintenance-activity#> .
+@prefix ann: <http://www.industrialontologies.org/IOFAnnotationVocabulary/> .
+
+# procedure documents
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, documentLabel, hasTitle
+from CSVREAD('staging/procedure_documents.csv')
+""" ;
+ottr:template ompd-tpl:MaintenanceProcedureDocument;
+ottr:argumentMaps (
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+) .
+
+# procedure processes
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, procedureDocumentIri, procedureName
+from CSVREAD('staging/procedures.csv')
+""" ;
+ottr:template ompd-tpl:MaintenanceProcedureProcess;
+ottr:argumentMaps (
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type xsd:string ]
+) .
+
+# maintenance tasks
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select i1.iri
+, i1.type
+, i1.taskName
+, i1.afterMaintenanceTaskIri
+, i1.parentMaintenanceTaskIri
+, GROUP_CONCAT(i2.iri) AS differentFrom
+from CSVREAD('staging/maintenance_tasks.csv') as i1
+left join CSVREAD('staging/maintenance_tasks.csv') as i2 
+on i2.iri != i1.iri AND i1.procedureIri = i2.procedureIri
+GROUP BY i1.iri, i1.type, i1.taskName, i1.afterMaintenanceTaskIri, i1.parentMaintenanceTaskIri
+""" ;
+ottr:template ompd-tpl:MantenanceTask;
+ottr:argumentMaps (
+      [ ottr:type owl:NamedIndividual]
+      [ ottr:type owl:Class ]
+      [ ottr:type xsd:string ]
+      [ ottr:type owl:NamedIndividual]
+      [ ottr:type owl:NamedIndividual]
+      [ ottr:type (rdf:List ottr:IRI)]
+) .
+
+# maintenance task classes
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select c1.type
+, GROUP_CONCAT(DISTINCT c2.type) as disjointWith
+from CSVREAD('staging/maintenance_tasks.csv') as c1
+JOIN CSVREAD('staging/maintenance_tasks.csv') as c2
+GROUP BY c1.type
+""" ;
+ottr:template ompd-tpl:MaintenanceTaskClass;
+ottr:argumentMaps (
+    [ ottr:type owl:Class ]
+    [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# maintenance task descriptions
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, taskDescriptionName, maintenanceTaskDescriptionText, denotes
+from CSVREAD('staging/maintenance_task_descriptions.csv')
+""" ;
+ottr:template ompd-tpl:MantenanceTaskDescription;
+ottr:argumentMaps (
+      [ ottr:type owl:NamedIndividual]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+      [ ottr:type owl:NamedIndividual]
+) .
+
+# extracted tools
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, toolName, participantIn, type
+from CSVREAD('staging/tools_extracted.csv')
+""" ;
+ottr:template ompd-tpl:Resource;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# extracted maintainable items
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, name, participantIn, type
+from CSVREAD('staging/physical_object_extracted.csv')
+""" ;
+ottr:template ompd-tpl:ItemInMaintenanceTask;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# extracted maintenance activities
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, actionName, actionOf, type
+from CSVREAD('staging/actions_extracted.csv')
+""" ;
+ottr:template ompd-tpl:Activity;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# hazards
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, processIri, hazardLabel, hazardRealisationProcess, hasHazardDescription
+from CSVREAD('staging/hazard.csv')
+""" ;
+ottr:template ompd-tpl:Hazard;
+ottr:argumentMaps (
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type xsd:string ]
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type xsd:string ]
+) .
+
+# materials
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, type, processIri, materialLabel, hasMaterialDescription, hasUnits, hasQuantity
+from CSVREAD('staging/materials.csv')
+""" ;
+ottr:template ompd-tpl:ResourceWithDetails;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+) .
+
+# tools
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, type, processIri, toolLabel, hasToolName, hasUnits, hasQuantity
+from CSVREAD('staging/tools.csv')
+""" ;
+ottr:template ompd-tpl:ResourceWithDetails;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+      [ ottr:type xsd:string ]
+) .
+
+# action_relation (has primary participant)
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+    select sourceIri, targetIri
+    from CSVREAD('staging/action_item_relationship_primary_participant.csv')
+""" ;
+ottr:template ompd-tpl:HasPrimaryParticipant;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
+) .

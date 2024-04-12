@@ -1,0 +1,144 @@
+{
+  "output_data_folder": "data/output/datafiles",
+  "prefix": "proc:",
+  "input_data_filepath": "data/input/task_descriptions.csv",
+  "text_preprocessing_tasks": ["LOWER", "LEMMATIZATION", "REMOVE_PUNCTUATION"],
+  "extraction_conditional_on_field": "is_candidate_for_entity_extraction",
+  "ner_model": {
+    "name": "gpt-3.5-turbo",
+    "type": "OPENAI_NER",
+    "template_path": "config/completion/prompt_template_ner.json"
+  },
+  "relationship_model": {
+    "name": "gpt-3.5-turbo",
+    "type": "OPENAI_RELATIONS",
+    "template_path": "config/completion/prompt_template_relations.json"
+  },
+  "text_field": "text_value",
+  "output_schema": [
+    {
+      "filename": "maintenance_task_descriptions.csv",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_description"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:MaintenanceTaskDescription"
+        },
+        {
+          "name": "taskDescriptionName",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "task_description_{task_id}"
+        },
+        {
+          "name": "maintenanceTaskDescriptionText",
+          "type": "TEXT",
+          "template": "text_value"
+        },
+        {
+          "name": "denotes",
+          "type": "IRI",
+          "template": "task_id"
+        }
+      ]
+    },
+    {
+      "filename": "maintenance_actions_extracted.csv",
+      "extractable_from_entity": "ACTIVITY",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "proc:MaintenanceAction, proc:Extracted"
+        },
+        {
+          "name": "actionName",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "{EXTRACTED}"
+        },
+        {
+          "name": "actionOf",
+          "type": "IRI",
+          "template": "task_id"
+        }
+      ]
+    },
+    {
+      "filename": "physical_object_extracted.csv",
+      "extractable_from_entity": "ITEM",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_Item_{EXTRACTED(F)}"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:ItemInMaintenanceProcess, proc:Extracted"
+        },
+        {
+          "name": "name",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "{EXTRACTED}"
+        },
+        {
+          "name": "participantIn",
+          "type": "IRI",
+          "template": "task_id"
+        }
+      ]
+    },
+    {
+      "filename": "action_item_relationship_primary_participant.csv",
+      "extractable_from_relation": "HAS_PRIMARY_PARTICIPANT",
+      "columns": [
+        {
+          "name": "sourceIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
+        },
+        {
+          "name": "relation",
+          "type": "LITERAL",
+          "template": "proc:hasPrimaryParticipant"
+        },
+        {
+          "name": "targetIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_Item_{EXTRACTED(F)}"
+        }
+      ]
+    },
+    {
+      "filename": "action_item_relationship_participant.csv",
+      "extractable_from_relation": "HAS_PARTICIPANT",
+      "columns": [
+        {
+          "name": "sourceIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
+        },
+        {
+          "name": "relation",
+          "type": "LITERAL",
+          "template": "proc:hasParticipant"
+        },
+        {
+          "name": "targetIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_Item_{EXTRACTED(F)}"
+        }
+      ]
+    }
+  ]
+}

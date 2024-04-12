@@ -13,25 +13,28 @@ from dotenv import load_dotenv
 class OpenAIRelationExtraction():
     
     def __init__(self, template_path, open_ai_model_name):
-        self.prompt_template = self.read_prompt_template(template_path)
+        self.prompt_templates = self.read_prompt_template(template_path)
         self.open_ai_model_name = open_ai_model_name
-        openai.api_key = self.load_api_key()
 
     def read_prompt_template(self, template_path: str) -> PrompTemplate:
-        return FileIo.read_json_prompt_template(template_path)
+       return FileIo.read_json_prompt_templates(template_path)
 
     def load_api_key(self) -> Union[str, None]:
         load_dotenv('.env') 
-        return os.getenv("OPENAI_API_KEY")
+        #return os.getenv("OPENAI_API_KEY") # todo: reinstate once working
+        return "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" # todo: remove for final app
 
     def tag_relations(self, text: str, entities: str) -> List[Relation]:
         self.wait(2) # todo: remove for final app
         prompt_question = "Entities to use: " + entities + "\nContext: " + text 
-        messages = self.replace_template_with_input(self.prompt_template.messages
-                                                    , self.prompt_template.template
+
+        prompt = self.prompt_templates[0] # todo: make extensible to chains 
+        messages = self.replace_template_with_input(prompt.messages
+                                                    , prompt.template
                                                     , prompt_question)
         json_messages = [message.get_json() for message in messages]
         try: 
+            openai.api_key = self.load_api_key()
             response = openai.ChatCompletion.create(
                model=self.open_ai_model_name,
                messages = json_messages,

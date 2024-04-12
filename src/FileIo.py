@@ -38,10 +38,10 @@ class FileIo:
             return json.load(f)
         
     @staticmethod
-    def read_json_prompt_template(file_path) -> PrompTemplate:
+    def read_json_prompt_templates(file_path) -> List[PrompTemplate]:
         with open(file_path, 'r') as f:
             loaded_json = json.load(f)
-            return PrompTemplate.from_json(loaded_json)
+            return [PrompTemplate.from_json(item) for item in loaded_json]
 
     @staticmethod
     def read_json_config(file_path) -> CompletionConfig:

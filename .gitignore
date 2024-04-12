@@ -1,4 +1,4 @@
-data/*
+./src/.env
 .vscode/
 
 *DS_Store*
@@ -17,7 +17,7 @@ build/
 develop-eggs/
 dist/
 downloads/
-eggs/
+eggs/ß
 .eggs/
 lib/
 lib64/

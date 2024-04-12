@@ -27,6 +27,7 @@ class CompletionTask:
     
     def execute(self):
         self.setup()
+        # todo: update to handle separated configuration files
         for data_transformation_item in self.config.data_transformation_items:
             input_data : DataFrame = FileIo.read_csv(data_transformation_item.input_data_filepath)
             if data_transformation_item.data_preprocessing_tasks != None and len(data_transformation_item.data_preprocessing_tasks) > 0:

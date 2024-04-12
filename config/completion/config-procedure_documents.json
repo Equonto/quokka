@@ -1,0 +1,58 @@
+{
+  "output_data_folder": "data/output/datafiles",
+  "prefix": "proc:",
+  "input_data_filepath": "data/input/procedure_documents.csv",
+  "output_schema": [
+    {
+      "filename": "procedures.csv",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "IRI",
+          "template": "procedure_id"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:MaintenanceProcedureProcess"
+        },
+        {
+          "name": "procedureDocumentIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{procedure_id}_document"
+        },
+        {
+          "name": "procedureName",
+          "type": "TEXT",
+          "template": "procedure_name"
+        }
+      ]
+    },
+    {
+      "filename": "procedure_documents.csv",
+      "rdfs_type": "ompd:MaintenanceProcedureDocument",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{ProcedureId}_document"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:MaintenanceProcedureDocument"
+        },
+        {
+          "name": "documentLabel",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "documentLabel_{ProcedureId}"
+        },
+        {
+          "name": "hasTitle",
+          "type": "TEXT",
+          "template": "ProcedureName"
+        }
+      ]
+    }
+  ]
+}

@@ -11,7 +11,7 @@ class TaskFactory:
 
     def create_task(self, task_type):
         if task_type == TaskType.COMPLETION:
-            return CompletionTask("config/completion/config_llm.json", "staging")
+            return CompletionTask("data/input", "data/output/datafiles", "config/completion/", "staging")
         elif task_type == TaskType.CORRECTION:
             return CorrectionTask()
         elif task_type == TaskType.POPULATION:

@@ -1,7 +1,6 @@
 {
-  "output_data_folder": "data/output/datafiles",
+  "config_name": "tasks",
   "prefix": "proc:",
-  "input_data_filepath": "data/input/tasks.csv",
   "output_schema": [
     {
       "filename": "maintenance_tasks.csv",

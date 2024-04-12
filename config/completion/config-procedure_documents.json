@@ -1,7 +1,6 @@
 {
-  "output_data_folder": "data/output/datafiles",
+  "config_name": "procedure_documents",
   "prefix": "proc:",
-  "input_data_filepath": "data/input/procedure_documents.csv",
   "output_schema": [
     {
       "filename": "procedures.csv",

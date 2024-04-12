@@ -1,7 +1,6 @@
 {
-  "output_data_folder": "data/output/datafiles",
+  "config_name": "tools",
   "prefix": "proc:",
-  "input_data_filepath": "data/input/tools.csv",
   "output_schema": [
     {
       "filename": "tools.csv",

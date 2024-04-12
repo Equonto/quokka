@@ -1,20 +1,25 @@
 {
-  "output_data_folder": "data/output/datafiles",
+  "config_name": "task_descriptions",
   "prefix": "proc:",
-  "input_data_filepath": "data/input/task_descriptions.csv",
-  "text_preprocessing_tasks": ["LOWER", "LEMMATIZATION", "REMOVE_PUNCTUATION"],
-  "extraction_conditional_on_field": "is_candidate_for_entity_extraction",
-  "ner_model": {
-    "name": "gpt-3.5-turbo",
-    "type": "OPENAI_NER",
-    "template_path": "config/completion/prompt_template_ner.json"
+  "information_extraction_details": {
+    "text_preprocessing_tasks": [
+      "LOWER",
+      "LEMMATIZATION",
+      "REMOVE_PUNCTUATION"
+    ],
+    "extraction_conditional_on_field": "is_candidate_for_entity_extraction",
+    "ner_model": {
+      "name": "gpt-3.5-turbo",
+      "type": "OPENAI_NER",
+      "template_path": "config/completion/prompt_template_ner.json"
+    },
+    "relationship_model": {
+      "name": "gpt-3.5-turbo",
+      "type": "OPENAI_RELATIONS",
+      "template_path": "config/completion/prompt_template_relations.json"
+    },
+    "text_field": "text_value"
   },
-  "relationship_model": {
-    "name": "gpt-3.5-turbo",
-    "type": "OPENAI_RELATIONS",
-    "template_path": "config/completion/prompt_template_relations.json"
-  },
-  "text_field": "text_value",
   "output_schema": [
     {
       "filename": "maintenance_task_descriptions.csv",

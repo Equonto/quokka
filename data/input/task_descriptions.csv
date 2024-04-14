@@ -1,4 +1,4 @@
-task_id,is_instructional,type,text value,media location,is_suitable_for_information_extraction
+task_id,is_instructional,type,text_value,media_location,is_candidate_for_information_extraction
 eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/s1hcVSyQJyFslNUO.standard,FALSE
 eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4,TRUE,Text,use a 2 phillips screwdriver to remove the four screws .,,TRUE
 c86c0512-ae2f-4ab0-a94e-e2b3af6146d0,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nJwqXyV2RmYOojPS.standard,FALSE

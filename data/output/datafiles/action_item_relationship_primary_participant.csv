@@ -1,0 +1,13 @@
+sourceIri,relation,targetIri
+proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4_action_remove,proc:hasPrimaryParticipant,proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4_Item_four_screw
+proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_action_remove,proc:hasPrimaryParticipant,proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_Item_rubber_gasket
+proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b_action_lift,proc:hasPrimaryParticipant,proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b_Item_tray
+proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_action_remove,proc:hasPrimaryParticipant,proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_Item_cap
+proc:2c02e284-8bf6-4569-90a6-914dcd76ae76_action_release,proc:hasPrimaryParticipant,proc:2c02e284-8bf6-4569-90a6-914dcd76ae76_Item_passenger-side_windshield_wiper_locking_nut
+proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58_action_gently_lift_up,proc:hasPrimaryParticipant,proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58_Item_passenger-side_windshield_wiper
+proc:629fe43d-4e15-45af-979b-ca496485935f_action_remove,proc:hasPrimaryParticipant,proc:629fe43d-4e15-45af-979b-ca496485935f_Item_driver-side_windshield_wiper
+proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4_action_lift_up,proc:hasPrimaryParticipant,proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4_Item_plastic_cover
+proc:591cfe91-bba9-47da-a517-6a3190a33738_action_remove,proc:hasPrimaryParticipant,proc:591cfe91-bba9-47da-a517-6a3190a33738_Item_screw
+proc:1249992e-4eb2-462c-bc82-a8c1bf65e001_action_remove,proc:hasPrimaryParticipant,proc:1249992e-4eb2-462c-bc82-a8c1bf65e001_Item_front_two_screw
+proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_action_unplug,proc:hasPrimaryParticipant,proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_Item_automatic_transmission_control_unit
+proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_action_lift_out,proc:hasPrimaryParticipant,proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_Item_automatic_transmission_control_unit

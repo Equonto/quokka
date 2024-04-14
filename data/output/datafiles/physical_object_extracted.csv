@@ -1,0 +1,15 @@
+iri,type,name,participantIn
+proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4_Item_four_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",four screw,proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4
+proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_Item_rubber_gasket,"ompd:ItemInMaintenanceProcess, proc:Extracted",rubber gasket,proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0
+proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_Item_rain_tray,"ompd:ItemInMaintenanceProcess, proc:Extracted",rain tray,proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0
+proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b_Item_tray,"ompd:ItemInMaintenanceProcess, proc:Extracted",tray,proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b
+proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_Item_cap,"ompd:ItemInMaintenanceProcess, proc:Extracted",cap,proc:a40816a0-b341-4db0-ba27-b5c1203c5d90
+proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_Item_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",windshield wiper,proc:a40816a0-b341-4db0-ba27-b5c1203c5d90
+proc:2c02e284-8bf6-4569-90a6-914dcd76ae76_Item_passenger-side_windshield_wiper_locking_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",passenger-side windshield wiper locking nut,proc:2c02e284-8bf6-4569-90a6-914dcd76ae76
+proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58_Item_passenger-side_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",passenger-side windshield wiper,proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58
+proc:629fe43d-4e15-45af-979b-ca496485935f_Item_driver-side_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",driver-side windshield wiper,proc:629fe43d-4e15-45af-979b-ca496485935f
+proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4_Item_plastic_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic cover,proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4
+proc:591cfe91-bba9-47da-a517-6a3190a33738_Item_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",screw,proc:591cfe91-bba9-47da-a517-6a3190a33738
+proc:591cfe91-bba9-47da-a517-6a3190a33738_Item_automatic_control_unit_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",automatic control unit cover,proc:591cfe91-bba9-47da-a517-6a3190a33738
+proc:1249992e-4eb2-462c-bc82-a8c1bf65e001_Item_front_two_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",front two screw,proc:1249992e-4eb2-462c-bc82-a8c1bf65e001
+proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_Item_automatic_transmission_control_unit,"ompd:ItemInMaintenanceProcess, proc:Extracted",automatic transmission control unit,proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d

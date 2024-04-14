@@ -14,7 +14,7 @@ class CompletionTask:
     def __init__(self, input_data_folder: str, output_data_folder: str, config_location: str, staging_dir: str):
         self.input_data_folder: str = input_data_folder
         self.output_data_folder: str = output_data_folder
-        self.config_files: List[CompletionConfig] = Config(input_data_folder, output_data_folder, config_location)
+        self.config_files: List[CompletionConfig] = Config(input_data_folder, config_location).configs
         self.staging_dir: str = staging_dir
     
     def setup(self):
@@ -25,14 +25,14 @@ class CompletionTask:
     def cleanup(self):
         FileIo.delete_directory(self.staging_dir)
     
-
     def execute(self):
         self.setup()
         for config in self.config_files:
             input_data : DataFrame = FileIo.read_csv(self.input_data_folder + config.config_name + ".csv")
+            tagged_sentences = None
             if (config.information_extraction_details != None):
                 tagged_sentences = self.perform_entity_recognition(config.information_extraction_details, input_data)
-            self.perform_output_serialization(config.prefix, config.output_data_folder
+            self.perform_output_serialization(config.prefix, self.output_data_folder
                                                     , input_data, config.output_schema, tagged_sentences)
         self.cleanup()
 
@@ -47,22 +47,22 @@ class CompletionTask:
                 for index, row in input_data.iterrows():
                     if (ie_details.text_field != None):
                         text = row[ie_details.text_field] # warn dynamic code
-                        if (ie_details.text_preprocessing_tasks != None):
-                            text_preprocessor = TextPreprocessor(ie_details.text_preprocessing_tasks)
-                            text = text_preprocessor.preprocess_text(text) 
-
                         # if the row is a candidate for extraction, then extract entities
                         if self.pass_condition(ie_details.extraction_conditional_on_field, row):
-                            tagged_sentence = entity_recognition.tag_text(text)
-                            tagged_sentence.set_preprocessed_text(text) 
-                            tagged_sentence.set_raw_input_data(row) # need this for formatting output object
-                            # relations can only be extracted if entities extracted
-                            if (ie_details.relationship_model != None and tagged_sentence.get_tagged_ngrams() != []):
-                                relationship_extraction = RelationExtraction(ie_details.relationship_model.name,
-                                                                                ie_details.relationship_model.type,
-                                                                                ie_details.relationship_model.template_path)
-                                tagged_sentence = relationship_extraction.tag_relations(tagged_sentence)
-                            tagged_sentences.append(tagged_sentence)
+                            if (ie_details.text_preprocessing_tasks != None):
+                                text_preprocessor = TextPreprocessor(ie_details.text_preprocessing_tasks)
+                                text = text_preprocessor.preprocess_text(text) 
+
+                                tagged_sentence = entity_recognition.tag_text(text)
+                                tagged_sentence.set_preprocessed_text(text) 
+                                tagged_sentence.set_raw_input_data(row) # need this for formatting output object
+                                # relations can only be extracted if entities extracted
+                                if (ie_details.relationship_model != None and tagged_sentence.get_tagged_ngrams() != []):
+                                    relationship_extraction = RelationExtraction(ie_details.relationship_model.name,
+                                                                                    ie_details.relationship_model.type,
+                                                                                    ie_details.relationship_model.template_path)
+                                    tagged_sentence = relationship_extraction.tag_relations(tagged_sentence)
+                                tagged_sentences.append(tagged_sentence)
             
             self.write_to_analysis_folder(tagged_sentences) # for debugging
             return tagged_sentences

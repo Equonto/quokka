@@ -101,7 +101,7 @@ class FileIo:
     def write_tagged_sentences_to_txt_file(list: List[TaggedSentence], file_path: str):
         with open(file_path, 'w') as f:
             for item in list:
-                f.write("Raw Text:" +  item.get_raw_input_data()["StepText"] + '\n')
+                f.write("Raw Text:" +  item.get_raw_input_data()["text_value"] + '\n')
                 f.write("Preprocessed Text:" +  item.get_preprocessed_text() + '\n')
                 tagged_ngram_string = ""
                 for ngram in item.get_tagged_ngrams():
@@ -112,7 +112,7 @@ class FileIo:
     def write_tagged_relations_to_txt_file(list: List[TaggedSentence], file_path: str):
         with open(file_path, 'w') as f:
             for item in list:
-                f.write("Raw Text:" +  item.get_raw_input_data()["StepText"] + '\n')
+                f.write("Raw Text:" +  item.get_raw_input_data()["text_value"] + '\n')
                 f.write("Preprocessed Text:" +  item.get_preprocessed_text() + '\n')
                 tagged_relation_string = ""
                 for relation in item.get_relations(): # todo: remove hardcoding

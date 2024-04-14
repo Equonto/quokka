@@ -2,7 +2,6 @@ from typing import Optional
 from completion.model.Enums import ModelType
 from completion.information_extraction.OpenAINer import OpenAIEntityRecognition
 from completion.information_extraction.Flair import FlairEntityRecognition
-from completion.information_extraction.OpenAINer import LLMPromptChain
 from completion.information_extraction.TaggedSentence import TaggedSentence
 
 class EntityRecognition:

@@ -96,12 +96,12 @@ class CompletionConfig:
     def from_json(json):
         information_extraction_details = None
         if Utils.attribute_exists(json, "information_extraction_details"):
-            information_extraction_details = InformationExtractionDetails.from_json(json)
+            information_extraction_details = InformationExtractionDetails.from_json(json["information_extraction_details"])
         output_schemas = []
         if Utils.attribute_exists(json, "output_schema"):
             for item in json["output_schema"]:
                 output_schemas.append(OutputSchema.from_json(item))
-        return CompletionConfig(json["config_name"], json["output_data_folder"], json["prefix"], information_extraction_details, output_schemas)
+        return CompletionConfig(json["config_name"], json["prefix"], output_schemas, information_extraction_details)
 
 class PromptMessage:
 

@@ -1,0 +1,13 @@
+iri,type,actionName,actionOf
+proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4
+proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0
+proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b_action_lift,"proc:MaintenanceAction, proc:Extracted",lift,proc:9cc80cd4-c2a9-43b2-afc4-6ffe56ef8e0b
+proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:a40816a0-b341-4db0-ba27-b5c1203c5d90
+proc:2c02e284-8bf6-4569-90a6-914dcd76ae76_action_release,"proc:MaintenanceAction, proc:Extracted",release,proc:2c02e284-8bf6-4569-90a6-914dcd76ae76
+proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58_action_gently_lift_up,"proc:MaintenanceAction, proc:Extracted",gently lift up,proc:7269cd2b-a27b-40d1-b7f6-2dd1a7728f58
+proc:629fe43d-4e15-45af-979b-ca496485935f_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:629fe43d-4e15-45af-979b-ca496485935f
+proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4_action_lift_up,"proc:MaintenanceAction, proc:Extracted",lift up,proc:b88c0fe9-ed0c-4da4-8c5b-a2570f429db4
+proc:591cfe91-bba9-47da-a517-6a3190a33738_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:591cfe91-bba9-47da-a517-6a3190a33738
+proc:1249992e-4eb2-462c-bc82-a8c1bf65e001_action_remove,"proc:MaintenanceAction, proc:Extracted",remove,proc:1249992e-4eb2-462c-bc82-a8c1bf65e001
+proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_action_unplug,"proc:MaintenanceAction, proc:Extracted",unplug,proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d
+proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d_action_lift_out,"proc:MaintenanceAction, proc:Extracted",lift out,proc:40e20e8e-0ab9-488a-85ca-a452f16ce28d

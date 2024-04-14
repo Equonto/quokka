@@ -1,0 +1,3 @@
+sourceIri,relation,targetIri
+proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_action_remove,proc:hasParticipant,proc:c86c0512-ae2f-4ab0-a94e-e2b3af6146d0_Item_rain_tray
+proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_action_remove,proc:hasParticipant,proc:a40816a0-b341-4db0-ba27-b5c1203c5d90_Item_windshield_wiper

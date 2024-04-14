@@ -1,0 +1,44 @@
+Raw Text:use a 2 phillips screwdriver to remove the four screws .
+Preprocessed Text:use a 2 phillips screwdriver to remove the four screw .
+remove/HAS_PRIMARY_PARTICIPANT/four screw, 
+
+Raw Text:remove the rubber gasket from the rain tray .
+Preprocessed Text:remove the rubber gasket from the rain tray .
+remove/HAS_PRIMARY_PARTICIPANT/rubber gasket, remove/HAS_PARTICIPANT/rain tray, 
+
+Raw Text:lift the tray upwards and away from the vehicle .
+Preprocessed Text:lift the tray upwards and away from the vehicle .
+lift/HAS_PRIMARY_PARTICIPANT/tray, 
+
+Raw Text:use a flathead screwdriver to remove the cap from the windshield wiper .
+Preprocessed Text:use a flathead screwdriver to remove the cap from the windshield wiper .
+remove/HAS_PRIMARY_PARTICIPANT/cap, remove/HAS_PARTICIPANT/windshield wiper, 
+
+Raw Text:use a socket wrench to release the passenger-side windshield wiper locking nut .
+Preprocessed Text:use a socket wrench to release the passenger-side windshield wiper locking nut .
+release/HAS_PRIMARY_PARTICIPANT/passenger-side windshield wiper locking nut, 
+
+Raw Text:gently lift up the passenger-side windshield wiper .
+Preprocessed Text:gently lift up the passenger-side windshield wiper .
+gently lift up/HAS_PRIMARY_PARTICIPANT/passenger-side windshield wiper, 
+
+Raw Text:remove the driver-side windshield wiper in the same fashion .
+Preprocessed Text:remove the driver-side windshield wiper in the same fashion .
+remove/HAS_PRIMARY_PARTICIPANT/driver-side windshield wiper, 
+
+Raw Text:lift up the plastic cover .
+Preprocessed Text:lift up the plastic cover .
+lift up/HAS_PRIMARY_PARTICIPANT/plastic cover, 
+
+Raw Text:use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .
+Preprocessed Text:use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .
+remove/HAS_PRIMARY_PARTICIPANT/screw, 
+
+Raw Text:use a 2 phillips screwdriver to remove the front two screws .
+Preprocessed Text:use a 2 phillips screwdriver to remove the front two screw .
+remove/HAS_PRIMARY_PARTICIPANT/front two screw, 
+
+Raw Text:gently unplug and lift out the automatic transmission control unit .
+Preprocessed Text:gently unplug and lift out the automatic transmission control unit .
+unplug/HAS_PRIMARY_PARTICIPANT/automatic transmission control unit, lift out/HAS_PRIMARY_PARTICIPANT/automatic transmission control unit, 
+

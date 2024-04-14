@@ -9,8 +9,8 @@ import string
 class TextPreprocessor:
 
     def __init__(self, tasks):
-        nltk.download('punkt')
-        nltk.download('wordnet')
+        nltk.download('punkt') # todo: check if this downloaded before downloading
+        nltk.download('wordnet') # todo: check if this downloaded before downloading
         self.tasks : List[TextPreprocessingTaskType] = tasks
 
     def preprocess_text(self, text: str) -> str:

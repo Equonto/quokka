@@ -34,7 +34,7 @@
         {
           "name": "iri",
           "type": "CONSTRUCTED_IRI",
-          "template": "{ProcedureId}_document"
+          "template": "{procedure_id}_document"
         },
         {
           "name": "type",
@@ -44,12 +44,12 @@
         {
           "name": "documentLabel",
           "type": "CONSTRUCTED_TEXT",
-          "template": "documentLabel_{ProcedureId}"
+          "template": "documentLabel_{procedure_id}"
         },
         {
           "name": "hasTitle",
           "type": "TEXT",
-          "template": "ProcedureName"
+          "template": "procedure_name"
         }
       ]
     }

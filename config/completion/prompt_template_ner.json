@@ -36,37 +36,5 @@
         "content": ["A:"]
       }
     ]
-  },
-  {
-    "template": "{question}",
-    "messages": [
-      {
-        "role": "system",
-        "content": [
-          "You are an assistant that corrects activity tags in tagged maintenance text.",
-          "If an activity tag is similar to one in the accepted tags list, rename the tagged text to what is found in the accepted tags list.",
-          "If an activity is not like one in the accepted list, remove it from the tags",
-          "Respond with a comma separated list of {n-gram \\ tag} tuples.",
-          "Here is the accepted tags list: [add, adjust, align, amend, confirm, correct, detension, discharge, fill, free-up, guide, position, program, re-adjust, re-align, readjust, realign, regulate, reposition, review, set, shim, straighten, tension, tighten, tilt, top up, top-up, torque, track, train, tune, turn, calibrate, re-calibrate, analyse, assess, check, check out, detect, fault find, find, identify, investigate, re-test, test, troubleshooot, verify, crack test, measure, monitor, ndt, read, thermography, thickness test, build up, fix, free-up, grind, heat, mount, overhaul, patch, re-attach, re-build, re-clamp, re-connect, re-engage, re-fit, re-line, re-mount, re-route, re-run, re-seal, re-seat, re-secure, re-splice, re-tension, re-torque, re-track, re-weld, re-work, reactivate, rectify, refurbish, regas, reinforce, renew, repair, rerail, reseal, reset, rewheel, rewire, seal, un-bog, unblock, weld, change, change out, change over, connect, fit, install, re-install, re-instate, reattach, reinstate, remove, replace, swap, switch, transition, charge, clean, drain, fill, grease, hose-out, lubricate, maintain, purge, re-charge, re-fill, rotate, sample, scan, wash, approve, audit, commission, design, label, order, print, quote, redesign, report, reschedule, scope, sign, attach, build, create, develop, fabricate, make, make up, manufacture, pre fabricate, rebuild, set up, deisolate, buff, clip, correct, cut, cut off, improve, laminate, refurbish, resplice, reweld, trim, upgrade, demobilise, drop, drop down, erect, guide, life, locate, mobilise, pack up, pop out, position, pull, push, put, raise, rearrange, relocate, remove, reposition, reroute, return, suspend, transfer, unbog, activate, disable, launch, re-run, reactivate, reset, reterminate, run, startup, trip, carry, carry out, collect, compile, complete, conduct, generate, prepare, rework, work, assist, attend, call, call out, follow up, provide, supply, support, train, adjust, calibrate, diagnose, inspect, repair, replace, service, admin, assemble, isolate, modify, move, operate, perform, teamwork]",
-          "Here are some examples: ",
-          "Q: [{3/8'' socket \\ TOOL},{remove \\ ACTIVITY},{bolt \\ ITEM}]",
-          "A: [{3/8'' socket \\ TOOL},{remove \\ ACTIVITY},{bolt \\ ITEM}]",
-          "Q: [{check \\ ACTIVITY},{engine \\ ITEM},{needs replacing \\ ACTIVITY}]",
-          "A: [{3/8'' socket \\ TOOL},{remove \\ ACTIVITY},{replace \\ ACTIVITY]",
-          "Q: [{break down \\ ACTIVITY},{engine \\ ITEM}]",
-          "A: [{engine \\ ITEM}]",
-          "Q: [{pick up and move\\ ACTIVITY},{engine \\ ITEM}]",
-          "A: [{move\\ ACTIVITY},{engine \\ ITEM}]"
-        ]
-      },
-      {
-        "role": "user",
-        "content": ["Q: {question}"]
-      },
-      {
-        "role": "assistant",
-        "content": ["A:"]
-      }
-    ]
   }
 ]

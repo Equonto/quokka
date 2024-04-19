@@ -2,6 +2,7 @@ from typing import List, Optional
 from pandas import DataFrame, Series
 from FileIo import FileIo
 from completion.RelationExtraction import RelationExtraction
+from completion.EntityLinking import EntityLinking
 from completion.model.Config import Config
 from completion.EntityRecognition import EntityRecognition
 from completion.OutputSerializer import OutputSerializer
@@ -41,36 +42,62 @@ class CompletionTask:
                                    , input_data: DataFrame) -> List[TaggedSentence]:
             tagged_sentences : List[TaggedSentence] = []
             if ie_details.ner_model != None:
-                entity_recognition = EntityRecognition(ie_details.ner_model.name, 
-                                                       ie_details.ner_model.type,
-                                                       ie_details.ner_model.template_path)
+
                 for index, row in input_data.iterrows():
                     if (ie_details.text_field != None):
                         text = row[ie_details.text_field] # warn dynamic code
                         # if the row is a candidate for extraction, then extract entities
                         if self.pass_condition(ie_details.extraction_conditional_on_field, row):
                             if (ie_details.text_preprocessing_tasks != None):
-                                text_preprocessor = TextPreprocessor(ie_details.text_preprocessing_tasks)
-                                text = text_preprocessor.preprocess_text(text) 
+                                 text = self.run_preprocessing_tasks(text, ie_details.text_preprocessing_tasks)
+                                
+                            tagged_sentence = self.run_ner_model(ie_details.ner_model, text, row)
+                            
+                            # relations can only be extracted if entities extracted
+                            if (ie_details.relationship_model != None and tagged_sentence.get_tagged_ngrams() != []):
+                                tagged_sentence = self.run_relation_model(ie_details.relationship_model, tagged_sentence)
+                            
+                            # if entity linking models exist
+                            if (ie_details.entity_linking_models != None and tagged_sentence.get_tagged_ngrams() != []):
+                                for model in ie_details.entity_linking_models:
+                                    tagged_sentence = self.run_entity_linking_model(model, tagged_sentence)
 
-                                tagged_sentence = entity_recognition.tag_text(text)
-                                tagged_sentence.set_preprocessed_text(text) 
-                                tagged_sentence.set_raw_input_data(row) # need this for formatting output object
-                                # relations can only be extracted if entities extracted
-                                if (ie_details.relationship_model != None and tagged_sentence.get_tagged_ngrams() != []):
-                                    relationship_extraction = RelationExtraction(ie_details.relationship_model.name,
-                                                                                    ie_details.relationship_model.type,
-                                                                                    ie_details.relationship_model.template_path)
-                                    tagged_sentence = relationship_extraction.tag_relations(tagged_sentence)
-                                tagged_sentences.append(tagged_sentence)
+                            tagged_sentences.append(tagged_sentence)
             
             self.write_to_analysis_folder(tagged_sentences) # for debugging
             return tagged_sentences
+    
+    def run_preprocessing_tasks(self, text, text_preprocessing_tasks) -> str:
+        text_preprocessor = TextPreprocessor(text_preprocessing_tasks)
+        return text_preprocessor.preprocess_text(text) 
+    
+    def run_ner_model(self, ner_model, text, row) -> TaggedSentence:
+        entity_recognition = EntityRecognition(ner_model.name, 
+                                ner_model.type,
+                                ner_model.template_path)
+        tagged_sentence = entity_recognition.tag_text(text)
+        tagged_sentence.set_preprocessed_text(text) 
+        tagged_sentence.set_raw_input_data(row) # need this for formatting output object
+        return tagged_sentence
+
+    def run_relation_model(self, relationship_model, tagged_sentence) -> TaggedSentence:
+        relationship_extraction = RelationExtraction(relationship_model.name,
+            relationship_model.type,
+            relationship_model.template_path)
+        return relationship_extraction.tag_relations(tagged_sentence)
+
+    def run_entity_linking_model(self, entity_linking_model, tagged_sentence) -> TaggedSentence:
+        entity_linking = EntityLinking(entity_linking_model.name
+                                       , entity_linking_model.type
+                                       , entity_linking_model.entity
+                                       , entity_linking_model.template_path)
+        return entity_linking.link_entities(tagged_sentence) 
     
     def perform_output_serialization(self, prefix: str, output_data_folder: str, data: DataFrame
                                      , output_schema : List[OutputSchema], tagged_sentences : List[TaggedSentence]) -> None:
             serialized_files_as_dict = OutputSerializer(prefix, data, output_schema, tagged_sentences).get_serialized_dictionary()
             FileIo.write_dict_to_csvs(output_data_folder, serialized_files_as_dict, output_schema)
+
 
     def pass_condition(self, extraction_conditional_on_field: Optional[str], row: Series) -> bool:
         if (extraction_conditional_on_field != None):

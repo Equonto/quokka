@@ -8,7 +8,7 @@ remove/HAS_PRIMARY_PARTICIPANT/rubber gasket, remove/HAS_PARTICIPANT/rain tray,
 
 Raw Text:lift the tray upwards and away from the vehicle .
 Preprocessed Text:lift the tray upwards and away from the vehicle .
-lift/HAS_PRIMARY_PARTICIPANT/tray, 
+
 
 Raw Text:use a flathead screwdriver to remove the cap from the windshield wiper .
 Preprocessed Text:use a flathead screwdriver to remove the cap from the windshield wiper .
@@ -24,7 +24,7 @@ gently lift up/HAS_PRIMARY_PARTICIPANT/passenger-side windshield wiper,
 
 Raw Text:remove the driver-side windshield wiper in the same fashion .
 Preprocessed Text:remove the driver-side windshield wiper in the same fashion .
-remove/HAS_PRIMARY_PARTICIPANT/driver-side windshield wiper, 
+
 
 Raw Text:lift up the plastic cover .
 Preprocessed Text:lift up the plastic cover .
@@ -41,4 +41,152 @@ remove/HAS_PRIMARY_PARTICIPANT/front two screw,
 Raw Text:gently unplug and lift out the automatic transmission control unit .
 Preprocessed Text:gently unplug and lift out the automatic transmission control unit .
 unplug/HAS_PRIMARY_PARTICIPANT/automatic transmission control unit, lift out/HAS_PRIMARY_PARTICIPANT/automatic transmission control unit, 
+
+Raw Text:remove the plastic phillips screw towards the front of the door panel .
+Preprocessed Text:remove the plastic phillips screw towards the front of the door panel .
+remove/HAS_PRIMARY_PARTICIPANT/plastic phillips screw, 
+
+Raw Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
+Preprocessed Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
+apply force/HAS_PRIMARY_PARTICIPANT/screw head, screw/HAS_PRIMARY_PARTICIPANT/plastic clip, screw/HAS_PARTICIPANT/securing mechanism, 
+
+Raw Text:use a flathead screwdriver to remove the plastic clip that holds the screw .
+Preprocessed Text:use a flathead screwdriver to remove the plastic clip that hold the screw .
+remove/HAS_PRIMARY_PARTICIPANT/plastic clip, remove/HAS_PARTICIPANT/screw, 
+
+Raw Text:unscrew the phillips screw in the bottom of the door panel cup .
+Preprocessed Text:unscrew the phillips screw in the bottom of the door panel cup .
+unscrew/HAS_PRIMARY_PARTICIPANT/phillips screw, 
+
+Raw Text:lift the cup out of the the door panel .
+Preprocessed Text:lift the cup out of the the door panel .
+lift/HAS_PRIMARY_PARTICIPANT/cup, lift/HAS_PARTICIPANT/door panel, 
+
+Raw Text:insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .
+Preprocessed Text:insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .
+
+
+Raw Text:unscrew the phillips screw underneath the screw cover .
+Preprocessed Text:unscrew the phillips screw underneath the screw cover .
+unscrew/HAS_PRIMARY_PARTICIPANT/phillips screw, unscrew/HAS_PARTICIPANT/screw cover, 
+
+Raw Text:remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
+Preprocessed Text:remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
+remove/HAS_PRIMARY_PARTICIPANT/plastic cover, pulling/HAS_PRIMARY_PARTICIPANT/plastic cover, pulling/HAS_PARTICIPANT/window, 
+
+Raw Text:the cover is held in place by a metal clip , so some force will be required to free it .
+Preprocessed Text:the cover is held in place by a metal clip , so some force will be required to free it .
+force/HAS_PRIMARY_PARTICIPANT/cover, free/HAS_PRIMARY_PARTICIPANT/cover, force/HAS_PARTICIPANT/metal clip, 
+
+Raw Text:in addition to the metal clip , two small tabs at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tabs from their respective holes in the door .
+Preprocessed Text:in addition to the metal clip , two small tab at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tab from their respective hole in the door .
+
+
+Raw Text:using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
+Preprocessed Text:using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
+using firm pressure/HAS_PRIMARY_PARTICIPANT/door panel, pull/HAS_PRIMARY_PARTICIPANT/door panel, work down the side/HAS_PRIMARY_PARTICIPANT/door panel, 
+
+Raw Text:multiple clips hold the door panel in place . the door panel will jerk as each clip is freed from its position .
+Preprocessed Text:multiple clip hold the door panel in place . the door panel will jerk a each clip is freed from it position .
+hold/HAS_PARTICIPANT/clip, hold/HAS_PRIMARY_PARTICIPANT/door panel, 
+
+Raw Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
+Preprocessed Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
+pull/HAS_PRIMARY_PARTICIPANT/bottom of the door panel, lift/HAS_PRIMARY_PARTICIPANT/entire panel, 
+
+Raw Text:do not try to completely remove the door panel yet , as it is still attached by a number of electrical connectors .
+Preprocessed Text:do not try to completely remove the door panel yet , a it is still attached by a number of electrical connector .
+remove/HAS_PRIMARY_PARTICIPANT/door panel, remove/HAS_PARTICIPANT/electrical connector, 
+
+Raw Text:push down on the small tab and pull the connector directly away from its socket to disconnect the power lock switch .
+Preprocessed Text:push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .
+push down/HAS_PRIMARY_PARTICIPANT/small tab, pull/HAS_PRIMARY_PARTICIPANT/connector, disconnect/HAS_PRIMARY_PARTICIPANT/power lock switch, 
+
+Raw Text:use the same method described above to remove the connector for the tweeter .
+Preprocessed Text:use the same method described above to remove the connector for the tweeter .
+remove/HAS_PRIMARY_PARTICIPANT/connector, remove/HAS_PARTICIPANT/tweeter, 
+
+Raw Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror controls .
+Preprocessed Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror control .
+press the tab/HAS_PRIMARY_PARTICIPANT/larger green connector, press the tab/HAS_PARTICIPANT/side-view mirror control, disconnect/HAS_PRIMARY_PARTICIPANT/side-view mirror control, 
+
+Raw Text:disconnect the power window connector .
+Preprocessed Text:disconnect the power window connector .
+disconnect/HAS_PRIMARY_PARTICIPANT/power window connector, 
+
+Raw Text:you may now remove the entire door panel .
+Preprocessed Text:you may now remove the entire door panel .
+
+
+Raw Text:use compressed air to clear any debris from the area around the ignition coils on top of the engine .
+Preprocessed Text:use compressed air to clear any debris from the area around the ignition coil on top of the engine .
+
+
+Raw Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
+Preprocessed Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
+remove/HAS_PRIMARY_PARTICIPANT/ignition coil electrical connector, depressing/HAS_PRIMARY_PARTICIPANT/plastic tab, 
+
+Raw Text:pull the connector straight away from the ignition coil to detach it .
+Preprocessed Text:pull the connector straight away from the ignition coil to detach it .
+pull the connector/HAS_PRIMARY_PARTICIPANT/ignition coil, pull the connector/HAS_PARTICIPANT/ignition coil, detach/HAS_PRIMARY_PARTICIPANT/ignition coil, 
+
+Raw Text:repeat this procedure for the remaining three ignition coils .
+Preprocessed Text:repeat this procedure for the remaining three ignition coil .
+repeat procedure/HAS_PRIMARY_PARTICIPANT/ignition coil, 
+
+Raw Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolts .
+Preprocessed Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolt .
+loosen/HAS_PRIMARY_PARTICIPANT/mounting bolt, loosen/HAS_PRIMARY_PARTICIPANT/ignition coil, 
+
+Raw Text:once the bolts are loose , they can be removed by hand .
+Preprocessed Text:once the bolt are loose , they can be removed by hand .
+removed/HAS_PRIMARY_PARTICIPANT/bolt, 
+
+Raw Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
+Preprocessed Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
+twist/HAS_PRIMARY_PARTICIPANT/ignition coil, twist/HAS_PRIMARY_PARTICIPANT/spark plug boot, lifting/HAS_PRIMARY_PARTICIPANT/engine, remove/HAS_PRIMARY_PARTICIPANT/engine, 
+
+Raw Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
+Preprocessed Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
+avoid rocking/HAS_PRIMARY_PARTICIPANT/coil, avoid rocking/HAS_PARTICIPANT/boot, break/HAS_PRIMARY_PARTICIPANT/existing spark plug, 
+
+Raw Text:the procedure to remove the ignition coil and spark plug boot is the same for each spark plug . however , to reduce the chance of dirt entering the engine , only remove one at a time .
+Preprocessed Text:the procedure to remove the ignition coil and spark plug boot is the same for each spark plug . however , to reduce the chance of dirt entering the engine , only remove one at a time .
+remove/HAS_PRIMARY_PARTICIPANT/ignition coil, remove/HAS_PRIMARY_PARTICIPANT/spark plug boot, reduce/HAS_PRIMARY_PARTICIPANT/engine, 
+
+Raw Text:use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
+Preprocessed Text:use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
+remove/HAS_PRIMARY_PARTICIPANT/existing spark plug, remove/HAS_PARTICIPANT/cylinder head, remove/HAS_PARTICIPANT/rubber end, remove/HAS_PARTICIPANT/loosening, 
+
+Raw Text:apply dielectric grease to the ribbed portion of the insulator .
+Preprocessed Text:apply dielectric grease to the ribbed portion of the insulator .
+apply/HAS_PRIMARY_PARTICIPANT/dielectric grease, apply/HAS_PARTICIPANT/insulator, 
+
+Raw Text:gently place the spark plug boot over the ribs and twist the two pieces back and forth to even out the layer of dielectric grease .
+Preprocessed Text:gently place the spark plug boot over the rib and twist the two piece back and forth to even out the layer of dielectric grease .
+gently place/HAS_PRIMARY_PARTICIPANT/spark plug boot, gently place/HAS_PARTICIPANT/rib, twist/HAS_PRIMARY_PARTICIPANT/two piece, 
+
+Raw Text:place the new spark plug firmly in the spark plug socket so that the threaded end sticks out .
+Preprocessed Text:place the new spark plug firmly in the spark plug socket so that the threaded end stick out .
+
+
+Raw Text:apply an even layer of anti-seize compound to the threads of the spark plug .
+Preprocessed Text:apply an even layer of anti-seize compound to the thread of the spark plug .
+apply/HAS_PRIMARY_PARTICIPANT/anti-seize compound, apply/HAS_PRIMARY_PARTICIPANT/thread, apply/HAS_PRIMARY_PARTICIPANT/spark plug, 
+
+Raw Text:place the new spark plug into the cylinder head and tighten it by hand as much as you can .
+Preprocessed Text:place the new spark plug into the cylinder head and tighten it by hand a much a you can .
+tighten/HAS_PRIMARY_PARTICIPANT/new spark plug, tighten/HAS_PARTICIPANT/cylinder head, 
+
+Raw Text:tighten the spark plugs to 11 ft-lbs with a torque wrench .
+Preprocessed Text:tighten the spark plug to 11 ft-lbs with a torque wrench .
+
+
+Raw Text:place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .
+Preprocessed Text:place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .
+place/HAS_PRIMARY_PARTICIPANT/ignition coil, place/HAS_PARTICIPANT/dust boot, place/HAS_PARTICIPANT/spark plug, pushing down/HAS_PRIMARY_PARTICIPANT/ignition coil, twisting/HAS_PRIMARY_PARTICIPANT/ignition coil, 
+
+Raw Text:reconnect the ignition coil electrical connector by snapping it back into place .
+Preprocessed Text:reconnect the ignition coil electrical connector by snapping it back into place .
+reconnect the ignition coil electrical connector/HAS_PRIMARY_PARTICIPANT/ignition coil, reconnect the ignition coil electrical connector/HAS_PARTICIPANT/electrical connector, snapping it back into place/HAS_PRIMARY_PARTICIPANT/ignition coil, snapping it back into place/HAS_PARTICIPANT/electrical connector, 
 

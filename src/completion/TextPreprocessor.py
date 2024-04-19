@@ -4,7 +4,6 @@ from nltk.stem import WordNetLemmatizer
 from nltk.stem.lancaster import LancasterStemmer
 from autocorrect import Speller
 from completion.model.Enums import TextPreprocessingTaskType
-import string
 
 class TextPreprocessor:
 

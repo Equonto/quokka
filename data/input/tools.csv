@@ -1,11 +1,36 @@
 tool_id,procedure_id,tool_name
-cf6d3f29-d38e-4862-ab62-bc41bb8b7b9f,2965,phillips 2 screwdriver
-ef7d5ae6-1572-4341-8f8b-6dbcf1f39b92,2965,flathead screwdriver
-2dba5349-fa0b-467b-a89e-32d3f30b8d32,2965,socket wrench
-2078dd80-d141-48e8-8a5b-e5c86b35f3e6,2965,offset screwdriver
-cf6d3f29-d38e-4862-ab62-bc41bb8b7b9f,eb5ef1b5-529c-42ef-adf0-5f99acaa8bb4,phillips 2 screwdriver
-ef7d5ae6-1572-4341-8f8b-6dbcf1f39b92,a40816a0-b341-4db0-ba27-b5c1203c5d90,flathead screwdriver
-2dba5349-fa0b-467b-a89e-32d3f30b8d32,2c02e284-8bf6-4569-90a6-914dcd76ae76,socket wrench
-3c885a26-cd09-46e7-883f-88a3a03f9c6b,591cfe91-bba9-47da-a517-6a3190a33738,screwdriver
-2dba5349-fa0b-467b-a89e-32d3f30b8d32,591cfe91-bba9-47da-a517-6a3190a33738,socket wrench
-cf6d3f29-d38e-4862-ab62-bc41bb8b7b9f,1249992e-4eb2-462c-bc82-a8c1bf65e001,phillips 2 screwdriver
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,2965,phillips 2 screwdriver
+49ff7014-529f-4842-96d5-993a94670c81,2965,flathead screwdriver
+34cf835b-760c-4518-b81e-90c4e6bf4b4f,2965,socket wrench
+507d1e61-13f2-40f8-b17c-16eceda78d4d,2965,offset screwdriver
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,1f879378-f579-4d3f-91f3-ff55742d197f,phillips 2 screwdriver
+49ff7014-529f-4842-96d5-993a94670c81,40e15f95-7e19-4d48-b97a-9aa87efb98c4,flathead screwdriver
+34cf835b-760c-4518-b81e-90c4e6bf4b4f,417befa5-6ed2-40dc-995c-0eeccfa09cb4,socket wrench
+6184343b-ad8d-45a7-b109-de8ba6a8edb8,b166539f-893e-4928-9b32-771527bee859,screwdriver
+34cf835b-760c-4518-b81e-90c4e6bf4b4f,b166539f-893e-4928-9b32-771527bee859,socket wrench
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,0bc89634-9e6b-4c89-bb16-bc507445516f,phillips 2 screwdriver
+e66acd7e-ac0f-4e08-bb22-e82bae3792cb,3544,flathead screwdriver
+f471abe7-deae-4fe0-a1f3-d9e9f8694c79,3544,phillips 2 screwdriver
+4560a37b-0ffa-4fb7-850c-bd9f551e50b9,3544,2.5mm flathead screwdriver
+49ff7014-529f-4842-96d5-993a94670c81,c79b036e-e37f-4868-8a6b-5a46720d2320,flathead screwdriver
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,c79b036e-e37f-4868-8a6b-5a46720d2320,phillips 2 screwdriver
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,1417f29c-d979-4ed9-bd50-069cbba26768,phillips 2 screwdriver
+49ff7014-529f-4842-96d5-993a94670c81,83575832-a76c-4230-add5-7c81559ec759,flathead screwdriver
+8455dec3-45c8-4bc3-aa7d-8ba7e22084fe,83575832-a76c-4230-add5-7c81559ec759,phillips 2 screwdriver
+319d7113-09b4-48dc-9924-2bee4a58dc51,5124,1 2 ratchet extension
+c19691b5-49d0-4d85-9c84-45a1d13eb44f,5124,1 2 socket wrench
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,5124,5 8 spark plug socket
+6813b0a0-bac9-4895-944c-de4568a4d1e8,5124,8 mm deep socket
+9fc80d82-0246-435d-9cc0-1d02e2691b1e,5124,anti-seize lubricant
+c860c417-fb89-431e-9c5f-22798fb61aa3,5124,compressed air
+b638a282-c0b8-4f69-8ebb-34145904ec6a,5124,dielectric grease
+a0d6c3ae-641e-41f4-854e-f68ea71d3901,5124,torque wrench
+c860c417-fb89-431e-9c5f-22798fb61aa3,d1af9d74-eecd-4f7a-9f14-40b38c4845ce,compressed air
+6813b0a0-bac9-4895-944c-de4568a4d1e8,0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,8 mm deep socket
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,f6f63e04-b2f6-4945-9d12-0fc8744855ea,5 8 spark plug socket
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,70ba809a-c44b-49b3-b5b2-021ae9798a57,5 8 spark plug socket
+b638a282-c0b8-4f69-8ebb-34145904ec6a,5556e9a1-6a19-4f97-8036-8c5782d9e457,dielectric grease
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,1c2c0938-4009-4f5e-9073-fe1887618018,5 8 spark plug socket
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,5 8 spark plug socket
+a0d6c3ae-641e-41f4-854e-f68ea71d3901,e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,torque wrench
+c4e23d5f-32b6-49fb-ac3c-3a7fad8f9cc2,94990899-b475-4992-a6a4-1e22a20b7baa,5 8 spark plug socket

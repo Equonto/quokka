@@ -6,6 +6,7 @@ from pandas import DataFrame, Series
 from completion.Utils import Utils
 from completion.model.Enums import ColumnType
 from completion.model.Models import OutputColumn, OutputSchema
+from completion.information_extraction.TaggedNgram import TaggedNgram
 
 from completion.information_extraction.TaggedSentence import TaggedSentence
 
@@ -44,7 +45,7 @@ class OutputSerializer:
                         for column in data_structure.columns:
                             output[column.name] = self.create_value( tagged_sentence.get_raw_input_data()
                                                                     , column
-                                                                    , extracted_item.get_ngram()
+                                                                    , extracted_item
                                                                     , index + 1)
                             output_list.append(output)
                 self.output_dict[data_structure.filename] = Utils.make_objects_in_list_unique(output_list)
@@ -80,7 +81,7 @@ class OutputSerializer:
             output_list.append(output)
         self.output_dict[data_structure.filename] = Utils.make_objects_in_list_unique(output_list)
 
-    def create_value(self, row: Series, column: OutputColumn, extracted_item = None, extracted_item_number = None):
+    def create_value(self, row: Series, column: OutputColumn, extracted_item: Union[TaggedNgram, str] = None, extracted_item_number = None):
             columnType = column.type
             template = column.template
             if (columnType == ColumnType.IRI): 
@@ -95,26 +96,42 @@ class OutputSerializer:
                     return self.create_constructed_value(row, template, extracted_item, column)
             elif (columnType == ColumnType.LITERAL):
                     return template
+            elif (columnType == ColumnType.LINKED_IRI):
+                    val = self.create_constructed_value(row, template, extracted_item, column)
+                    return self.prefix + val if (val != None) else None # todo: consider if I want a different prefix
             else:
                 raise ValueError("Unknown column type: " + str(columnType)) 
             
             
-    def create_constructed_value(self, row: Series, template: str, extracted_item: Union[str, None], column: OutputColumn, extracted_item_number = None):
+    def create_constructed_value(self, row: Series, template: str, extracted_item: Union[TaggedNgram, str], column: OutputColumn, extracted_item_number = None):
+        
         raw_templates = re.findall('\{([^}]+)\}', template)
         for temp in raw_templates:
-            if temp != "EXTRACTED" and temp != "EXTRACTED(F)" and temp != "EXTRACTED(C)":
+            if temp != "EXTRACTED" and temp != "EXTRACTED(F)" and temp != "EXTRACTED(C)" and temp != "LINKED":
                 val = self.get_value(row, temp)
                 if val is not None:
                     template = template.replace("{" + temp + "}", val)
                 
             else:
-                if extracted_item != None:
-                    if temp == "EXTRACTED":
+
+                # todo: fix repeated code here: it is here we can handle extracted items, relaitons and linked entities in the same place
+                if isinstance(extracted_item, str):
+                    if temp == "EXTRACTED" and extracted_item != None:
                         template = template.replace("{" + temp + "}", 
-                                                self.get_tagged_value(extracted_item, False, extracted_item_number))
-                    if temp == "EXTRACTED(F)":
+                            self.get_tagged_value(extracted_item, False, extracted_item_number))
+                    if temp == "EXTRACTED(F)" and extracted_item != None:
                         template = template.replace("{" + temp + "}", 
-                                                self.get_tagged_value(extracted_item, True, extracted_item_number))
+                            self.get_tagged_value(extracted_item, True, extracted_item_number))
+                else:
+                    if temp == "EXTRACTED" and extracted_item.get_ngram() != None:
+                        template = template.replace("{" + temp + "}", 
+                            self.get_tagged_value(extracted_item.get_ngram(), False, extracted_item_number))
+                    if temp == "EXTRACTED(F)" and extracted_item.get_ngram() != None:
+                        template = template.replace("{" + temp + "}", 
+                            self.get_tagged_value(extracted_item.get_ngram(), True, extracted_item_number))
+                    if temp == "LINKED" and extracted_item.get_linked_entity() != None:
+                        template = template.replace("{" + temp + "}", 
+                            self.get_tagged_value(extracted_item.get_linked_entity(), True))
         return template
 
     def get_value(self, row: Series, template: str) -> str:

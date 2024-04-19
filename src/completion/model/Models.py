@@ -4,10 +4,11 @@ from completion.model.Enums import ColumnType, TextPreprocessingTaskType, ModelT
 
 class InformationExtractionModel:
 
-    def __init__(self, name: str, type: ModelType, template_path: Optional[str]) -> None:
+    def __init__(self, name: str, type: ModelType, template_path: Optional[str], entity: Optional[str] = None) -> None:
         self.name : str = name
         self.type : ModelType = type
         self.template_path : Optional[str] = template_path
+        self.entity : Optional[str] = entity
 
     
     @staticmethod
@@ -15,7 +16,10 @@ class InformationExtractionModel:
         template_path = None
         if Utils.attribute_exists(json, "template_path"):
             template_path = json["template_path"]
-        return InformationExtractionModel(json["name"], ModelType[json["type"]], template_path)
+        entity = None
+        if Utils.attribute_exists(json, "entity"):
+            entity = json["entity"]
+        return InformationExtractionModel(json["name"], ModelType[json["type"]], template_path=template_path, entity=entity)
 
 
 class OutputColumn:
@@ -55,10 +59,12 @@ class InformationExtractionDetails:
     def __init__(self,
                    text_preprocessing_tasks: List[TextPreprocessingTaskType], ner_model: Optional[InformationExtractionModel]
                  , relationship_model: Optional[InformationExtractionModel]
+                 , entity_linking_models: Optional[List[InformationExtractionModel]]
                  , text_field: Optional[str], extraction_conditional_on_field: Optional[str]) -> None:
             self.text_preprocessing_tasks : List[TextPreprocessingTaskType] = text_preprocessing_tasks
             self.ner_model : Optional[InformationExtractionModel] = ner_model
             self.relationship_model : Optional[InformationExtractionModel] = relationship_model
+            self.entity_linking_models : Optional[List[InformationExtractionModel]] = entity_linking_models
             self.text_field : Optional[str] = text_field
             self.extraction_conditional_on_field : Optional[str] = extraction_conditional_on_field
 
@@ -75,12 +81,16 @@ class InformationExtractionDetails:
         if Utils.attribute_exists(json, "relationship_model"):
             relationship_model = InformationExtractionModel.from_json(json["relationship_model"])
         text_field = None
+        if Utils.attribute_exists(json, "entity_linking_models"):
+            entity_linking_models = []
+            for item in json["entity_linking_models"]:
+                entity_linking_models.append(InformationExtractionModel.from_json(item))
         if Utils.attribute_exists(json, "text_field"):
             text_field = json["text_field"]
         extraction_conditional_on_field = None
         if Utils.attribute_exists(json, "extraction_conditional_on_field"):
             extraction_conditional_on_field = json["extraction_conditional_on_field"]
-        return InformationExtractionDetails(text_preprocessing_tasks, ner_model, relationship_model, text_field, extraction_conditional_on_field)
+        return InformationExtractionDetails(text_preprocessing_tasks, ner_model, relationship_model, entity_linking_models, text_field, extraction_conditional_on_field)
 
 
 class CompletionConfig:

@@ -5,12 +5,14 @@ class ColumnType(Enum):
     TEXT = 2,
     CONSTRUCTED_IRI = 3,
     CONSTRUCTED_TEXT = 4,
+    LINKED_IRI = 3,
     LITERAL = 5
 
 class ModelType(Enum):
     FLAIR = 1,
     OPENAI_NER = 2,
     OPENAI_RELATIONS = 3
+    OPENAI_ENTITY_LINKING = 4
 
 class TextPreprocessingTaskType(Enum):
     LOWER = 1,

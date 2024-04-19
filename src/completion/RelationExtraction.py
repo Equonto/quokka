@@ -8,11 +8,8 @@ class RelationExtraction:
     def __init__(self, model_name: str, model_type: ModelType, template_path: Optional[str] = None):
         if model_type == ModelType.OPENAI_RELATIONS:
             self.tagger = OpenAIRelationExtraction(template_path, model_name)
-        elif model_type == ModelType.OPENAI_NER or model_type == ModelType.FLAIR:
-            raise ValueError("Entity Recignition model incorrectly used for Relation Extraction")
         else :
             raise ValueError("Invalid model type: " + model_type)
-
 
     def tag_relations(self, pre_tagged_sentence: TaggedSentence) -> TaggedSentence:
         text = pre_tagged_sentence.get_preprocessed_text()

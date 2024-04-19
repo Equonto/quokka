@@ -35,6 +35,9 @@ class TaggedSentence:
     def add_tagged_ngram(self, tagged_ngram: TaggedNgram) -> None:
         self.tagged_ngrams.append(tagged_ngram)
 
+    def set_tagged_ngrams(self, tagged_ngrams: List[TaggedNgram]) -> None:
+        self.tagged_ngrams = tagged_ngrams
+
     def get_ngrams_with_tag(self, tag: str) -> List[TaggedNgram]:
         return [ngram for ngram in self.tagged_ngrams if ngram.get_tag() == tag]
     

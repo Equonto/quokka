@@ -18,6 +18,14 @@
       "type": "OPENAI_RELATIONS",
       "template_path": "config/completion/prompt_template_relations.json"
     },
+    "entity_linking_models": [
+      {
+        "entity": "ACTIVITY",
+        "name": "gpt-3.5-turbo",
+        "type": "OPENAI_ENTITY_LINKING",
+        "template_path": "config/completion/prompt_template_entity_linking.json"
+      }
+    ],
     "text_field": "text_value"
   },
   "output_schema": [
@@ -64,6 +72,11 @@
           "name": "type",
           "type": "LITERAL",
           "template": "proc:MaintenanceAction, proc:Extracted"
+        },
+        {
+          "name": "activityType",
+          "type": "LINKED_IRI",
+          "template": "{LINKED}"
         },
         {
           "name": "actionName",

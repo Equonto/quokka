@@ -1,109 +1,272 @@
 task_id,is_instructional,type,text_value,media_location,is_candidate_for_information_extraction
-1f879378-f579-4d3f-91f3-ff55742d197f,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/s1hcVSyQJyFslNUO.standard,FALSE
-1f879378-f579-4d3f-91f3-ff55742d197f,TRUE,Text,use a 2 phillips screwdriver to remove the four screws .,,TRUE
-d58074fb-894d-4e07-a19c-acd972e10a93,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nJwqXyV2RmYOojPS.standard,FALSE
-d58074fb-894d-4e07-a19c-acd972e10a93,TRUE,Text,remove the rubber gasket from the rain tray .,,TRUE
-d3f97485-c420-4bac-9cb5-def9403864d8,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MufoG63h1mGKaTbS.standard,FALSE
-d3f97485-c420-4bac-9cb5-def9403864d8,TRUE,Text,lift the tray upwards and away from the vehicle .,,TRUE
-40e15f95-7e19-4d48-b97a-9aa87efb98c4,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/IxSU1wATCFJNVVmM.standard,FALSE
-40e15f95-7e19-4d48-b97a-9aa87efb98c4,TRUE,Text,use a flathead screwdriver to remove the cap from the windshield wiper .,,TRUE
-417befa5-6ed2-40dc-995c-0eeccfa09cb4,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nxm4PdFYM5mZOxn1.standard,FALSE
-417befa5-6ed2-40dc-995c-0eeccfa09cb4,TRUE,Text,use a socket wrench to release the passenger-side windshield wiper locking nut .,,TRUE
-aa51034e-8590-43e2-b4ff-59bb1e992f00,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/12yGbSN4VAQWPrQt.standard,FALSE
-aa51034e-8590-43e2-b4ff-59bb1e992f00,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/xyb4sWcS4vh2swNX.standard,FALSE
-aa51034e-8590-43e2-b4ff-59bb1e992f00,TRUE,Text,gently lift up the passenger-side windshield wiper .,,TRUE
-33d63d3e-8eb0-4515-ac8b-3e1ec9f06bbd,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ED3Ox2cZhUJ6DrNg.standard,FALSE
-33d63d3e-8eb0-4515-ac8b-3e1ec9f06bbd,TRUE,Text,remove the driver-side windshield wiper in the same fashion .,,TRUE
-c4a9692c-ad9f-42b7-bbfa-cfe31e7208e1,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/DwZV1cfnI5KfIpZi.standard,FALSE
-c4a9692c-ad9f-42b7-bbfa-cfe31e7208e1,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Fk5RvMnylOphMNYB.standard,FALSE
-c4a9692c-ad9f-42b7-bbfa-cfe31e7208e1,TRUE,Text,lift up the plastic cover .,,TRUE
-b166539f-893e-4928-9b32-771527bee859,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/sDQSIHtHiTDO52OO.standard,FALSE
-b166539f-893e-4928-9b32-771527bee859,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/juAAjnn3rPk3hcYb.standard,FALSE
-b166539f-893e-4928-9b32-771527bee859,TRUE,Text,use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .,,TRUE
-b166539f-893e-4928-9b32-771527bee859,FALSE,Text,"in a pinch , you can make this tool with a phillips driver bit and end wrench .",,FALSE
-0bc89634-9e6b-4c89-bb16-bc507445516f,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/DBOBNPsC5ST1ciqZ.standard,FALSE
-0bc89634-9e6b-4c89-bb16-bc507445516f,TRUE,Text,use a 2 phillips screwdriver to remove the front two screws .,,TRUE
-551b6c20-2644-42e8-954e-47953f47f887,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ZU43sUXowgRbRp2s.standard,FALSE
-551b6c20-2644-42e8-954e-47953f47f887,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/goXWBveX5yRNt2rt.standard,FALSE
-551b6c20-2644-42e8-954e-47953f47f887,TRUE,Text,gently unplug and lift out the automatic transmission control unit .,,TRUE
-c79b036e-e37f-4868-8a6b-5a46720d2320,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/3oJA3DKStqsT1ClB.standard,FALSE
-c79b036e-e37f-4868-8a6b-5a46720d2320,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/6osqgU42UTfhIowF.standard,FALSE
-c79b036e-e37f-4868-8a6b-5a46720d2320,TRUE,Text,remove the plastic phillips screw towards the front of the door panel .,,TRUE
-c79b036e-e37f-4868-8a6b-5a46720d2320,TRUE,Text,"this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .",,TRUE
-c79b036e-e37f-4868-8a6b-5a46720d2320,TRUE,Text,use a flathead screwdriver to remove the plastic clip that holds the screw .,,TRUE
-1417f29c-d979-4ed9-bd50-069cbba26768,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/om3L2VRGZhGnsWUT.standard,FALSE
-1417f29c-d979-4ed9-bd50-069cbba26768,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/F1gwCQb6RHGJ6HqU.standard,FALSE
-1417f29c-d979-4ed9-bd50-069cbba26768,TRUE,Text,unscrew the phillips screw in the bottom of the door panel cup .,,TRUE
-1417f29c-d979-4ed9-bd50-069cbba26768,TRUE,Text,lift the cup out of the the door panel .,,TRUE
-83575832-a76c-4230-add5-7c81559ec759,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WcFgowZPdM3Ovx6T.standard,FALSE
-83575832-a76c-4230-add5-7c81559ec759,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OWfYX6LNiwUCSj1Z.standard,FALSE
-83575832-a76c-4230-add5-7c81559ec759,TRUE,Text,insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .,,TRUE
-83575832-a76c-4230-add5-7c81559ec759,TRUE,Text,unscrew the phillips screw underneath the screw cover .,,TRUE
-c262a435-8c87-4894-91c4-a18e6584c854,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OYuqjtD3qvojyJc6.standard,FALSE
-c262a435-8c87-4894-91c4-a18e6584c854,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/xOo6lFuHVSgL3aWF.standard,FALSE
-c262a435-8c87-4894-91c4-a18e6584c854,TRUE,Text,remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .,,TRUE
-c262a435-8c87-4894-91c4-a18e6584c854,TRUE,Text,"the cover is held in place by a metal clip , so some force will be required to free it .",,TRUE
-c262a435-8c87-4894-91c4-a18e6584c854,TRUE,Text,"in addition to the metal clip , two small tabs at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tabs from their respective holes in the door .",,TRUE
-aba7429b-b888-4bfa-99a7-eb11fe4541d6,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Do2uNCsIAK54FWaC.standard,FALSE
-aba7429b-b888-4bfa-99a7-eb11fe4541d6,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/QVO1HGSD1WWToH6h.standard,FALSE
-aba7429b-b888-4bfa-99a7-eb11fe4541d6,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WjEA4ScSjgIdl3bI.standard,FALSE
-aba7429b-b888-4bfa-99a7-eb11fe4541d6,TRUE,Text,"using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .",,TRUE
-aba7429b-b888-4bfa-99a7-eb11fe4541d6,TRUE,Text,multiple clips hold the door panel in place . the door panel will jerk as each clip is freed from its position .,,TRUE
-c4012ad9-12eb-4d25-a7a1-a33cf48505c9,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/TnE2wWxhXWUD2Ey2.standard,FALSE
-c4012ad9-12eb-4d25-a7a1-a33cf48505c9,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/p4TLPvNUSPrSNgIV.standard,FALSE
-c4012ad9-12eb-4d25-a7a1-a33cf48505c9,TRUE,Text,"pull the bottom of the door panel away from the door , and lift the entire panel off the door .",,TRUE
-c4012ad9-12eb-4d25-a7a1-a33cf48505c9,TRUE,Text,"do not try to completely remove the door panel yet , as it is still attached by a number of electrical connectors .",,TRUE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/huxXxNqFuQAE4GTN.standard,FALSE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4DZCLm1UqXbBoVKs.standard,FALSE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/unUVKKxQKeLMG1qF.standard,FALSE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,TRUE,Text,push down on the small tab and pull the connector directly away from its socket to disconnect the power lock switch .,,TRUE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,TRUE,Text,use the same method described above to remove the connector for the tweeter .,,TRUE
-aa84dfd9-8355-4b07-b450-4adde537b7e1,TRUE,Text,press the tab on the bottom of the larger green connector to disconnect the side-view mirror controls .,,TRUE
-f8405ca9-654c-474c-a389-ef77160de59d,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OdmA1bbt62dZLVkb.standard,FALSE
-f8405ca9-654c-474c-a389-ef77160de59d,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/2FoleOfpOLIIyLKH.standard,FALSE
-f8405ca9-654c-474c-a389-ef77160de59d,TRUE,Text,disconnect the power window connector .,,TRUE
-f8405ca9-654c-474c-a389-ef77160de59d,TRUE,Text,you may now remove the entire door panel .,,TRUE
-d1af9d74-eecd-4f7a-9f14-40b38c4845ce,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/E2ecqktIDmRxETvR.standard,FALSE
-d1af9d74-eecd-4f7a-9f14-40b38c4845ce,TRUE,Text,use compressed air to clear any debris from the area around the ignition coils on top of the engine .,,TRUE
-d1af9d74-eecd-4f7a-9f14-40b38c4845ce,FALSE,Text,any particles that fall into the ignition cylinder could cause serious engine damage .,,FALSE
-2344b144-bd67-4058-a502-956b56cbf5d2,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/EfcWNKxUZ4NUJCf3.standard,FALSE
-2344b144-bd67-4058-a502-956b56cbf5d2,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FRjM5AwqK5YDSu6A.standard,FALSE
-2344b144-bd67-4058-a502-956b56cbf5d2,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MgAksgnfEia1b4oB.standard,FALSE
-2344b144-bd67-4058-a502-956b56cbf5d2,TRUE,Text,remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .,,TRUE
-2344b144-bd67-4058-a502-956b56cbf5d2,TRUE,Text,pull the connector straight away from the ignition coil to detach it .,,TRUE
-2344b144-bd67-4058-a502-956b56cbf5d2,TRUE,Text,repeat this procedure for the remaining three ignition coils .,,TRUE
-0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/EhnSohy4cToFFc6s.standard,FALSE
-0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WicJTPGUOBlFvLAy.standard,FALSE
-0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/2VKJNMeKWiKE1VMi.standard,FALSE
-0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,TRUE,Text,use an 8 mm deep socket to loosen the four ignition coil mounting bolts .,,TRUE
-0f39e4aa-cb7c-4d66-bf8a-3c3f72334501,TRUE,Text,"once the bolts are loose , they can be removed by hand .",,TRUE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/yN2dhuHDsrdwJckm.standard,FALSE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FkpU6SJublETNXM4.standard,FALSE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/woEyWtPy4T3mI3ix.standard,FALSE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,TRUE,Text,twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .,,TRUE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,TRUE,Text,"avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .",,TRUE
-f6f63e04-b2f6-4945-9d12-0fc8744855ea,TRUE,Text,"the procedure to remove the ignition coil and spark plug boot is the same for each spark plug . however , to reduce the chance of dirt entering the engine , only remove one at a time .",,TRUE
-70ba809a-c44b-49b3-b5b2-021ae9798a57,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/iQ1UcNSxKptmmmRM.standard,FALSE
-70ba809a-c44b-49b3-b5b2-021ae9798a57,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/PsuMukTy3cUMp2tV.standard,FALSE
-70ba809a-c44b-49b3-b5b2-021ae9798a57,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/wnSD4xZaPXIPJbB2.standard,FALSE
-70ba809a-c44b-49b3-b5b2-021ae9798a57,TRUE,Text,use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .,,TRUE
-70ba809a-c44b-49b3-b5b2-021ae9798a57,FALSE,Text,"spark plug sockets have rubber in the end of them to grip the spark plug and are made long enough to keep from snapping the spark plug . there are other common methods for removing spark plugs that involve using a long piece of rubber tubing to pull them out , but using a spark plug socket is the correct procedure .",,FALSE
-5556e9a1-6a19-4f97-8036-8c5782d9e457,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ZQDG6RxUFhPSfBjj.standard,FALSE
-5556e9a1-6a19-4f97-8036-8c5782d9e457,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/tLLKQbknrXYQOjPg.standard,FALSE
-5556e9a1-6a19-4f97-8036-8c5782d9e457,TRUE,Text,apply dielectric grease to the ribbed portion of the insulator .,,TRUE
-5556e9a1-6a19-4f97-8036-8c5782d9e457,TRUE,Text,gently place the spark plug boot over the ribs and twist the two pieces back and forth to even out the layer of dielectric grease .,,TRUE
-1c2c0938-4009-4f5e-9073-fe1887618018,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/pF6CfYlX5mX1flcD.standard,FALSE
-1c2c0938-4009-4f5e-9073-fe1887618018,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MLPeEfWUIWBlxinI.standard,FALSE
-1c2c0938-4009-4f5e-9073-fe1887618018,TRUE,Text,place the new spark plug firmly in the spark plug socket so that the threaded end sticks out .,,TRUE
-1c2c0938-4009-4f5e-9073-fe1887618018,TRUE,Text,apply an even layer of anti-seize compound to the threads of the spark plug .,,TRUE
-1c2c0938-4009-4f5e-9073-fe1887618018,FALSE,Text,be careful not to get any of the anti-seize compound on the spark plug's electrode .,,FALSE
-e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/jPaUKsfkreok6OHj.standard,FALSE
-e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lgyKfcrOJH1OmnUl.standard,FALSE
-e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lTWJv5cMfjxT6PYN.standard,FALSE
-e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,TRUE,Text,place the new spark plug into the cylinder head and tighten it by hand as much as you can .,,TRUE
-e8e8f866-bba2-4e9d-a672-3dbc5789c9d8,TRUE,Text,tighten the spark plugs to 11 ft-lbs with a torque wrench .,,TRUE
-94990899-b475-4992-a6a4-1e22a20b7baa,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FrdvQoLOTQEGhW1V.standard,FALSE
-94990899-b475-4992-a6a4-1e22a20b7baa,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FqZw4gV1Lv61LLig.standard,FALSE
-94990899-b475-4992-a6a4-1e22a20b7baa,TRUE,Text,place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .,,TRUE
-94990899-b475-4992-a6a4-1e22a20b7baa,TRUE,Text,reconnect the ignition coil electrical connector by snapping it back into place .,,TRUE
-94990899-b475-4992-a6a4-1e22a20b7baa,FALSE,Text,"after installing your new spark plugs , compare the old ones to a plug wear chart to determine if there are any issues with the way your engine is running . a similar chart can be found in the back of all haynes repair manuals .",,FALSE
+Task_14461,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/s1hcVSyQJyFslNUO.standard,FALSE
+Task_14461,TRUE,Text,use a 2 phillips screwdriver to remove the four screws .,,TRUE
+Task_14462,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nJwqXyV2RmYOojPS.standard,FALSE
+Task_14462,TRUE,Text,remove the rubber gasket from the rain tray .,,TRUE
+Task_14463,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MufoG63h1mGKaTbS.standard,FALSE
+Task_14463,TRUE,Text,lift the tray upwards and away from the vehicle .,,TRUE
+Task_14475,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/IxSU1wATCFJNVVmM.standard,FALSE
+Task_14475,TRUE,Text,use a flathead screwdriver to remove the cap from the windshield wiper .,,TRUE
+Task_14476,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nxm4PdFYM5mZOxn1.standard,FALSE
+Task_14476,TRUE,Text,use a socket wrench to release the passenger-side windshield wiper locking nut .,,TRUE
+Task_14477,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/12yGbSN4VAQWPrQt.standard,FALSE
+Task_14477,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/xyb4sWcS4vh2swNX.standard,FALSE
+Task_14477,TRUE,Text,gently lift up the passenger-side windshield wiper .,,TRUE
+Task_14478,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ED3Ox2cZhUJ6DrNg.standard,FALSE
+Task_14478,TRUE,Text,remove the driver-side windshield wiper in the same fashion .,,TRUE
+Task_14479,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/DwZV1cfnI5KfIpZi.standard,FALSE
+Task_14479,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Fk5RvMnylOphMNYB.standard,FALSE
+Task_14479,TRUE,Text,lift up the plastic cover .,,TRUE
+Task_14481,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/sDQSIHtHiTDO52OO.standard,FALSE
+Task_14481,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/juAAjnn3rPk3hcYb.standard,FALSE
+Task_14481,TRUE,Text,use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .,,TRUE
+Task_14481,FALSE,Text,"in a pinch , you can make this tool with a phillips driver bit and end wrench .",,FALSE
+Task_14482,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/DBOBNPsC5ST1ciqZ.standard,FALSE
+Task_14482,TRUE,Text,use a 2 phillips screwdriver to remove the front two screws .,,TRUE
+Task_14483,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ZU43sUXowgRbRp2s.standard,FALSE
+Task_14483,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/goXWBveX5yRNt2rt.standard,FALSE
+Task_14483,TRUE,Text,gently unplug and lift out the automatic transmission control unit .,,TRUE
+Task_16999,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/3oJA3DKStqsT1ClB.standard,FALSE
+Task_16999,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/6osqgU42UTfhIowF.standard,FALSE
+Task_16999,TRUE,Text,remove the plastic phillips screw towards the front of the door panel .,,TRUE
+Task_16999,FALSE,Text,"this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .",,TRUE
+Task_16999,TRUE,Text,use a flathead screwdriver to remove the plastic clip that holds the screw .,,TRUE
+Task_17000,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/om3L2VRGZhGnsWUT.standard,FALSE
+Task_17000,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/F1gwCQb6RHGJ6HqU.standard,FALSE
+Task_17000,TRUE,Text,unscrew the phillips screw in the bottom of the door panel cup .,,TRUE
+Task_17000,TRUE,Text,lift the cup out of the the door panel .,,TRUE
+Task_17001,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WcFgowZPdM3Ovx6T.standard,FALSE
+Task_17001,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OWfYX6LNiwUCSj1Z.standard,FALSE
+Task_17001,TRUE,Text,insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .,,TRUE
+Task_17001,TRUE,Text,unscrew the phillips screw underneath the screw cover .,,TRUE
+Task_17002,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OYuqjtD3qvojyJc6.standard,FALSE
+Task_17002,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/xOo6lFuHVSgL3aWF.standard,FALSE
+Task_17002,TRUE,Text,remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .,,TRUE
+Task_17002,FALSE,Text,"the cover is held in place by a metal clip , so some force will be required to free it .",,TRUE
+Task_17002,TRUE,Text,"in addition to the metal clip , two small tabs at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tabs from their respective holes in the door .",,TRUE
+Task_17003,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Do2uNCsIAK54FWaC.standard,FALSE
+Task_17003,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/QVO1HGSD1WWToH6h.standard,FALSE
+Task_17003,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WjEA4ScSjgIdl3bI.standard,FALSE
+Task_17003,TRUE,Text,"using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .",,TRUE
+Task_17003,FALSE,Text,multiple clips hold the door panel in place . the door panel will jerk as each clip is freed from its position .,,FALSE
+Task_17004,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/TnE2wWxhXWUD2Ey2.standard,FALSE
+Task_17004,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/p4TLPvNUSPrSNgIV.standard,FALSE
+Task_17004,TRUE,Text,"pull the bottom of the door panel away from the door , and lift the entire panel off the door .",,TRUE
+Task_17004,FALSE,Text,"do not try to completely remove the door panel yet , as it is still attached by a number of electrical connectors .",,FALSE
+Task_17005,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/huxXxNqFuQAE4GTN.standard,FALSE
+Task_17005,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4DZCLm1UqXbBoVKs.standard,FALSE
+Task_17005,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/unUVKKxQKeLMG1qF.standard,FALSE
+Task_17005,TRUE,Text,push down on the small tab and pull the connector directly away from its socket to disconnect the power lock switch .,,TRUE
+Task_17005,TRUE,Text,use the same method described above to remove the connector for the tweeter .,,TRUE
+Task_17005,TRUE,Text,press the tab on the bottom of the larger green connector to disconnect the side-view mirror controls .,,TRUE
+Task_17006,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OdmA1bbt62dZLVkb.standard,FALSE
+Task_17006,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/2FoleOfpOLIIyLKH.standard,FALSE
+Task_17006,TRUE,Text,disconnect the power window connector .,,TRUE
+Task_17006,TRUE,Text,you may now remove the entire door panel .,,TRUE
+Task_23031,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/E2ecqktIDmRxETvR.standard,FALSE
+Task_23031,TRUE,Text,use compressed air to clear any debris from the area around the ignition coils on top of the engine .,,TRUE
+Task_23031,FALSE,Text,any particles that fall into the ignition cylinder could cause serious engine damage .,,FALSE
+Task_23032,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/EfcWNKxUZ4NUJCf3.standard,FALSE
+Task_23032,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FRjM5AwqK5YDSu6A.standard,FALSE
+Task_23032,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MgAksgnfEia1b4oB.standard,FALSE
+Task_23032,TRUE,Text,remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .,,TRUE
+Task_23032,TRUE,Text,pull the connector straight away from the ignition coil to detach it .,,TRUE
+Task_23032,TRUE,Text,repeat this procedure for the remaining three ignition coils .,,TRUE
+Task_23033,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/EhnSohy4cToFFc6s.standard,FALSE
+Task_23033,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/WicJTPGUOBlFvLAy.standard,FALSE
+Task_23033,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/2VKJNMeKWiKE1VMi.standard,FALSE
+Task_23033,TRUE,Text,use an 8 mm deep socket to loosen the four ignition coil mounting bolts .,,TRUE
+Task_23033,TRUE,Text,"once the bolts are loose , they can be removed by hand .",,TRUE
+Task_23034,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/yN2dhuHDsrdwJckm.standard,FALSE
+Task_23034,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FkpU6SJublETNXM4.standard,FALSE
+Task_23034,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/woEyWtPy4T3mI3ix.standard,FALSE
+Task_23034,TRUE,Text,twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .,,TRUE
+Task_23034,FALSE,Text,"avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .",,FALSE
+Task_23034,FALSE,Text,"the procedure to remove the ignition coil and spark plug boot is the same for each spark plug . however , to reduce the chance of dirt entering the engine , only remove one at a time .",,FALSE
+Task_23035,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/iQ1UcNSxKptmmmRM.standard,FALSE
+Task_23035,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/PsuMukTy3cUMp2tV.standard,FALSE
+Task_23035,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/wnSD4xZaPXIPJbB2.standard,FALSE
+Task_23035,TRUE,Text,use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .,,TRUE
+Task_23035,FALSE,Text,"spark plug sockets have rubber in the end of them to grip the spark plug and are made long enough to keep from snapping the spark plug . there are other common methods for removing spark plugs that involve using a long piece of rubber tubing to pull them out , but using a spark plug socket is the correct procedure .",,FALSE
+Task_23036,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ZQDG6RxUFhPSfBjj.standard,FALSE
+Task_23036,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/tLLKQbknrXYQOjPg.standard,FALSE
+Task_23036,TRUE,Text,apply dielectric grease to the ribbed portion of the insulator .,,TRUE
+Task_23036,TRUE,Text,gently place the spark plug boot over the ribs and twist the two pieces back and forth to even out the layer of dielectric grease .,,TRUE
+Task_23037,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/pF6CfYlX5mX1flcD.standard,FALSE
+Task_23037,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MLPeEfWUIWBlxinI.standard,FALSE
+Task_23037,TRUE,Text,place the new spark plug firmly in the spark plug socket so that the threaded end sticks out .,,TRUE
+Task_23037,TRUE,Text,apply an even layer of anti-seize compound to the threads of the spark plug .,,TRUE
+Task_23037,FALSE,Text,be careful not to get any of the anti-seize compound on the spark plug's electrode .,,FALSE
+Task_23038,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/jPaUKsfkreok6OHj.standard,FALSE
+Task_23038,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lgyKfcrOJH1OmnUl.standard,FALSE
+Task_23038,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lTWJv5cMfjxT6PYN.standard,FALSE
+Task_23038,TRUE,Text,place the new spark plug into the cylinder head and tighten it by hand as much as you can .,,TRUE
+Task_23038,TRUE,Text,tighten the spark plugs to 11 ft-lbs with a torque wrench .,,TRUE
+Task_23039,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FrdvQoLOTQEGhW1V.standard,FALSE
+Task_23039,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FqZw4gV1Lv61LLig.standard,FALSE
+Task_23039,TRUE,Text,place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .,,TRUE
+Task_23039,TRUE,Text,reconnect the ignition coil electrical connector by snapping it back into place .,,TRUE
+Task_23039,FALSE,Text,"after installing your new spark plugs , compare the old ones to a plug wear chart to determine if there are any issues with the way your engine is running . a similar chart can be found in the back of all haynes repair manuals .",,FALSE
+Task_27942,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/IlLIwljoLUn1SMaM.standard,FALSE
+Task_27942,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/u5VDgNByrGUpmPZx.standard,FALSE
+Task_27942,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/GtTUpoT5BUKlhvIc.standard,FALSE
+Task_27942,FALSE,Text,let the engine run for a few minutes to warm up the oil before beginning .,,FALSE
+Task_27942,TRUE,Text,pull the hood release latch at the front right of the tractor and lift the hood up .,,TRUE
+Task_27943,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4wEYWUVmJZVVaiOH.standard,FALSE
+Task_27943,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/eDfFREBAgH2GNnhV.standard,FALSE
+Task_27943,TRUE,Text,lift the hood prop bar from its seat and place it in the hooks on the underside of the hood .,,TRUE
+Task_27944,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/yFmLg6aLd4Su1V3X.standard,FALSE
+Task_27944,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/NfScaBWnWgfmyIsF.standard,FALSE
+Task_27944,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MFJHKJsZrTcThXmH.standard,FALSE
+Task_27944,FALSE,Text,the right side engine panel is held in place by two rotating tabs ( highlighted in red ) .,,TRUE
+Task_27944,TRUE,Text,pull each tab straight away from the panel and twist them 90 so that they fit through the slots in the panel .,,TRUE
+Task_27944,TRUE,Text,pull the top of the engine panel straight out until it is free from the tabs .,,TRUE
+Task_27944,TRUE,Text,lift the engine panel up to remove it and set it aside .,,TRUE
+Task_27945,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/tOIsQ6UNdBSpdppE.standard,FALSE
+Task_27945,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/nUbDxcDAvvhPuS64.standard,FALSE
+Task_27945,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/kRyLeOa6n136snZx.standard,FALSE
+Task_27945,FALSE,Text,the drain plug is a 17 mm hex bolt located on the underside of the tractor .,,TRUE
+Task_27945,TRUE,Text,place an oil drain pan underneath the drain plug to catch the oil when it begins to drain .,,TRUE
+Task_27945,TRUE,Text,use a 17 mm box end wrench to loosen the drain plug 3 /4 of a turn .,,TRUE
+Task_27946,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/OKWULjYZImpbrrLm.standard,FALSE
+Task_27946,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/GtIcgNJDPGJRTtgP.standard,FALSE
+Task_27946,TRUE,Text,loosen the drain plug by hand until it comes out and oil begins to drain from the oil pan .,,TRUE
+Task_27946,FALSE,Text,"you may consider using a bucket first to catch the oil , as it may not drain into the oil drain pan quickly , potentially leading to a spill .",,FALSE
+Task_27946,TRUE,Text,watch the draining oil for shiny specks . small flakes of metal could indicate a problem with your tractor's engine internals .,,TRUE
+Task_27947,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/NEMXIcURvPYR1Nhx.standard,FALSE
+Task_27947,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/VReCnitxk4j6hiJl.standard,FALSE
+Task_27947,TRUE,Text,"while the oil is draining , wipe off the drain plug with a clean rag or towel .",,TRUE
+Task_27947,TRUE,Text,"remove the old drain plug gasket and replace it , making sure that the new gasket fits over the threads of the drain plug .",,TRUE
+Task_27948,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/fGR21LXAts2YILSn.standard,FALSE
+Task_27948,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/BetbWEOhCiVRmoLM.standard,FALSE
+Task_27948,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/YwHTSgGhaiQhkPV3.standard,FALSE
+Task_27948,TRUE,Text,wipe down the area around the drain plug with a clean rag or towel .,,TRUE
+Task_27948,TRUE,Text,reinstall the drain plug and tighten it as much as you can by hand .,,TRUE
+Task_27948,TRUE,Text,use a 17 mm box end wrench to tighten the drain plug until it is snug .,,TRUE
+Task_27948,FALSE,Text,do not over-tighten the drain plug . doing so may strip the threads or crack the oil pan . you can always come back later and tighten the drain plug more if needed .,,FALSE
+Task_27949,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lElhZVrcLI2v2AVf.standard,FALSE
+Task_27949,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/RVOVQlADZwVPRyZT.standard,FALSE
+Task_27949,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/NAPNpsHQfKPlw2nU.standard,FALSE
+Task_27949,TRUE,Text,move the oil drain pan so that it is directly under the oil filter .,,TRUE
+Task_27949,TRUE,Text,remove the oil filter by turning it counterclockwise until it comes free .,,TRUE
+Task_27949,FALSE,Text,"if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .",,FALSE
+Task_27949,TRUE,Text,place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .,,TRUE
+Task_27950,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/56dOStYUVObKfvl3.standard,FALSE
+Task_27950,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/JApQ5eVa1uP44WEp.standard,FALSE
+Task_27950,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/JPMYoiZjNsGKcSYH.standard,FALSE
+Task_27950,TRUE,Text,"dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter's gasket .",,TRUE
+Task_27950,FALSE,Text,this layer of oil will help provide a good seal and make removing the filter at the next oil change easier .,,FALSE
+Task_27950,TRUE,Text,wipe off the oil filter threads and contact area on the engine with a clean rag or towel .,,TRUE
+Task_27950,TRUE,Text,place the new oil filter over the threads and turn it clockwise until it is snug .,,TRUE
+Task_27951,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ASNjVVYu3NrFTMV5.standard,FALSE
+Task_27951,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/BXNo2sxnaRnpdYV4.standard,FALSE
+Task_27951,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/gPGSEXE6k4oxeAXc.standard,FALSE
+Task_27951,FALSE,Text,the oil filler cap is located on top of the engine at the front of the valve cover ( highlighted in red ) .,,FALSE
+Task_27951,TRUE,Text,twist the oil filler cap counterclockwise and remove it from the valve cover .,,TRUE
+Task_27952,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/IMRFoyxEXVueTuLC.standard,FALSE
+Task_27952,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/AkXcbrCNaMMHSpbh.standard,FALSE
+Task_27952,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/VZuptNZTMVDhVg1c.standard,FALSE
+Task_27952,TRUE,Text,place a funnel in the oil filler hole .,,TRUE
+Task_27952,TRUE,Text,hold the funnel with one hand to steady it and pour 5.1 quarts of 15 w-40 oil into the funnel .,,TRUE
+Task_27952,TRUE,Text,reinstall the oil filler cap and turn it clockwise until it is snug .,,TRUE
+Task_27953,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/crGmx6CrIKLaXrFS.standard,FALSE
+Task_27953,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/KWGmJaBdmpEIAcsK.standard,FALSE
+Task_27953,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/D2iVPTOvG1XcWjPU.standard,FALSE
+Task_27953,FALSE,Text,the engine oil dipstick is located on the right side of the engine and has a yellow handle .,,FALSE
+Task_27953,TRUE,Text,"remove the dipstick , wipe it off with a clean rag or towel , reinsert it , and remove it again .",,TRUE
+Task_27953,FALSE,Text,"read the initial oil level . it should be somewhere in the crosshatched region . it is acceptable for the level to be slightly high , since it hasn't filled the oil filter and other nooks and crannies of the engine yet .",,FALSE
+Task_27953,TRUE,Text,"reinsert the dipstick and add or remove any oil , if necessary .",,TRUE
+Task_27954,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/pmAI45AXH5X6qKgj.standard,FALSE
+Task_27954,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/iKL4p5wFg4Nhk2Fb.standard,FALSE
+Task_27954,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/QSAxFExlgSVgRaD5.standard,FALSE
+Task_27954,TRUE,Text,"place the engine panel back in its original location , making sure the two retaining tabs go through their respective slots in the panel .",,TRUE
+Task_27954,TRUE,Text,"secure the engine panel by pulling the retaining tabs straight out , turning them 90 , and laying them down flat .",,TRUE
+Task_27955,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4PPUx2ULyRJFKjKt.standard,FALSE
+Task_27955,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/JtCQfoIykgg5pdCB.standard,FALSE
+Task_27955,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/KTujjyk3ZDMH15ia.standard,FALSE
+Task_27955,TRUE,Text,hold the hood up with one hand and use the other hand to return the hood prop to its original location,,TRUE
+Task_27955,TRUE,Text,close the hood firmly and make sure that the hood latch engages .,,TRUE
+Task_27956,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/GZFNlAYADCGeWxKl.standard,FALSE
+Task_27956,FALSE,Text,allow 12-24 hours for all of the oil to drain out of the old oil filter .,,FALSE
+Task_27956,FALSE,Text,"take your old oil and filter to a recycling facility . most auto parts stores and repair shops accept these at no charge to you . in addition , some cities and/or counties have a service where they will collect used oil and filters from your home . for more information , see the american petroleum institute's web page on motor oil collection and recycling .",,FALSE
+Task_38904,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/mKRAGGdWP4fICN66.standard,FALSE
+Task_38904,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/gT5IIqDcq6Q63gA6.standard,FALSE
+Task_38904,TRUE,Text,open the rear part of the middle console .,,TRUE
+Task_38906,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/VE6SlLrKZmpGLvHC.standard,FALSE
+Task_38906,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/FhdgQvjRRHMht1Pm.standard,FALSE
+Task_38906,TRUE,Text,grip the right side of the console and pull up towards the passenger seat to remove it .,,TRUE
+Task_38907,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/viZA2IJ5XCOyyMUX.standard,FALSE
+Task_38907,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/ryCWrfv2OQCJASHN.standard,FALSE
+Task_38907,TRUE,Text,locate the two bolts under the air conditioning controls at the bottom of the face plate .,,TRUE
+Task_38907,TRUE,Text,loosen these two bolts with a basic socket wrench suited for 7 mm bolts .,,TRUE
+Task_38908,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4J4NRmMTQCTb2Xf5.standard,FALSE
+Task_38908,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/uDPVRjXJBkDDwxek.standard,FALSE
+Task_38908,TRUE,Text,wedge a spudger or plastic opening tool ( in place of the screwdriver shown ) under the top of the face plate .,,TRUE
+Task_38908,TRUE,Text,apply pressure until the corners pop out of place .,,TRUE
+Task_39034,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/QdOI16TecOYXrmBh.standard,FALSE
+Task_39034,TRUE,Text,inspect the interior of the center console for damaged wires or other faulty components .,,TRUE
+Task_132385,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/BAhkNBdqeLrZCcng.standard,FALSE
+Task_132385,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Wv6N6Jepf4BwFYBS.standard,FALSE
+Task_132385,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/bmSSDyKTXymEt1bI.standard,FALSE
+Task_132385,TRUE,Text,"remove 4 , 7.9 mm nuts using a 7.9 mm socket driver head",,TRUE
+Task_132385,TRUE,Text,one of the nuts is placed underneath the l-bracket . remove the l-bracket and the 3 circled nuts before attempting to remove the remaining nut,,TRUE
+Task_132385,FALSE,Text,there are two covers that need to be removed from the alternator . this step describes how to remove the back cover .,,FALSE
+Task_132386,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/h35iNqkANoAkkSlc.standard,FALSE
+Task_132386,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/NsoGtlflcFaGrifN.standard,FALSE
+Task_132386,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/oOOhy2WBOqDvCwZw.standard,FALSE
+Task_132386,TRUE,Text,pull cover off the body of the alternator,,TRUE
+Task_132386,FALSE,Text,"once you have done this , you should be able to see the internal components of the alternator , particularly the bridge assembly that houses the rectifier , voltage regulator and brushes .",,FALSE
+Task_132186,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/wF2LRSylOthPrJKl.standard,FALSE
+Task_132186,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/Iaigpqq4PmxYnsfH.standard,FALSE
+Task_132186,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/3gKs4yln6B3kIqho.standard,FALSE
+Task_132186,TRUE,Text,"with the alternator cover removed , use a 2 phillips screwdriver to remove the two , 6 mm screws that hold the brush cover in place .",,TRUE
+Task_132186,TRUE,Text,remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brushes from the rotor . pull it out without using much force to avoid damage .,,TRUE
+Task_132186,FALSE,Text,avoid disconnecting wires unless otherwise specified !,,FALSE
+Task_132550,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/lZ2ZGkXq3G2WTZJN.standard,FALSE
+Task_132550,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/DCqPJfbB3SLaWsbB.standard,FALSE
+Task_132550,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/e4J11o4WHot2XIDh.standard,FALSE
+Task_132550,TRUE,Text,use a 2 phillips screwdriver to remove the two 6 mm screws holding down the voltage regulator,,TRUE
+Task_132550,FALSE,Text,there are three screws that attach the voltage regulator to the bridge assembly . one of these screws was removed in the previous step .,,FALSE
+Task_132552,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/B5gEeRwERlqCK1AG.standard,FALSE
+Task_132552,TRUE,Text,"locate and unscrew the 3 , 6 mm screws holding the bridge assembly in place",,TRUE
+Task_132552,FALSE,Text,there are 4 screws attaching the bridge assembly to the alternator . one of these screws were removed in the previous step .,,FALSE
+Task_132560,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/LlGZdUoRy3KLrBYK.standard,FALSE
+Task_132560,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/xJPHiUYPkxTI6bUd.standard,FALSE
+Task_132560,TRUE,Text,"locate the copper leads connecting the stator to the bridge assembly . there are 3 sets of 2 leads on the perimeter of the bridge , making 6 leads total .",,TRUE
+Task_132560,FALSE,Text,these leads must be cut in order to remove the bridge from the alternator . these leads will have to be soldered back together on reassembly . keep the cut as clean as possible .,,FALSE
+Task_132560,TRUE,Text,use wire cutters to cut all 6 of the leads on the perimeter of the bridge .,,TRUE
+Task_132562,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MljetcECmLEHibG3.standard,FALSE
+Task_132562,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/PSFgxZE6tJJbNaYC.standard,FALSE
+Task_132562,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/cX2JL6WSRMBLenRA.standard,FALSE
+Task_132562,TRUE,Text,"if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator",,TRUE
+Task_132562,FALSE,Text,be extremely careful with the pry bar . excessive force will damage the bridge assembly .,,FALSE
+Task_132562,FALSE,Text,make sure the cut ends of the copper leads are straight to make bridge assembly easier to pull off .,,FALSE
+Task_132563,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/wB32lxkR1YTZaJRF.standard,FALSE
+Task_132563,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/rJ43Ye6tWuV2EGCO.standard,FALSE
+Task_132563,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/iCNcSfUUfStbPFhv.standard,FALSE
+Task_132563,TRUE,Text,remove the lower section of the bridge assembly,,TRUE
+Task_132563,FALSE,Text,use of a pry bar may be necessary . be gentle .,,FALSE
+Task_132516,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/vaFBLFk2dh5ZYSrt.standard,FALSE
+Task_132516,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/TXKPMElXruP2NaKU.standard,FALSE
+Task_132516,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/PHs1NdALNcUtwYMb.standard,FALSE
+Task_132516,TRUE,Text,"use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolts running along the outer perimeter of the alternator",,TRUE
+Task_132630,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/TtGtrYWrDCuyKf2r.standard,FALSE
+Task_132630,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/2NEn1SlKHQDUApnn.standard,FALSE
+Task_132630,TRUE,Text,use a c-clamp or another fixture to hold the pulley in place,,TRUE
+Task_132630,FALSE,Text,be gentle with the clamp . excessive force will bend the pulley out of shape,,FALSE
+Task_132631,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/aedhCVRJJnbHwfVq.standard,FALSE
+Task_132631,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/RSWgvKXVpdfbwSPR.standard,FALSE
+Task_132631,TRUE,Text,use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley,,TRUE
+Task_132631,FALSE,Text,"may need to use a power ratchet , depending on how tight the fit is on the nut",,FALSE
+Task_132632,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/iiyUNj1ggMfSejLh.standard,FALSE
+Task_132632,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/IJQtKXCdSAnOmbwD.standard,FALSE
+Task_132632,TRUE,Text,"once the nut is off , you can then remove the pulley .",,TRUE
+Task_132633,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/4ioucQ2AOP6PTOlc.standard,FALSE
+Task_132633,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/colYbYbUmUKOBmOL.standard,FALSE
+Task_132633,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/YgDcRSvaASIMaFPc.standard,FALSE
+Task_132633,TRUE,Text,"once the pulley is removed , separate the rotor and stator . the stator is the piece with copper windings .",,TRUE
+Task_132634,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/SGfrbbs6r5vwnEwP.standard,FALSE
+Task_132634,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/jWYux6uSTksBjhMA.standard,FALSE
+Task_132634,FALSE,Image,,https://d3nevzfk7ii3be.cloudfront.net/igi/MFEwTNTWjKLuXMA6.standard,FALSE
+Task_132634,TRUE,Text,you can pull the stator out of the remaining cover and examine it .,,TRUE
+Task_132634,TRUE,Text,"if the stator is scratched or damaged , you will need to replace it . look for scoring marks or cut pieces of winding .",,TRUE

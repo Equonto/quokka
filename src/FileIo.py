@@ -108,6 +108,16 @@ class FileIo:
                     tagged_ngram_string += str(ngram) + ", "
                 f.write(tagged_ngram_string + "\n\n")
 
+        # also write to csv where column 1 is preprocessed text and column 2 is tagged ngrams
+        with open(file_path + ".csv", 'w', newline='') as csvfile:
+            csv_writer = csv.writer(csvfile)
+            csv_writer.writerow(["Preprocessed Text", "Tagged Ngrams"])
+            for item in list:
+                tagged_ngram_string = ""
+                for ngram in item.get_tagged_ngrams():
+                    tagged_ngram_string += str(ngram) + ", "
+                csv_writer.writerow([item.get_preprocessed_text(), tagged_ngram_string])
+
     @staticmethod
     def write_tagged_relations_to_txt_file(list: List[TaggedSentence], file_path: str):
         with open(file_path, 'w') as f:
@@ -124,3 +134,4 @@ class FileIo:
         with open(file_path, 'w') as f:
             for item in list:
                 f.write(item.get_preprocessed_text() + '\n')
+

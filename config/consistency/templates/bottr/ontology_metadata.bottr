@@ -25,7 +25,7 @@
 @prefix ont: <http://data.grundfos.com/ontology/pump/ont/> .
 @prefix ido-tpl: <http://example.com/ido/> .
 @prefix ido: <http://example.com/ido/ontology/> .
-@prefix lis:<http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
 
 [] a ottr:InstanceMap ; 
  ottr:source [ a ottr:H2Source ] ; 

@@ -58,16 +58,18 @@
 @prefix ido-tpl:      <http://example.com/ido/> .
 @prefix ido:          <http://example.com/ido/ontology/> .
 @prefix lis:          <http://rds.posccaesar.org/ontology/lis14/rdl/> .
-@prefix proc: 	  <http://example.org/ontology/procedure_ontology_application#> .
+@prefix proc: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#> .
 @prefix act: 	  <http://www.semanticweb.org/maintenance-activity#> .
 @prefix ann: <http://www.industrialontologies.org/IOFAnnotationVocabulary/> .
+@prefix ompd: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#> .
 
 ompd-tpl:MaintenanceProcedureDocument[
     ottr:IRI ?iri,
+    owl:Class ?type,
     ? xsd:string ?procedure_name,
     ? xsd:string ?hasTitle   
 ] :: {
-    o-rdf:Type(?iri, ompd:MaintenanceProcedureDocument),
+    o-rdf:Type(?iri, ?type),
     ottr:Triple(?iri, rdfs:label, ?procedure_name),
     o-owl-dec:DatatypeProperty(proc:hasTitle, "hasTitle", ottr:none, ottr:none, ottr:none),
     ottr:Triple(?iri, proc:hasTitle, ?hasTitle)
@@ -75,10 +77,11 @@ ompd-tpl:MaintenanceProcedureDocument[
 
 ompd-tpl:MaintenanceProcedureProcess[
     owl:NamedIndividual ?iri,
+    owl:Class ?type,
     owl:NamedIndividual ?procedure_document_iri,
     ? xsd:string ?procedure_name
 ] :: {
-    o-rdf:Type(?iri, ompd:MaintenanceProcedureProcess),
+    o-rdf:Type(?iri, ?type),
     ottr:Triple(?iri, rdfs:label, ?procedure_name),
     ottr:Triple(?procedure_document_iri, lis:isAbout, ?iri)
 } .
@@ -112,15 +115,21 @@ ompd-tpl:MaintenanceTaskClass[
 
 ompd-tpl:MantenanceTaskDescription[
     owl:NamedIndividual ?iri,
+    owl:Class ?type,
     ? xsd:string ?task_description_name,
-    ? xsd:string ?task_description_text,
-    ? owl:NamedIndividual ?denotes
+    ? owl:NamedIndividual ?media_iri,
+    ? owl:Class ?media_type,
+    ? xsd:string ?text_value,
+    ? xsd:string ?media_location,
+    ? owl:NamedIndividual ?denotes,
+    ? owl:Class ?description_type
 ] :: {
-    o-rdf:Type(?iri, ompd:MaintenanceTaskDescription),
+    o-rdf:Type(?iri, ?description_type),
+    o-rdf:Type(?media_iri, ?media_type),
+    ottr:Triple(?iri, lis:concretizedBy, ?media_iri),
     ottr:Triple(?iri, rdfs:label, ?task_description_name),
-    ottr:Triple(proc:hasDescription, rdf:type, owl:DatatypeProperty),
-    ottr:Triple(?iri, rdfs:hasTextValue, ?task_description_text),
-    ottr:Triple(?iri, lis:denotes, ?denotes)
+    ottr:Triple(?iri, lis:isAbout ?denotes),
+    #ottr:Triple(?iri, ompd:isInstructional, ?is_instructional)
 } .
 
 ompd-tpl:Resource[

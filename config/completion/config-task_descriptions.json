@@ -35,7 +35,7 @@
         {
           "name": "iri",
           "type": "CONSTRUCTED_IRI",
-          "template": "{task_id}_description"
+          "template": "{description_id}_description"
         },
         {
           "name": "type",
@@ -48,14 +48,34 @@
           "template": "task_description_{task_id}"
         },
         {
-          "name": "maintenanceTaskDescriptionText",
+          "name": "mediaIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{description_id}_description_media"
+        },
+        {
+          "name": "mediaType",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "ompd:{type}"
+        },
+        {
+          "name": "textValue",
           "type": "TEXT",
           "template": "text_value"
+        },
+        {
+          "name": "mediaLocation",
+          "type": "TEXT",
+          "template": "media_location"
         },
         {
           "name": "denotes",
           "type": "IRI",
           "template": "task_id"
+        },
+        {
+          "name": "descriptionType",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "ompd:{description_type}MaintenanceTaskDescription"
         }
       ]
     },

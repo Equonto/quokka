@@ -27,8 +27,8 @@
 @prefix ido: <http://example.com/ido/ontology/> .
 @prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
 @prefix ompd-tpl: 	  <http://www.example.org/static-procedure-ontology/tpl/> .
-@prefix ompd: 	  <http://www.example.org/static-procedure-ontology#> .
-@prefix proc: 	  <http://example.org/ontology/procedure_ontology_application#> .
+@prefix ompd: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#> .
+@prefix proc: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#> .
 @prefix act: 	  <http://www.semanticweb.org/maintenance-activity#> .
 @prefix ann: <http://www.industrialontologies.org/IOFAnnotationVocabulary/> .
 
@@ -36,12 +36,13 @@
 [] a ottr:InstanceMap ;
     ottr:source [ a ottr:H2Source ] ;
     ottr:query """
-select iri, documentLabel, hasTitle
+select iri, type, documentLabel, hasTitle
 from CSVREAD('staging/procedure_documents.csv')
 """ ;
 ottr:template ompd-tpl:MaintenanceProcedureDocument;
 ottr:argumentMaps (
       [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:Class ]
       [ ottr:type xsd:string ]
       [ ottr:type xsd:string ]
 ) .
@@ -50,12 +51,13 @@ ottr:argumentMaps (
 [] a ottr:InstanceMap ;
     ottr:source [ a ottr:H2Source ] ;
     ottr:query """
-select iri, procedureDocumentIri, procedureName
+select iri, type, procedureDocumentIri, procedureName
 from CSVREAD('staging/procedures.csv')
 """ ;
 ottr:template ompd-tpl:MaintenanceProcedureProcess;
 ottr:argumentMaps (
       [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:Class ]
       [ ottr:type owl:NamedIndividual ]
       [ ottr:type xsd:string ]
 ) .
@@ -68,12 +70,12 @@ select i1.iri
 , i1.type
 , i1.taskName
 , i1.afterMaintenanceTaskIri
-, i1.parentMaintenanceTaskIri
+, i1.parentProcessIri
 , GROUP_CONCAT(i2.iri) AS differentFrom
 from CSVREAD('staging/maintenance_tasks.csv') as i1
 left join CSVREAD('staging/maintenance_tasks.csv') as i2 
 on i2.iri != i1.iri AND i1.procedureIri = i2.procedureIri
-GROUP BY i1.iri, i1.type, i1.taskName, i1.afterMaintenanceTaskIri, i1.parentMaintenanceTaskIri
+GROUP BY i1.iri, i1.type, i1.taskName, i1.afterMaintenanceTaskIri, i1.parentProcessIri
 """ ;
 ottr:template ompd-tpl:MantenanceTask;
 ottr:argumentMaps (
@@ -105,123 +107,18 @@ ottr:argumentMaps (
 [] a ottr:InstanceMap ;
     ottr:source [ a ottr:H2Source ] ;
     ottr:query """
-select iri, taskDescriptionName, maintenanceTaskDescriptionText, denotes
+select iri, type, taskDescriptionName, mediaIri, mediaType, textValue, mediaLocation, denotes, descriptionType
 from CSVREAD('staging/maintenance_task_descriptions.csv')
 """ ;
 ottr:template ompd-tpl:MantenanceTaskDescription;
 ottr:argumentMaps (
       [ ottr:type owl:NamedIndividual]
-      [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-      [ ottr:type owl:NamedIndividual]
-) .
-
-# extracted tools
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, toolName, participantIn, type
-from CSVREAD('staging/tools_extracted.csv')
-""" ;
-ottr:template ompd-tpl:Resource;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type xsd:string ]
-      [ ottr:type ottr:IRI ]
-      [ ottr:type (rdf:List owl:Class) ]
-) .
-
-# extracted maintainable items
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, name, participantIn, type
-from CSVREAD('staging/physical_object_extracted.csv')
-""" ;
-ottr:template ompd-tpl:ItemInMaintenanceTask;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type xsd:string ]
-      [ ottr:type ottr:IRI ]
-      [ ottr:type (rdf:List owl:Class) ]
-) .
-
-# extracted maintenance activities
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, actionName, actionOf, type
-from CSVREAD('staging/actions_extracted.csv')
-""" ;
-ottr:template ompd-tpl:Activity;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type xsd:string ]
-      [ ottr:type ottr:IRI ]
-      [ ottr:type (rdf:List owl:Class) ]
-) .
-
-# hazards
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, processIri, hazardLabel, hazardRealisationProcess, hasHazardDescription
-from CSVREAD('staging/hazard.csv')
-""" ;
-ottr:template ompd-tpl:Hazard;
-ottr:argumentMaps (
-      [ ottr:type owl:NamedIndividual ]
-      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:Class ]
       [ ottr:type xsd:string ]
       [ ottr:type owl:NamedIndividual ]
-      [ ottr:type xsd:string ]
-) .
-
-# materials
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, type, processIri, materialLabel, hasMaterialDescription, hasUnits, hasQuantity
-from CSVREAD('staging/materials.csv')
-""" ;
-ottr:template ompd-tpl:ResourceWithDetails;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type (rdf:List owl:Class) ]
-      [ ottr:type ottr:IRI ]
+      [ ottr:type owl:Class ]
       [ ottr:type xsd:string ]
       [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-) .
-
-# tools
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-select iri, type, processIri, toolLabel, hasToolName, hasUnits, hasQuantity
-from CSVREAD('staging/tools.csv')
-""" ;
-ottr:template ompd-tpl:ResourceWithDetails;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type (rdf:List owl:Class) ]
-      [ ottr:type ottr:IRI ]
-      [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-      [ ottr:type xsd:string ]
-) .
-
-# action_relation (has primary participant)
-[] a ottr:InstanceMap ;
-    ottr:source [ a ottr:H2Source ] ;
-    ottr:query """
-    select sourceIri, targetIri
-    from CSVREAD('staging/action_item_relationship_primary_participant.csv')
-""" ;
-ottr:template ompd-tpl:HasPrimaryParticipant;
-ottr:argumentMaps (
-      [ ottr:type ottr:IRI ]
-      [ ottr:type ottr:IRI ]
+      [ ottr:type owl:NamedIndividual ]
+      [ ottr:type owl:Class ]
 ) .

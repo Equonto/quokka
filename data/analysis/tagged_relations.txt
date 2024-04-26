@@ -8,7 +8,7 @@ remove/HAS_PRIMARY_PARTICIPANT/rubber gasket, remove/HAS_PARTICIPANT/rain tray,
 
 Raw Text:lift the tray upwards and away from the vehicle .
 Preprocessed Text:lift the tray upwards and away from the vehicle .
-
+lift/HAS_PRIMARY_PARTICIPANT/tray, 
 
 Raw Text:use a flathead screwdriver to remove the cap from the windshield wiper .
 Preprocessed Text:use a flathead screwdriver to remove the cap from the windshield wiper .
@@ -48,7 +48,7 @@ remove/HAS_PRIMARY_PARTICIPANT/plastic phillips screw,
 
 Raw Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
 Preprocessed Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
-apply/HAS_PRIMARY_PARTICIPANT/force, screw/HAS_PRIMARY_PARTICIPANT/screw head, screw/HAS_PARTICIPANT/plastic clip, 
+apply/HAS_PRIMARY_PARTICIPANT/force, screw/HAS_PRIMARY_PARTICIPANT/two-piece securing mechanism, screw/HAS_PRIMARY_PARTICIPANT/plastic clip, screw/HAS_PRIMARY_PARTICIPANT/screw head, 
 
 Raw Text:use a flathead screwdriver to remove the plastic clip that holds the screw .
 Preprocessed Text:use a flathead screwdriver to remove the plastic clip that hold the screw .
@@ -76,31 +76,31 @@ remove/HAS_PRIMARY_PARTICIPANT/plastic cover, remove/HAS_PARTICIPANT/plastic cov
 
 Raw Text:the cover is held in place by a metal clip , so some force will be required to free it .
 Preprocessed Text:the cover is held in place by a metal clip , so some force will be required to free it .
-force/HAS_PRIMARY_PARTICIPANT/cover, free/HAS_PRIMARY_PARTICIPANT/cover, 
-
-Raw Text:in addition to the metal clip , two small tabs at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tabs from their respective holes in the door .
-Preprocessed Text:in addition to the metal clip , two small tab at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tab from their respective hole in the door .
-
+force/HAS_PRIMARY_PARTICIPANT/cover, free/HAS_PRIMARY_PARTICIPANT/cover, force/HAS_PARTICIPANT/metal clip, 
 
 Raw Text:using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
 Preprocessed Text:using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
-using firm pressure/HAS_PRIMARY_PARTICIPANT/door panel, pull/HAS_PRIMARY_PARTICIPANT/door panel, start/HAS_PRIMARY_PARTICIPANT/door panel, work down/HAS_PRIMARY_PARTICIPANT/door panel, up/HAS_PRIMARY_PARTICIPANT/door panel, 
+using firm pressure/HAS_PRIMARY_PARTICIPANT/door panel, pull/HAS_PRIMARY_PARTICIPANT/door panel, work down the side/HAS_PRIMARY_PARTICIPANT/door panel, 
+
+Raw Text:multiple clips hold the door panel in place . the door panel will jerk as each clip is freed from its position .
+Preprocessed Text:multiple clip hold the door panel in place . the door panel will jerk a each clip is freed from it position .
+hold/HAS_PRIMARY_PARTICIPANT/door panel, hold/HAS_PARTICIPANT/clip, 
 
 Raw Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
 Preprocessed Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
 pull/HAS_PRIMARY_PARTICIPANT/bottom of the door panel, lift/HAS_PRIMARY_PARTICIPANT/entire panel, 
 
+Raw Text:do not try to completely remove the door panel yet , as it is still attached by a number of electrical connectors .
+Preprocessed Text:do not try to completely remove the door panel yet , a it is still attached by a number of electrical connector .
+remove/HAS_PRIMARY_PARTICIPANT/door panel, remove/HAS_PARTICIPANT/electrical connector, 
+
 Raw Text:push down on the small tab and pull the connector directly away from its socket to disconnect the power lock switch .
 Preprocessed Text:push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .
 push down/HAS_PRIMARY_PARTICIPANT/small tab, pull/HAS_PRIMARY_PARTICIPANT/connector, disconnect/HAS_PRIMARY_PARTICIPANT/power lock switch, 
 
-Raw Text:use the same method described above to remove the connector for the tweeter .
-Preprocessed Text:use the same method described above to remove the connector for the tweeter .
-remove/HAS_PRIMARY_PARTICIPANT/connector, remove/HAS_PARTICIPANT/tweeter, 
-
 Raw Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror controls .
 Preprocessed Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror control .
-press the tab/HAS_PRIMARY_PARTICIPANT/larger green connector, disconnect/HAS_PRIMARY_PARTICIPANT/side-view mirror control, 
+press/HAS_PRIMARY_PARTICIPANT/tab, disconnect/HAS_PRIMARY_PARTICIPANT/side-view mirror control, disconnect/HAS_PARTICIPANT/larger green connector, 
 
 Raw Text:disconnect the power window connector .
 Preprocessed Text:disconnect the power window connector .
@@ -116,15 +116,15 @@ Preprocessed Text:use compressed air to clear any debris from the area around th
 
 Raw Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
 Preprocessed Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
-remove/HAS_PRIMARY_PARTICIPANT/ignition coil electrical connector, depressing/HAS_PRIMARY_PARTICIPANT/plastic tab, 
+remove/HAS_PRIMARY_PARTICIPANT/ignition coil electrical connector, 
 
 Raw Text:pull the connector straight away from the ignition coil to detach it .
 Preprocessed Text:pull the connector straight away from the ignition coil to detach it .
-pull the connector/HAS_PRIMARY_PARTICIPANT/ignition coil, detach/HAS_PRIMARY_PARTICIPANT/ignition coil, 
+pull/HAS_PRIMARY_PARTICIPANT/connector, detach/HAS_PRIMARY_PARTICIPANT/ignition coil, 
 
 Raw Text:repeat this procedure for the remaining three ignition coils .
 Preprocessed Text:repeat this procedure for the remaining three ignition coil .
-repeat/HAS_PRIMARY_PARTICIPANT/procedure, repeat/HAS_PARTICIPANT/ignition coil, 
+repeat/HAS_PRIMARY_PARTICIPANT/procedure, repeat/HAS_PARTICIPANT/remaining three ignition coil, 
 
 Raw Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolts .
 Preprocessed Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolt .
@@ -132,15 +132,23 @@ loosen/HAS_PRIMARY_PARTICIPANT/four ignition coil mounting bolt,
 
 Raw Text:once the bolts are loose , they can be removed by hand .
 Preprocessed Text:once the bolt are loose , they can be removed by hand .
-removed by hand/HAS_PRIMARY_PARTICIPANT/bolt, 
+removed/HAS_PRIMARY_PARTICIPANT/bolt, 
 
 Raw Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
 Preprocessed Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
-twist/HAS_PRIMARY_PARTICIPANT/ignition coil, twist/HAS_PRIMARY_PARTICIPANT/spark plug boot, lifting/HAS_PRIMARY_PARTICIPANT/engine, remove/HAS_PRIMARY_PARTICIPANT/ignition coil, remove/HAS_PRIMARY_PARTICIPANT/spark plug boot, 
+twist/HAS_PRIMARY_PARTICIPANT/ignition coil, twist/HAS_PRIMARY_PARTICIPANT/spark plug boot, lifting/HAS_PRIMARY_PARTICIPANT/engine, remove/HAS_PRIMARY_PARTICIPANT/engine, 
+
+Raw Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
+Preprocessed Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
+avoid rocking/HAS_PRIMARY_PARTICIPANT/coil, avoid rocking/HAS_PARTICIPANT/boot, break/HAS_PRIMARY_PARTICIPANT/existing spark plug, 
 
 Raw Text:use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
 Preprocessed Text:use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
-remove/HAS_PRIMARY_PARTICIPANT/existing spark plug, remove/HAS_PARTICIPANT/cylinder head, loosening/HAS_PRIMARY_PARTICIPANT/existing spark plug, 
+remove/HAS_PRIMARY_PARTICIPANT/existing spark plug, remove/HAS_PARTICIPANT/cylinder head, remove/HAS_PARTICIPANT/rubber end, loosening/HAS_PRIMARY_PARTICIPANT/existing spark plug, 
+
+Raw Text:spark plug sockets have rubber in the end of them to grip the spark plug and are made long enough to keep from snapping the spark plug . there are other common methods for removing spark plugs that involve using a long piece of rubber tubing to pull them out , but using a spark plug socket is the correct procedure .
+Preprocessed Text:spark plug socket have rubber in the end of them to grip the spark plug and are made long enough to keep from snapping the spark plug . there are other common method for removing spark plug that involve using a long piece of rubber tubing to pull them out , but using a spark plug socket is the correct procedure .
+grip/HAS_PRIMARY_PARTICIPANT/spark plug, removing/HAS_PRIMARY_PARTICIPANT/spark plug, pull out/HAS_PRIMARY_PARTICIPANT/spark plug, removing/HAS_PARTICIPANT/long piece, 
 
 Raw Text:apply dielectric grease to the ribbed portion of the insulator .
 Preprocessed Text:apply dielectric grease to the ribbed portion of the insulator .
@@ -148,7 +156,7 @@ apply/HAS_PRIMARY_PARTICIPANT/insulator,
 
 Raw Text:gently place the spark plug boot over the ribs and twist the two pieces back and forth to even out the layer of dielectric grease .
 Preprocessed Text:gently place the spark plug boot over the rib and twist the two piece back and forth to even out the layer of dielectric grease .
-place/HAS_PRIMARY_PARTICIPANT/spark plug boot, place/HAS_PARTICIPANT/rib, twist/HAS_PRIMARY_PARTICIPANT/two piece, 
+place/HAS_PRIMARY_PARTICIPANT/spark plug boot, twist/HAS_PRIMARY_PARTICIPANT/two piece, even out/HAS_PRIMARY_PARTICIPANT/two piece, 
 
 Raw Text:place the new spark plug firmly in the spark plug socket so that the threaded end sticks out .
 Preprocessed Text:place the new spark plug firmly in the spark plug socket so that the threaded end stick out .
@@ -160,15 +168,15 @@ apply/HAS_PARTICIPANT/thread, apply/HAS_PARTICIPANT/spark plug,
 
 Raw Text:place the new spark plug into the cylinder head and tighten it by hand as much as you can .
 Preprocessed Text:place the new spark plug into the cylinder head and tighten it by hand a much a you can .
-tighten/HAS_PRIMARY_PARTICIPANT/new spark plug, tighten/HAS_PARTICIPANT/by hand, tighten/HAS_PARTICIPANT/cylinder head, 
+tighten/HAS_PRIMARY_PARTICIPANT/new spark plug, hand/HAS_PRIMARY_PARTICIPANT/new spark plug, hand/HAS_PRIMARY_PARTICIPANT/cylinder head, 
 
 Raw Text:tighten the spark plugs to 11 ft-lbs with a torque wrench .
 Preprocessed Text:tighten the spark plug to 11 ft-lbs with a torque wrench .
-
+tighten/HAS_PRIMARY_PARTICIPANT/spark plug, 
 
 Raw Text:place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .
 Preprocessed Text:place the ignition coil and dust boot back over the spark plug by pushing down and twisting it into place .
-place the ignition coil/HAS_PRIMARY_PARTICIPANT/spark plug, place the ignition coil/HAS_PARTICIPANT/dust boot, place the ignition coil/HAS_ACTIVITY/pushing down, place the ignition coil/HAS_ACTIVITY/twisting, 
+place the ignition coil/HAS_PARTICIPANT/dust boot, place the ignition coil/HAS_PARTICIPANT/spark plug, place the ignition coil/HAS_PRIMARY_PARTICIPANT/pushing down, place the ignition coil/HAS_PRIMARY_PARTICIPANT/twisting, 
 
 Raw Text:reconnect the ignition coil electrical connector by snapping it back into place .
 Preprocessed Text:reconnect the ignition coil electrical connector by snapping it back into place .
@@ -204,7 +212,7 @@ drain plug/HAS_PRIMARY_PARTICIPANT/17 mm hex bolt, drain plug/HAS_PARTICIPANT/tr
 
 Raw Text:place an oil drain pan underneath the drain plug to catch the oil when it begins to drain .
 Preprocessed Text:place an oil drain pan underneath the drain plug to catch the oil when it begin to drain .
-catch/HAS_PRIMARY_PARTICIPANT/oil drain pan, 
+place/HAS_PRIMARY_PARTICIPANT/oil drain pan, 
 
 Raw Text:use a 17 mm box end wrench to loosen the drain plug 3 /4 of a turn .
 Preprocessed Text:use a 17 mm box end wrench to loosen the drain plug 3  or 4 of a turn .
@@ -216,7 +224,7 @@ loosen the drain plug/HAS_PARTICIPANT/oil pan,
 
 Raw Text:watch the draining oil for shiny specks . small flakes of metal could indicate a problem with your tractor's engine internals .
 Preprocessed Text:watch the draining oil for shiny speck . small flake of metal could indicate a problem with your tractor 's engine internals .
-watch/HAS_PRIMARY_PARTICIPANT/draining oil, indicate/HAS_PRIMARY_PARTICIPANT/tractors engine internals, 
+watch/HAS_PRIMARY_PARTICIPANT/draining oil, watch/HAS_PARTICIPANT/tractors engine internals, 
 
 Raw Text:while the oil is draining , wipe off the drain plug with a clean rag or towel .
 Preprocessed Text:while the oil is draining , wipe off the drain plug with a clean rag or towel .
@@ -224,7 +232,7 @@ draining/HAS_PRIMARY_PARTICIPANT/drain plug, wipe off/HAS_PRIMARY_PARTICIPANT/dr
 
 Raw Text:remove the old drain plug gasket and replace it , making sure that the new gasket fits over the threads of the drain plug .
 Preprocessed Text:remove the old drain plug gasket and replace it , making sure that the new gasket fit over the thread of the drain plug .
-replace/HAS_PRIMARY_PARTICIPANT/new gasket, replace/HAS_PRIMARY_PARTICIPANT/drain plug, 
+remove/HAS_PRIMARY_PARTICIPANT/old drain plug gasket, replace/HAS_PRIMARY_PARTICIPANT/new gasket, fit over/HAS_PRIMARY_PARTICIPANT/new gasket, fit over/HAS_PARTICIPANT/thread, fit over/HAS_PARTICIPANT/drain plug, 
 
 Raw Text:wipe down the area around the drain plug with a clean rag or towel .
 Preprocessed Text:wipe down the area around the drain plug with a clean rag or towel .
@@ -238,17 +246,25 @@ Raw Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
 Preprocessed Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
 tighten/HAS_PRIMARY_PARTICIPANT/drain plug, 
 
+Raw Text:do not over-tighten the drain plug . doing so may strip the threads or crack the oil pan . you can always come back later and tighten the drain plug more if needed .
+Preprocessed Text:do not over-tighten the drain plug . doing so may strip the thread or crack the oil pan . you can always come back later and tighten the drain plug more if needed .
+over-tighten/HAS_PRIMARY_PARTICIPANT/drain plug, tighten/HAS_PRIMARY_PARTICIPANT/drain plug, 
+
 Raw Text:move the oil drain pan so that it is directly under the oil filter .
 Preprocessed Text:move the oil drain pan so that it is directly under the oil filter .
 move/HAS_PRIMARY_PARTICIPANT/oil drain pan, move/HAS_PARTICIPANT/oil filter, 
 
 Raw Text:remove the oil filter by turning it counterclockwise until it comes free .
 Preprocessed Text:remove the oil filter by turning it counterclockwise until it come free .
-remove/HAS_PRIMARY_PARTICIPANT/oil filter, remove/HAS_PARTICIPANT/turning, 
+remove/HAS_PRIMARY_PARTICIPANT/oil filter, remove/HAS_PARTICIPANT/turning counterclockwise, 
+
+Raw Text:if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .
+Preprocessed Text:if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .
+loosen/HAS_PRIMARY_PARTICIPANT/filter, remove/HAS_PRIMARY_PARTICIPANT/filter, continue/HAS_PRIMARY_PARTICIPANT/filter, 
 
 Raw Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
 Preprocessed Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
-place/HAS_PRIMARY_PARTICIPANT/oil filter, place/HAS_PARTICIPANT/oil drain pan, allow/HAS_PRIMARY_PARTICIPANT/drain out, 
+place the oil filter/HAS_PARTICIPANT/oil drain pan, 
 
 Raw Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter's gasket .
 Preprocessed Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter 's gasket .
@@ -260,7 +276,7 @@ wipe off/HAS_PRIMARY_PARTICIPANT/oil filter thread, wipe off/HAS_PARTICIPANT/eng
 
 Raw Text:place the new oil filter over the threads and turn it clockwise until it is snug .
 Preprocessed Text:place the new oil filter over the thread and turn it clockwise until it is snug .
-turn/HAS_PRIMARY_PARTICIPANT/new oil filter, turn/HAS_PARTICIPANT/thread, 
+place/HAS_PRIMARY_PARTICIPANT/new oil filter, place/HAS_PARTICIPANT/thread, turn/HAS_PRIMARY_PARTICIPANT/new oil filter, 
 
 Raw Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
 Preprocessed Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
@@ -268,7 +284,7 @@ twist/HAS_PRIMARY_PARTICIPANT/oil filler cap, remove/HAS_PRIMARY_PARTICIPANT/oil
 
 Raw Text:place a funnel in the oil filler hole .
 Preprocessed Text:place a funnel in the oil filler hole .
-
+place/HAS_PRIMARY_PARTICIPANT/funnel, 
 
 Raw Text:hold the funnel with one hand to steady it and pour 5.1 quarts of 15 w-40 oil into the funnel .
 Preprocessed Text:hold the funnel with one hand to steady it and pour 5.1 quart of 15 w-40 oil into the funnel .
@@ -288,19 +304,19 @@ Preprocessed Text:reinsert the dipstick and add or remove any oil , if necessary
 
 Raw Text:place the engine panel back in its original location , making sure the two retaining tabs go through their respective slots in the panel .
 Preprocessed Text:place the engine panel back in it original location , making sure the two retaining tab go through their respective slot in the panel .
-place/HAS_PRIMARY_PARTICIPANT/engine panel, place/HAS_PARTICIPANT/retaining tab, 
+place/HAS_PRIMARY_PARTICIPANT/engine panel, place/HAS_PARTICIPANT/retaining tab, place/HAS_PARTICIPANT/retaining tab, 
 
 Raw Text:secure the engine panel by pulling the retaining tabs straight out , turning them 90 , and laying them down flat .
 Preprocessed Text:secure the engine panel by pulling the retaining tab straight out , turning them 90 , and laying them down flat .
-secure the engine panel/HAS_PRIMARY_PARTICIPANT/retaining tab, pulling the retaining tab straight out/HAS_PRIMARY_PARTICIPANT/retaining tab, turning them 90/HAS_PRIMARY_PARTICIPANT/retaining tab, laying them down flat/HAS_PRIMARY_PARTICIPANT/retaining tab, 
+secure the engine panel/HAS_PRIMARY_PARTICIPANT/retaining tab, pulling/HAS_PRIMARY_PARTICIPANT/retaining tab, turning/HAS_PRIMARY_PARTICIPANT/retaining tab, laying down/HAS_PRIMARY_PARTICIPANT/retaining tab, 
 
 Raw Text:hold the hood up with one hand and use the other hand to return the hood prop to its original location
 Preprocessed Text:hold the hood up with one hand and use the other hand to return the hood prop to it original location
-hold/HAS_PRIMARY_PARTICIPANT/hood, hold/HAS_PARTICIPANT/hand, return/HAS_PRIMARY_PARTICIPANT/hood prop, 
+hold the hood up/HAS_PRIMARY_PARTICIPANT/hood prop, return/HAS_PRIMARY_PARTICIPANT/hood prop, 
 
 Raw Text:close the hood firmly and make sure that the hood latch engages .
 Preprocessed Text:close the hood firmly and make sure that the hood latch engages .
-close/HAS_PRIMARY_PARTICIPANT/hood, close/HAS_PARTICIPANT/hood latch, 
+close the hood/HAS_PRIMARY_PARTICIPANT/hood latch, 
 
 Raw Text:open the rear part of the middle console .
 Preprocessed Text:open the rear part of the middle console .
@@ -308,11 +324,11 @@ open/HAS_PRIMARY_PARTICIPANT/middle console,
 
 Raw Text:grip the right side of the console and pull up towards the passenger seat to remove it .
 Preprocessed Text:grip the right side of the console and pull up towards the passenger seat to remove it .
-pull up/HAS_PRIMARY_PARTICIPANT/console, remove/HAS_PRIMARY_PARTICIPANT/console, 
+grip/HAS_PRIMARY_PARTICIPANT/console, pull up/HAS_PRIMARY_PARTICIPANT/console, remove/HAS_PRIMARY_PARTICIPANT/console, 
 
 Raw Text:locate the two bolts under the air conditioning controls at the bottom of the face plate .
 Preprocessed Text:locate the two bolt under the air conditioning control at the bottom of the face plate .
-locate/HAS_PARTICIPANT/air conditioning control, locate/HAS_PARTICIPANT/face plate, 
+locate/HAS_PRIMARY_PARTICIPANT/air conditioning control, locate/HAS_PRIMARY_PARTICIPANT/face plate, 
 
 Raw Text:loosen these two bolts with a basic socket wrench suited for 7 mm bolts .
 Preprocessed Text:loosen these two bolt with a basic socket wrench suited for 7 mm bolt .
@@ -320,7 +336,7 @@ loosen/HAS_PRIMARY_PARTICIPANT/two bolt, loosen/HAS_PARTICIPANT/7 mm bolt,
 
 Raw Text:wedge a spudger or plastic opening tool ( in place of the screwdriver shown ) under the top of the face plate .
 Preprocessed Text:wedge a spudger or plastic opening tool ( in place of the screwdriver shown ) under the top of the face plate .
-
+wedge/HAS_PARTICIPANT/face plate, 
 
 Raw Text:apply pressure until the corners pop out of place .
 Preprocessed Text:apply pressure until the corner pop out of place .
@@ -336,7 +352,7 @@ Preprocessed Text:remove 4 , 7.9 mm nut using a 7.9 mm socket driver head
 
 Raw Text:one of the nuts is placed underneath the l-bracket . remove the l-bracket and the 3 circled nuts before attempting to remove the remaining nut
 Preprocessed Text:one of the nut is placed underneath the l-bracket . remove the l-bracket and the 3 circled nut before attempting to remove the remaining nut
-remove/HAS_PRIMARY_PARTICIPANT/l-bracket, remove/HAS_PARTICIPANT/circled nut, remove/HAS_PARTICIPANT/circled nut, attempting/HAS_PRIMARY_PARTICIPANT/remaining nut, 
+remove/HAS_PRIMARY_PARTICIPANT/l-bracket, remove/HAS_PARTICIPANT/nut, remove/HAS_PARTICIPANT/circled nut, attempting/HAS_PRIMARY_PARTICIPANT/nut, 
 
 Raw Text:pull cover off the body of the alternator
 Preprocessed Text:pull cover off the body of the alternator
@@ -348,11 +364,15 @@ remove/HAS_PRIMARY_PARTICIPANT/alternator cover, remove/HAS_PRIMARY_PARTICIPANT/
 
 Raw Text:remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brushes from the rotor . pull it out without using much force to avoid damage .
 Preprocessed Text:remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brush from the rotor . pull it out without using much force to avoid damage .
-remove the brush cover assembly/HAS_PRIMARY_PARTICIPANT/alternator, 
+remove the brush cover assembly/HAS_PRIMARY_PARTICIPANT/alternator, separate/HAS_PRIMARY_PARTICIPANT/brush, separate/HAS_PARTICIPANT/rotor, pull out/HAS_PRIMARY_PARTICIPANT/brush, 
 
 Raw Text:use a 2 phillips screwdriver to remove the two 6 mm screws holding down the voltage regulator
 Preprocessed Text:use a 2 phillips screwdriver to remove the two 6 mm screw holding down the voltage regulator
 remove/HAS_PRIMARY_PARTICIPANT/6 mm screw, remove/HAS_PRIMARY_PARTICIPANT/voltage regulator, 
+
+Raw Text:there are three screws that attach the voltage regulator to the bridge assembly . one of these screws was removed in the previous step .
+Preprocessed Text:there are three screw that attach the voltage regulator to the bridge assembly . one of these screw wa removed in the previous step .
+attach/HAS_PRIMARY_PARTICIPANT/voltage regulator, attach/HAS_PRIMARY_PARTICIPANT/bridge assembly, attach/HAS_PRIMARY_PARTICIPANT/screw, 
 
 Raw Text:locate and unscrew the 3 , 6 mm screws holding the bridge assembly in place
 Preprocessed Text:locate and unscrew the 3 , 6 mm screw holding the bridge assembly in place
@@ -362,6 +382,10 @@ Raw Text:locate the copper leads connecting the stator to the bridge assembly . 
 Preprocessed Text:locate the copper lead connecting the stator to the bridge assembly . there are 3 set of 2 lead on the perimeter of the bridge , making 6 lead total .
 locate/HAS_PRIMARY_PARTICIPANT/copper lead, locate/HAS_PARTICIPANT/stator, locate/HAS_PARTICIPANT/bridge assembly, 
 
+Raw Text:these leads must be cut in order to remove the bridge from the alternator . these leads will have to be soldered back together on reassembly . keep the cut as clean as possible .
+Preprocessed Text:these lead must be cut in order to remove the bridge from the alternator . these lead will have to be soldered back together on reassembly . keep the cut a clean a possible .
+cut/HAS_PRIMARY_PARTICIPANT/lead, remove/HAS_PRIMARY_PARTICIPANT/bridge, remove/HAS_PRIMARY_PARTICIPANT/alternator, soldered/HAS_PRIMARY_PARTICIPANT/lead, reassembly/HAS_PRIMARY_PARTICIPANT/lead, 
+
 Raw Text:use wire cutters to cut all 6 of the leads on the perimeter of the bridge .
 Preprocessed Text:use wire cutter to cut all 6 of the lead on the perimeter of the bridge .
 cut/HAS_PRIMARY_PARTICIPANT/lead, 
@@ -370,21 +394,41 @@ Raw Text:if necessary , use a pry bar to gently raise the top of the bridge asse
 Preprocessed Text:if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
 raise/HAS_PRIMARY_PARTICIPANT/top of the bridge assembly, raise/HAS_PARTICIPANT/alternator, 
 
+Raw Text:be extremely careful with the pry bar . excessive force will damage the bridge assembly .
+Preprocessed Text:be extremely careful with the pry bar . excessive force will damage the bridge assembly .
+
+
+Raw Text:make sure the cut ends of the copper leads are straight to make bridge assembly easier to pull off .
+Preprocessed Text:make sure the cut end of the copper lead are straight to make bridge assembly easier to pull off .
+make/HAS_PRIMARY_PARTICIPANT/bridge assembly, cut end/HAS_PRIMARY_PARTICIPANT/copper lead, pull off/HAS_PRIMARY_PARTICIPANT/bridge assembly, 
+
 Raw Text:remove the lower section of the bridge assembly
 Preprocessed Text:remove the lower section of the bridge assembly
 remove/HAS_PRIMARY_PARTICIPANT/lower section, remove/HAS_PARTICIPANT/bridge assembly, 
 
+Raw Text:use of a pry bar may be necessary . be gentle .
+Preprocessed Text:use of a pry bar may be necessary . be gentle .
+
+
 Raw Text:use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolts running along the outer perimeter of the alternator
 Preprocessed Text:use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolt running along the outer perimeter of the alternator
-
+unscrew/HAS_PRIMARY_PARTICIPANT/bolt, 
 
 Raw Text:use a c-clamp or another fixture to hold the pulley in place
 Preprocessed Text:use a c-clamp or another fixture to hold the pulley in place
-hold/HAS_PRIMARY_PARTICIPANT/pulley, 
+use/HAS_PARTICIPANT/pulley, hold/HAS_PRIMARY_PARTICIPANT/pulley, 
+
+Raw Text:be gentle with the clamp . excessive force will bend the pulley out of shape
+Preprocessed Text:be gentle with the clamp . excessive force will bend the pulley out of shape
+be gentle/HAS_PRIMARY_PARTICIPANT/clamp, bend/HAS_PRIMARY_PARTICIPANT/pulley, 
 
 Raw Text:use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley
 Preprocessed Text:use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley
 remove/HAS_PRIMARY_PARTICIPANT/25 mm hex nut, remove/HAS_PARTICIPANT/pulley, 
+
+Raw Text:may need to use a power ratchet , depending on how tight the fit is on the nut
+Preprocessed Text:may need to use a power ratchet , depending on how tight the fit is on the nut
+
 
 Raw Text:once the nut is off , you can then remove the pulley .
 Preprocessed Text:once the nut is off , you can then remove the pulley .
@@ -393,10 +437,6 @@ remove/HAS_PRIMARY_PARTICIPANT/nut, remove/HAS_PARTICIPANT/pulley,
 Raw Text:once the pulley is removed , separate the rotor and stator . the stator is the piece with copper windings .
 Preprocessed Text:once the pulley is removed , separate the rotor and stator . the stator is the piece with copper winding .
 remove/HAS_PRIMARY_PARTICIPANT/pulley, separate/HAS_PRIMARY_PARTICIPANT/rotor, separate/HAS_PRIMARY_PARTICIPANT/stator, 
-
-Raw Text:you can pull the stator out of the remaining cover and examine it .
-Preprocessed Text:you can pull the stator out of the remaining cover and examine it .
-pull/HAS_PRIMARY_PARTICIPANT/stator, pull/HAS_PARTICIPANT/remaining cover, examine/HAS_PRIMARY_PARTICIPANT/stator, 
 
 Raw Text:if the stator is scratched or damaged , you will need to replace it . look for scoring marks or cut pieces of winding .
 Preprocessed Text:if the stator is scratched or damaged , you will need to replace it . look for scoring mark or cut piece of winding .

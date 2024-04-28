@@ -1,5 +1,6 @@
 from FileIo import FileIo
 from consistency.Lutra import Lutra
+from consistency.Reasoner import Reasoner
 
 class ConsistencyTask:
 
@@ -16,10 +17,15 @@ class ConsistencyTask:
         FileIo.move_files("config/consistency/metadata", "config/consistency/staging")
         print("Running lurta")
         lutra.run_lutra_process(self.ontology_name)
-        print("Process complete. Please check the config/output folder.")
+        print("Running reasoner on generated ontology")
+        result = Reasoner(self.ontology_name).run_pellet_reasoner()
+        if (result):
+            print("\033[92m" + "Ontology is consistent" + "\033[0m") # todo: move these colors out to class
+        else:
+            print("\033[91m" + "Ontology is inconsistent, please check and try again" + "\033[0m")
         FileIo.move_files("config/consistency/output", "data/output/ontology")
         FileIo.clear_directory("config/consistency/staging")
         FileIo.clear_directory("config/consistency/output")
-        print("process complete")
+        print("Process complete. Please check the config/output folder.")
 
 

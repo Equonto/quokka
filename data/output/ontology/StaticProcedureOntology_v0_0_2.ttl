@@ -212,15 +212,6 @@ proc-spo:hasVersion rdf:type owl:DatatypeProperty ;
                     rdfs:label "hasVersion" .
 
 
-###  http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#isInstructional
-proc-spo:isInstructional rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
-                         rdf:type owl:FunctionalProperty ;
-                         rdfs:domain proc-spo:MaintenanceTaskDescription ;
-                         rdfs:range xsd:boolean ;
-                         rdfs:label "isInstructional" .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -242,14 +233,6 @@ proc-spo:Animation rdf:type owl:Class ;
 
 ###  http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#AuxilliaryMaintenanceTaskDescription
 proc-spo:AuxilliaryMaintenanceTaskDescription rdf:type owl:Class ;
-                                              owl:equivalentClass [ owl:intersectionOf ( proc-spo:MaintenanceTaskDescription
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty proc-spo:isInstructional ;
-                                                                                           owl:hasValue "false"^^xsd:boolean
-                                                                                         ]
-                                                                                       ) ;
-                                                                    rdf:type owl:Class
-                                                                  ] ;
                                               rdfs:subClassOf proc-spo:MaintenanceTaskDescription ;
                                               rdfs:comment "A LIS:MaintenanceTaskDescription that provides  additional information for some agent to assist in the execution of a maintenance task." ;
                                               rdfs:label "AuxilliaryMaintenanceTaskDescription" ;
@@ -355,14 +338,6 @@ proc-spo:Image rdf:type owl:Class ;
 
 ###  http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#InstructionalMaintenanceTaskDescription
 proc-spo:InstructionalMaintenanceTaskDescription rdf:type owl:Class ;
-                                                 owl:equivalentClass [ owl:intersectionOf ( proc-spo:MaintenanceTaskDescription
-                                                                                            [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty proc-spo:isInstructional ;
-                                                                                              owl:hasValue "true"^^xsd:boolean
-                                                                                            ]
-                                                                                          ) ;
-                                                                       rdf:type owl:Class
-                                                                     ] ;
                                                  rdfs:subClassOf proc-spo:MaintenanceTaskDescription ;
                                                  rdfs:comment "A LIS:MaintenanceTaskDescription that describes the actions necessary to execute a maintenance task" ;
                                                  rdfs:label "InstructionalMaintenanceTaskDescription" ;
@@ -720,16 +695,6 @@ proc-spo:Video rdf:type owl:Class ;
                                                                                            iof-av:isPrimitive "true"^^xsd:boolean ;
                                                                                            iof-av:maturity iof-av:Released ;
                                                                                            iof-av:semiFormalNaturalLanguageAxioms "A LIS:MediaObject of type \"3D Model\"" .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#aux
-proc-spo:aux rdf:type owl:NamedIndividual ,
-                      proc-spo:MaintenanceTaskDescription ;
-             proc-spo:isInstructional "false"^^xsd:boolean .
 
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean

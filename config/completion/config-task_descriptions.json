@@ -80,7 +80,7 @@
       ]
     },
     {
-      "filename": "maintenance_actions_extracted.csv",
+      "filename": "maintenance_action_extracted.csv",
       "extractable_from_entity": "ACTIVITY",
       "columns": [
         {
@@ -91,12 +91,7 @@
         {
           "name": "type",
           "type": "LITERAL",
-          "template": "proc:MaintenanceAction, proc:Extracted"
-        },
-        {
-          "name": "activityType",
-          "type": "LINKED_IRI",
-          "template": "{LINKED}"
+          "template": "ompd:MaintenanceAction, proc:Extracted"
         },
         {
           "name": "actionName",
@@ -111,7 +106,7 @@
       ]
     },
     {
-      "filename": "physical_object_extracted.csv",
+      "filename": "item_extracted.csv",
       "extractable_from_entity": "ITEM",
       "columns": [
         {

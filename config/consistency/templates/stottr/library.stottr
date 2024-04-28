@@ -128,9 +128,40 @@ ompd-tpl:MantenanceTaskDescription[
     o-rdf:Type(?media_iri, ?media_type),
     ottr:Triple(?iri, lis:concretizedBy, ?media_iri),
     ottr:Triple(?iri, rdfs:label, ?task_description_name),
-    ottr:Triple(?iri, lis:isAbout ?denotes),
-    #ottr:Triple(?iri, ompd:isInstructional, ?is_instructional)
+    ottr:Triple(?iri, lis:isAbout, ?denotes),
+    ottr:Triple(?media_iri, ompd:text_value, ?text_value),
+    ottr:Triple(?media_iri, ompd:hasMediaLocation, ?media_location)
 } .
+
+ompd-tpl:ItemInMaintenanceProcess[
+    ottr:IRI ?iri,
+    ? xsd:string ?name,
+    ? ottr:IRI ?participantIn,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?name),
+    ottr:Triple(?iri, lis:participantIn, ?participantIn) # why is participant in going to annotation
+} .
+
+ompd-tpl:MaintenanceAction[
+    ottr:IRI ?iri,
+    ? xsd:string ?activity_name,
+    ? ottr:IRI ?activity_of,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?activity_name),
+    ottr:Triple(?iri, lis:activityPartOf, ?activity_of)
+} .
+
+
+## OLD TEMPLATES
+
+## TOOLS / EXTRACTED AND NOT
+## NEW RELATIONS
+
+## ADD REASONER TO MODULE
 
 ompd-tpl:Resource[
     ottr:IRI ?iri,
@@ -141,65 +172,6 @@ ompd-tpl:Resource[
     cross | o-rdf:Type(?iri, ++?type),
     ottr:Triple(?iri, rdfs:label, ?resource_name),
     ottr:Triple(?iri, lis:participantIn, ?participantIn)
-} .
-
-ompd-tpl:ResourceWithDetails[
-    ottr:IRI ?iri,
-    ? List<owl:Class> ?type,
-    ? ottr:IRI ?participantIn,
-    ? xsd:string ?resource_label,
-    ? xsd:string ?resource_name,
-    ? xsd:string ?hasUnits,
-    ? xsd:string ?hasQuantity
-] :: {
-    ompd-tpl:Resource(?iri, ?resource_label, ?participantIn, ?type),
-    ottr:Triple(?iri, proc:hasUnits, ?hasUnits),
-    ottr:Triple(?iri, proc:hasQuantity, ?hasQuantity),
-    ottr:Triple(?iri, rdfs:label, ?resource_name),
-    ottr:Triple(proc:hasUnits, rdf:type, owl:ObjectProperty),
-    ottr:Triple(proc:hasQuantity, rdf:type, owl:ObjectProperty)
-} .
-
-ompd-tpl:ItemInMaintenanceTask[
-    ottr:IRI ?iri,
-    ? xsd:string ?name,
-    ? ottr:IRI ?participantIn,
-    ? List<owl:Class> ?type
-] :: {
-    cross | o-rdf:Type(?iri, ++?type),
-    ottr:Triple(?iri, rdfs:label, ?name),
-    ottr:Triple(?iri, lis:participantIn, ?participantIn)
-} .
-
-ompd-tpl:Activity[
-    ottr:IRI ?iri,
-    ? xsd:string ?activity_name,
-    ? ottr:IRI ?activity_of,
-    ? List<owl:Class> ?type
-] :: {
-    o-rdfs:SubClassOf(proc:AtomicAction, lis:Activity),
-    ottr:Triple(proc:hasAtomicAction, rdf:type, owl:ObjectProperty),
-    ottr:Triple(proc:atomicActionIn, rdf:type, owl:ObjectProperty),
-    ottr:Triple(proc:AtomicAction, rdf:type, owl:Class),
-    o-owl-ax:SubObjectPropertyOf(proc:hasAtomicAction, lis:hasActivityPart),
-    o-owl-ax:SubObjectPropertyOf(proc:atomicActionIn, lis:activityPartOf),
-    cross | o-rdf:Type(?iri, ++?type),
-    ottr:Triple(?iri, rdfs:label, ?activity_name),
-    ottr:Triple(?activity_of, proc:hasAtomicAction, ?iri)
-} .
-
-ompd-tpl:Hazard[
-    owl:NamedIndividual ?iri,
-    owl:NamedIndividual ?process_iri,
-    ? xsd:string ?hazard_label,
-    ? owl:NamedIndividual ?hazard_realisation_process,
-    ? xsd:string ?hazard_description
-] :: {
-    o-rdf:Type(?iri, ompd:HazardInMaintenanceProcess),
-    o-rdf:Type(?hazard_realisation_process, ompd:HazardRealizationProcess),
-    ottr:Triple(?iri, lis:realizedIn, ?hazard_realisation_process),
-    ottr:Triple(?iri, rdfs:label, ?hazard_label),
-    ottr:Triple(?iri, proc:hasDescription, ?hazard_description)
 } .
 
 ompd-tpl:HasPrimaryParticipant[

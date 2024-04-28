@@ -7,6 +7,7 @@ gently lift up the passenger-side windshield wiper .
 remove the driver-side windshield wiper in the same fashion .
 lift up the plastic cover .
 use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .
+in a pinch , you can make this tool with a phillips driver bit and end wrench .
 use a 2 phillips screwdriver to remove the front two screw .
 gently unplug and lift out the automatic transmission control unit .
 remove the plastic phillips screw towards the front of the door panel .
@@ -18,11 +19,13 @@ insert a very thin flathead screwdriver blade into the small gap towards the rea
 unscrew the phillips screw underneath the screw cover .
 remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
 the cover is held in place by a metal clip , so some force will be required to free it .
+in addition to the metal clip , two small tab at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tab from their respective hole in the door .
 using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
 multiple clip hold the door panel in place . the door panel will jerk a each clip is freed from it position .
 pull the bottom of the door panel away from the door , and lift the entire panel off the door .
 do not try to completely remove the door panel yet , a it is still attached by a number of electrical connector .
 push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .
+use the same method described above to remove the connector for the tweeter .
 press the tab on the bottom of the larger green connector to disconnect the side-view mirror control .
 disconnect the power window connector .
 you may now remove the entire door panel .
@@ -35,7 +38,6 @@ once the bolt are loose , they can be removed by hand .
 twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
 avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
 use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
-spark plug socket have rubber in the end of them to grip the spark plug and are made long enough to keep from snapping the spark plug . there are other common method for removing spark plug that involve using a long piece of rubber tubing to pull them out , but using a spark plug socket is the correct procedure .
 apply dielectric grease to the ribbed portion of the insulator .
 gently place the spark plug boot over the rib and twist the two piece back and forth to even out the layer of dielectric grease .
 place the new spark plug firmly in the spark plug socket so that the threaded end stick out .
@@ -46,7 +48,6 @@ place the ignition coil and dust boot back over the spark plug by pushing down a
 reconnect the ignition coil electrical connector by snapping it back into place .
 pull the hood release latch at the front right of the tractor and lift the hood up .
 lift the hood prop bar from it seat and place it in the hook on the underside of the hood .
-the right side engine panel is held in place by two rotating tab ( highlighted in red ) .
 pull each tab straight away from the panel and twist them 90 so that they fit through the slot in the panel .
 pull the top of the engine panel straight out until it is free from the tab .
 lift the engine panel up to remove it and set it aside .
@@ -54,7 +55,6 @@ the drain plug is a 17 mm hex bolt located on the underside of the tractor .
 place an oil drain pan underneath the drain plug to catch the oil when it begin to drain .
 use a 17 mm box end wrench to loosen the drain plug 3  or 4 of a turn .
 loosen the drain plug by hand until it come out and oil begin to drain from the oil pan .
-watch the draining oil for shiny speck . small flake of metal could indicate a problem with your tractor 's engine internals .
 while the oil is draining , wipe off the drain plug with a clean rag or towel .
 remove the old drain plug gasket and replace it , making sure that the new gasket fit over the thread of the drain plug .
 wipe down the area around the drain plug with a clean rag or towel .
@@ -90,8 +90,8 @@ one of the nut is placed underneath the l-bracket . remove the l-bracket and the
 pull cover off the body of the alternator
 with the alternator cover removed , use a 2 phillips screwdriver to remove the two , 6 mm screw that hold the brush cover in place .
 remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brush from the rotor . pull it out without using much force to avoid damage .
+avoid disconnecting wire unless otherwise specified !
 use a 2 phillips screwdriver to remove the two 6 mm screw holding down the voltage regulator
-there are three screw that attach the voltage regulator to the bridge assembly . one of these screw wa removed in the previous step .
 locate and unscrew the 3 , 6 mm screw holding the bridge assembly in place
 locate the copper lead connecting the stator to the bridge assembly . there are 3 set of 2 lead on the perimeter of the bridge , making 6 lead total .
 these lead must be cut in order to remove the bridge from the alternator . these lead will have to be soldered back together on reassembly . keep the cut a clean a possible .
@@ -105,7 +105,7 @@ use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm
 use a c-clamp or another fixture to hold the pulley in place
 be gentle with the clamp . excessive force will bend the pulley out of shape
 use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley
-may need to use a power ratchet , depending on how tight the fit is on the nut
 once the nut is off , you can then remove the pulley .
 once the pulley is removed , separate the rotor and stator . the stator is the piece with copper winding .
+you can pull the stator out of the remaining cover and examine it .
 if the stator is scratched or damaged , you will need to replace it . look for scoring mark or cut piece of winding .

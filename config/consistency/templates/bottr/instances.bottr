@@ -122,3 +122,33 @@ ottr:argumentMaps (
       [ ottr:type owl:NamedIndividual ]
       [ ottr:type owl:Class ]
 ) .
+
+# extracted item in maintenance procedures
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, name, participantIn, type
+from CSVREAD('staging/item_extracted.csv')
+""" ;
+ottr:template ompd-tpl:ItemInMaintenanceProcess;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# extracted maintenance action
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, actionName, actionOf, type
+from CSVREAD('staging/maintenance_action_extracted.csv')
+""" ;
+ottr:template ompd-tpl:MaintenanceAction;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .

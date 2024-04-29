@@ -1,6 +1,6 @@
 # Consistency Test 3
 
-Test for Task Appearing in Multiple Hierarchies
+Test for Task Appearing in Multiple Procedures
 
 Test Data:
 

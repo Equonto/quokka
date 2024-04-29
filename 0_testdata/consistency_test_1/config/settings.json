@@ -1,0 +1,5 @@
+{
+    "ontology_filename": "instances",
+    "ontology_version": "0.0.1",
+    "imported_ontologies": ["AnnotationVocabulary.rdf", "iso.owl", "StaticProcedureOntology_v0_0_2.xml"]
+}

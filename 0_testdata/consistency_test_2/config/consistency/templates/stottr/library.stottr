@@ -1,0 +1,167 @@
+
+@prefix owl: 	  <http://www.w3.org/2002/07/owl#> . 
+@prefix rdf: 	  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 	  <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix ottr:       <http://ns.ottr.xyz/0.4/> .
+@prefix o-rdf:   <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/> .
+@prefix plm-tpl: <http://rds.posccaesar.org/ontology/plm/tpl/0.1/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix ompd: 	  <http://www.example.org/static-procedure-ontology#> .
+@prefix ompd-tpl: 	  <http://www.example.org/static-procedure-ontology/tpl/> .
+@prefix rdl: 	  <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix xsd: 	  <http://www.w3.org/2001/XMLSchema#> .
+@prefix ax:           <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:      <http://purl.org/dc/terms/> .
+@prefix ex:           <http://example.org/> .
+@prefix fmea:         <http://example.com/ns/asset-maintenance/fmea/> .
+@prefix fmea-tmp:     <http://tpl.ottr.xyz/p/asset-maintenance/fmea/0.2/> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix inter:        <http://tpl.ottr.xyz/p/asset-maintenance/interface/0.2/> .
+@prefix iso-tmp:      <http://tpl.ottr.xyz/p/asset-maintenance/iso14224/0.2/> .
+@prefix lis:          <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix listpl:       <http://rds.posccaesar.org/ontology/lis14/tpl/0.1/> .
+@prefix macro:        <http://tpl.ottr.xyz/p/asset-maintenance/owl/macro/0.1/> .
+@prefix o-docttr:     <http://tpl.ottr.xyz/p/docttr/0.1/> .
+@prefix o-owl-ax:     <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-owl-dec:    <http://tpl.ottr.xyz/owl/declaration/0.1/> .
+@prefix o-owl-ma:     <http://tpl.ottr.xyz/owl/macro/0.1/> .
+@prefix o-owl-re:     <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ut:     <http://tpl.ottr.xyz/owl/util/0.1/> .
+@prefix o-pizza:      <http://tpl.ottr.xyz/pizza/0.1/> .
+@prefix o-rdf:        <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix o-rdfs:       <http://tpl.ottr.xyz/rdfs/0.2/> .
+@prefix om:           <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix ont:          <http://data.grundfos.com/ontology/pump/ont/> .
+@prefix ottr:         <http://ns.ottr.xyz/0.4/> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix pav:          <http://purl.org/pav/> .
+@prefix plmtpl:       <http://rds.posccaesar.org/ontology/plm/tpl/0.1/> .
+@prefix pz:           <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdl:          <http://rds.posccaesar.org/ontology/plm/rdl/> .
+@prefix reqtpl:       <http://w3id.org/requirement-ontology/tpl/0.1/> .
+@prefix rstr:         <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix sd:           <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix tmp:          <http://tpl.ottr.xyz/p/asset-maintenance/general/0.2/> .
+@prefix tmp1:         <http://tpl.ottr.xyz/p/asset-maintenance/general/0.1/> .
+@prefix tmp2:         <http://tpl.ottr.xyz/p/asset-maintenance/general/0.2/> .
+@prefix vann:         <http://purl.org/vocab/vann/> .
+@prefix void:         <http://rdfs.org/ns/void#> .
+@prefix wo-tmp:       <http://tpl.ottr.xyz/p/asset-maintenance/work-orders/0.1/> .
+@prefix x:            <http://example.ottr.xyz/argument/> .
+@prefix xml:          <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ido-tpl:      <http://example.com/ido/> .
+@prefix ido:          <http://example.com/ido/ontology/> .
+@prefix lis:          <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix proc: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#> .
+@prefix act: 	  <http://www.semanticweb.org/maintenance-activity#> .
+@prefix ann: <http://www.industrialontologies.org/IOFAnnotationVocabulary/> .
+@prefix ompd: 	  <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#> .
+
+ompd-tpl:MaintenanceProcedureDocument[
+    ottr:IRI ?iri,
+    owl:Class ?type,
+    ? xsd:string ?procedure_name,
+    ? xsd:string ?hasTitle   
+] :: {
+    o-rdf:Type(?iri, ?type),
+    ottr:Triple(?iri, rdfs:label, ?procedure_name),
+    o-owl-dec:DatatypeProperty(proc:hasTitle, "hasTitle", ottr:none, ottr:none, ottr:none),
+    ottr:Triple(?iri, proc:hasTitle, ?hasTitle)
+} .
+
+ompd-tpl:MaintenanceProcedureProcess[
+    owl:NamedIndividual ?iri,
+    owl:Class ?type,
+    owl:NamedIndividual ?procedure_document_iri,
+    ? xsd:string ?procedure_name
+] :: {
+    o-rdf:Type(?iri, ?type),
+    ottr:Triple(?iri, rdfs:label, ?procedure_name),
+    ottr:Triple(?procedure_document_iri, lis:isAbout, ?iri)
+} .
+
+ompd-tpl:MantenanceTask[
+    owl:NamedIndividual ?iri,
+    owl:Class ?type,
+    ? xsd:string ?task_name,
+    ? owl:NamedIndividual ?afterMainteanceTaskIri,
+    ? owl:NamedIndividual ?parentMaintenanceTaskIri,
+    ? List<ottr:IRI> ?differentFrom 
+] :: {
+    ottr:Triple(ompd:directActivityPartOf, rdf:type, owl:ObjectProperty),
+    ottr:Triple(ompd:hasDirectActivityPart, rdf:type, owl:ObjectProperty),
+    ottr:Triple(ompd:hasIndirectActivityPart, rdf:type, owl:ObjectProperty),
+    ottr:Triple(ompd:indirectActivityPartOf, rdf:type, owl:ObjectProperty),
+    o-rdf:Type(?iri, ?type),
+    ottr:Triple(?iri, rdfs:label, ?task_name),
+    ottr:Triple(?iri, ompd:directlyAfter, ?afterMainteanceTaskIri),
+    ottr:Triple(?iri, ompd:directActivityPartOf, ?parentMaintenanceTaskIri),
+    cross | ottr:Triple(?iri, owl:differentFrom, ++?differentFrom)
+} .
+
+ompd-tpl:MaintenanceTaskClass[
+    owl:Class ?type,
+    ? List<owl:Class> ?disjointWith
+] :: {
+    o-rdfs:SubClassOf(?type, ompd:MaintenanceTask),
+    o-owl-ax:DisjointClasses(?disjointWith)
+} .
+
+ompd-tpl:MantenanceTaskDescription[
+    owl:NamedIndividual ?iri,
+    owl:Class ?type,
+    ? xsd:string ?task_description_name,
+    ? owl:NamedIndividual ?media_iri,
+    ? owl:Class ?media_type,
+    ? xsd:string ?text_value,
+    ? xsd:string ?media_location,
+    ? owl:NamedIndividual ?denotes,
+    ? owl:Class ?description_type
+] :: {
+    o-rdf:Type(?iri, ?description_type),
+    o-rdf:Type(?media_iri, ?media_type),
+    ottr:Triple(?iri, lis:concretizedBy, ?media_iri),
+    ottr:Triple(?iri, rdfs:label, ?task_description_name),
+    ottr:Triple(?iri, lis:isAbout, ?denotes),
+    ottr:Triple(?media_iri, ompd:text_value, ?text_value),
+    ottr:Triple(?media_iri, ompd:hasMediaLocation, ?media_location)
+} .
+
+ompd-tpl:ItemInMaintenanceProcess[
+    ottr:IRI ?iri,
+    ? xsd:string ?name,
+    ? ottr:IRI ?participantIn,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?name),
+    ottr:Triple(?iri, lis:participantIn, ?participantIn) # why is participant in going to annotation
+} .
+
+ompd-tpl:Resource[
+    ottr:IRI ?iri,
+    ? xsd:string ?name,
+    ? ottr:IRI ?participantIn,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?name),
+    ottr:Triple(?iri, lis:participantIn, ?participantIn)
+} .
+
+ompd-tpl:MaintenanceAction[
+    ottr:IRI ?iri,
+    ? xsd:string ?activity_name,
+    ? ottr:IRI ?activity_of,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?activity_name),
+    ottr:Triple(?iri, lis:activityPartOf, ?activity_of)
+} .

@@ -1,1 +1,3 @@
 description_id,task_id,description_type,type,text_value,media_location,is_candidate_for_information_extraction
+Desc_1,Task_1,Text,Instructional,Text,"First Instruction",,False
+Desc_1,Task_1,Text,Instructional,Text,"Second Instruction",,False

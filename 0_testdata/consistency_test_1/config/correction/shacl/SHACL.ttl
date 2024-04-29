@@ -1,0 +1,19 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ompd: <http://www.example.org/static-procedure-ontology#>
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
+@prefix proc: <http://example.org/ontology/procedure_ontology_application#>
+
+proc:ActivityWithNoItem 
+  a sh:NodeShape ;
+    sh:targetClass proc:AtomicAction ;
+    sh:property [           
+        sh:path proc:hasPrimaryParticipant ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+.

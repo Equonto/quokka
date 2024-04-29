@@ -1,0 +1,41 @@
+{
+  "config_name": "tasks",
+  "prefix": "proc:",
+  "output_schema": [
+    {
+      "filename": "maintenance_tasks.csv",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "IRI",
+          "template": "task_id"
+        },
+        {
+          "name": "type",
+          "type": "CONSTRUCTED_IRI",
+          "template": "MaintenaceTaskIn_{procedure_id}"
+        },
+        {
+          "name": "procedureIri",
+          "type": "IRI",
+          "template": "procedure_id"
+        },
+        {
+          "name": "taskName",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "task_{task_id}"
+        },
+        {
+          "name": "afterMaintenanceTaskIri",
+          "type": "IRI",
+          "template": "after_task_id"
+        },
+        {
+          "name": "parentProcessIri",
+          "type": "IRI",
+          "template": "parent_process_id"
+        }
+      ]
+    }
+  ]
+}

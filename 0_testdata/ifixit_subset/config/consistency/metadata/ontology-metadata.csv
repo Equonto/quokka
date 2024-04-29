@@ -1,0 +1,2 @@
+id,ontname,ontology,versionInfo,title,description,seeAlso,imports
+10,instances,http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances,0.0.1,,,,"http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology"

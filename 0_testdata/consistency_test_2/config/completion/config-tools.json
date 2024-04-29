@@ -1,0 +1,31 @@
+{
+  "config_name": "tools",
+  "prefix": "proc:",
+  "output_schema": [
+    {
+      "filename": "tools.csv",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "IRI",
+          "template": "tool_id"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:Tool"
+        },
+        {
+          "name": "processIri",
+          "type": "IRI",
+          "template": "procedure_id"
+        },
+        {
+          "name": "toolLabel",
+          "type": "TEXT",
+          "template": "tool_name"
+        }
+      ]
+    }
+  ]
+}

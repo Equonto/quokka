@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+   xmlns:ns1="http://www.w3.org/2003/11/swrl#"
+   xmlns:ns2="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b18">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Qualification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:Quality that is beared by zero or more OMPD:QualitifiedPerson</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:Quality that is beared by zero or more OMPD:QualitifiedPerson</rdfs:comment>
+    <iof-av:example>an electrical engineering qualification, a welding certificate</iof-av:example>
+    <rdfs:label>Qualification</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a capability of an individual to perform a specific task that has been assessed by a recognised 3rd party group</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#ItemInMaintenanceProcess">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:PhysicalObject that partiticipates in some OMPD:MaintenanceProcess</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:PhysicalObject that partiticipates in some OMPD:MaintenanceProcess</rdfs:comment>
+    <rdfs:label>ItemInMaintenanceProcess</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a physical object that is involved in some part of a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b1"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:InformationObject that is about some OMPD:MaintenanceTask and is concretized in some OMPD:MediaObject</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:InformationObject that is about some OMPD:MaintenanceTask and is concretized in some OMPD:MediaObject</rdfs:comment>
+    <iof-av:example>the section in a maintenance procedure description that describes an individual task in the process</iof-av:example>
+    <rdfs:label>MaintenanceTaskDescription</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the part of a document containing instructions or additional information  for performing a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b65">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b66"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardInMaintenanceProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b63"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Disposition"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An OMPD: Hazard that is realized in some OMPD: Hazard Realization Process that occurs relative to some OMPD: Maintenance Process</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An OMPD: Hazard that is realized in some OMPD: Hazard Realization Process that occurs relative to some OMPD: Maintenance Process</rdfs:comment>
+    <iof-av:example>a confined space, working at heights, pressurised containers</iof-av:example>
+    <rdfs:label>HazardInMaintenanceProcess</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>source or situation with a potential to cause injury and ill health identified in a maintenance procedure (ISO 45001:2018)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b25"/>
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An OMPD:MaintenanceProcess that is: - a direct activity part of zero or one OMPD:MaintenanceProcedureProcess - an activity part of zero or more OMPD:MaintenanceProcedureProcess - a direct activity part of zero or one OMPD:MaintenanceTask - an activity part of zero or more OMPD:MaintenanceTask - occurs directly before zero or one Maintenance task - occurs before zero or more MaintenanceTask - occurs directly after zero or one MaintenanceTask - occurs after zero or more OMPD:MaintenanceTask</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An OMPD:MaintenanceProcess that is: - a direct activity part of zero or one OMPD:MaintenanceProcedureProcess - an activity part of zero or more OMPD:MaintenanceProcedureProcess - a direct activity part of zero or one OMPD:MaintenanceTask - an activity part of zero or more OMPD:MaintenanceTask - occurs directly before zero or one Maintenance task - occurs before zero or more MaintenanceTask - occurs directly after zero or one MaintenanceTask - occurs after zero or more OMPD:MaintenanceTask</rdfs:comment>
+    <iof-av:example>shut-off the valve, remove the bolts from the cover, replace the shaft</iof-av:example>
+    <rdfs:label>MaintenanceTask</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a discrete activity within a multi-step maintenance process</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b26">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b27"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b88">
+    <ns2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns2:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule 2</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <ns1:body rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b89"/>
+    <ns1:head rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b93"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Material">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:PhysicalObject that may have some OMPD:ResourceRole</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:PhysicalObject that may have some OMPD:ResourceRole</rdfs:comment>
+    <iof-av:example>sheet metal, oil, lubricant</iof-av:example>
+    <rdfs:label>Material</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>items (generally consumables) that are required for the maintenance procedure to be executed that cannot be individually described according to its primary function (generally consumables).</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectActivityPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasIndirectActivityPart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Hazard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b68"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Disposition"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS: Realizeable Entity that is realizrd in some OMPD: Hazard Realization Process</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS: Realizeable Entity that is realizrd in some OMPD: Hazard Realization Process</rdfs:comment>
+    <iof-av:example>oil on the floor, a heavy object that needs to be moved, a high pressure pipe</iof-av:example>
+    <rdfs:label>Hazard</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>source or situation with a potential to cause injury and ill health (ISO 45001:2018)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceAction">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:Activity that is a maintenance activity or a supporting activity involved in execution of a maintenance task</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:Activity that is a maintenance activity or a supporting activity involved in execution of a maintenance task</rdfs:comment>
+    <iof-av:example>repair, replace, lubricate, clean, move</iof-av:example>
+    <rdfs:label>MaintenanceAction</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a context-agnostic maintenance activity or supporting activity that is described within a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#InstructionalMaintenanceTaskDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b11"/>
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MaintenanceTaskDescription that describes the actions necessary to execute a maintenance task</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MaintenanceTaskDescription that describes the actions necessary to execute a maintenance task</rdfs:comment>
+    <iof-av:example>"unscrew the six bolts on the engine"</iof-av:example>
+    <rdfs:label>InstructionalMaintenanceTaskDescription</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the part of a document containing instructions  for performing a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintainableItem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b8"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:PhysicalObject hat has a role OMPD:MaintainableItemRole</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:adaptedFrom>https://spec.industrialontologies.org/iof/ontology/core/Core/MaintainableMaterialItem</iof-av:adaptedFrom>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:PhysicalObject hat has a role OMPD:MaintainableItemRole</rdfs:comment>
+    <iof-av:example>a mechanical seal, a motor, tyres on a car</iof-av:example>
+    <rdfs:label>MaintainableItem</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>an item (system or component) for which a maintenance strategy has been identified  (IOF Core Ontology)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Component">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:PhysicalObject that may have some OMPD:ResourceRole</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:PhysicalObject that may have some OMPD:ResourceRole</rdfs:comment>
+    <iof-av:example>a circuit board, a pump shaft, a resistor, a cable</iof-av:example>
+    <rdfs:label>Component</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>an item of hardware, software or both that can be individually described and has a required function</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalDataProperty"/>
+    <rdfs:label>hasVersion</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasTextValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalDataProperty"/>
+    <rdfs:label>hasTextValue</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://spec.equonto.org/ontology/202312/maintenance-procedure/static-procedure-ontology"/>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:label>Maintenance Procedures - Static Procedure Ontology</rdfs:label>
+    <dcterms:creator>The University of Western Australia &amp; Equonto Pty. Ltd.</dcterms:creator>
+    <dcterms:license>http://opensource.org/licenses/MIT</dcterms:license>
+    <dcterms:contributor>Tim French: The University of Western Australia</dcterms:contributor>
+    <dcterms:contributor>Caitlin Woods: The University of Western Australia and Equonto</dcterms:contributor>
+    <dcterms:contributor>Melinda Hodkiewicz: The University of Western Australia</dcterms:contributor>
+    <dcterms:title>Ontology for Maintenance Procedure Documentation (OMPD) Static Procedure Ontology</dcterms:title>
+    <dcterms:publisher>Equonto Pty. Ltd.</dcterms:publisher>
+    <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"/>
+    <owl:imports rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core"/>
+    <dcterms:abstract>The OMPD Static Procedure Ontology captures static information found in most insdutrial maintenance procedures.</dcterms:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b17">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b18"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b33">
+    <owl:onClass rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureProcess"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b29"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b81">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <ns1:classPredicate rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardInMaintenanceProcess"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b93">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b94"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureProcess"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b61">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b79">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <ns1:classPredicate rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardRealizationProcess"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/p"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Resource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b38"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS: Object that has some OMPD: Resource Role</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS: Object that has some OMPD: Resource Role</rdfs:comment>
+    <iof-av:example>a crane, welding rods, a multi-meter, mechanic</iof-av:example>
+    <rdfs:label>Resource</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a tool, material, equipment or person required to complete a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#3DModel">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "3D Model"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "3D Model"</rdfs:comment>
+    <iof-av:example>a 3D model of a pump (that can be accessed when viewing the procedure via a link)</iof-av:example>
+    <rdfs:label>3D Model</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#documentIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>documentIdentifier</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureDocument"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/representedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b75">
+    <ns2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns2:isRuleEnabled>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule 3</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <ns1:body rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b76"/>
+    <ns1:head rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b86"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#QualifiedPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b41"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Person"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:Person that may have some OMPD:ResourceRole and has a OMPD:Qualification</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:Person that may have some OMPD:ResourceRole and has a OMPD:Qualification</rdfs:comment>
+    <iof-av:example>a mechanical engineer, an electrician, a machinist</iof-av:example>
+    <rdfs:label>QualifiedPerson</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the person recognised by a 3rd party group as having a specific capability</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b82">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b83"/>
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b84"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b39">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b40"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/representedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b21"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:InformationObject that is about some OMPD:MaineanceProcedureProcess</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:InformationObject that is about some OMPD:MaineanceProcedureProcess</rdfs:comment>
+    <iof-av:example>a document describing how to change the oil in the car, or to replace the coupling on a pump</iof-av:example>
+    <rdfs:label>MaintenanceProcedureDocument</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a digital or paper document describing a task or set of tasks for a maintainer to perform</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintainableItemRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:Role that is the role of the item that work is performed on in a OMPD:MaintenanceProcess</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:adaptedFrom>https://spec.industrialontologies.org/iof/ontology/core/Core/MaintainableMaterialItemRole</iof-av:adaptedFrom>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:Role that is the role of the item that work is performed on in a OMPD:MaintenanceProcess</rdfs:comment>
+    <iof-av:example>a pump has the maintainable material item role when it is undergoing repair after a failure, a bearing has a maintainable material item role when it is been lubricated as part of a preventative maintenance program </iof-av:example>
+    <rdfs:label>MaintainableItemRole</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>role played by an item when there is a maintenance strategy describing how it is to be maintained (IOF Core Ontology)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Image">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "Image"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "Image"</rdfs:comment>
+    <iof-av:example>an image of a pump, a schemaitc diagram (that can be accessed while viewing a procedure via a link)</iof-av:example>
+    <rdfs:label>Image</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardRealizationProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS: Activity that has the potential to cause harm</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS: Activity that has the potential to cause harm</rdfs:comment>
+    <iof-av:example>a slip on the oil, the lifting of the too-heavy object, the unconstrained release of pressure</iof-av:example>
+    <rdfs:label>HazardRealizationProcess</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the process in which the hazard is realised and harm occurs</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS: Activity, intended to repair or restore an item to a state in which it can perform its required function</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:adaptedFrom>https://spec.industrialontologies.org/iof/ontology/maintenance/MaintenanceReferenceOntology/MaintenanceProcess</iof-av:adaptedFrom>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS: Activity, intended to repair or restore an item to a state in which it can perform its required function</rdfs:comment>
+    <iof-av:example>repair the laptop, replace the window frame, inspect the fluid level</iof-av:example>
+    <rdfs:label>MaintenanceProcess</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the activities involved in restoring or retaining the function of an item (IOF Maintenance Reference Ontology)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b23">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#ResourceRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b56"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An LIS:Role that is the role of an LIS:Object that is required to execute some LIS:Activity</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An LIS:Role that is the role of an LIS:Object that is required to execute some LIS:Activity</rdfs:comment>
+    <iof-av:example>a spanner has a resource role when it is required for disassembling an engine</iof-av:example>
+    <rdfs:label>ResourceRole</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the role played by an object when it is required in the execution of a the maintenance task (and is not the equipment being worked on)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b51">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b52"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/roleOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Permit">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:InformationObject that  may have some OMPD:ResourceRole</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:InformationObject that  may have some OMPD:ResourceRole</rdfs:comment>
+    <iof-av:example>confined space entry permit, hot work permit</iof-av:example>
+    <rdfs:label>Permit</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a document containing approval to progress a task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintainableItemRole"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#locallyEquivalentTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#locallyEquivalentTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:range rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <rdfs:domain rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <rdfs:subPropertyOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#reasoningSupport"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b76">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b77"/>
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b78"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b94">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/z"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/y"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectActivityPartOf"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b52">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b54"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyAfter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/after"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyBefore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyBefore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/before"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyAfter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b64">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b65"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Hazard"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b30">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b28"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b31"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#AuxilliaryMaintenanceTaskDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b47"/>
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MaintenanceTaskDescription that provides  additional information for some agent to assist in the execution of a maintenance task.</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MaintenanceTaskDescription that provides  additional information for some agent to assist in the execution of a maintenance task.</rdfs:comment>
+    <iof-av:example>"hint: the engine has six bolts in total"</iof-av:example>
+    <rdfs:label>AuxilliaryMaintenanceTaskDescription</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the part of a document containing additional information (outside of the instructions) for performing a maintenance task</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b22">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b23"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#ExecutableScript">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "ExecutableScript"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "ExecutableScript"</rdfs:comment>
+    <iof-av:example>an assembly script sitting on a server for automating the movement of a robtic arm to unscrew a bolt.</iof-av:example>
+    <rdfs:label>ExecutableScript</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasIndirectActivityPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectActivityPartOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b27">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b34"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b35"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b70">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b77">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/b"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:PhysicalObject that provides communication to some agent</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:PhysicalObject that provides communication to some agent</rdfs:comment>
+    <iof-av:example>a physical image that is on a server and can be accessed while viewing a maintenance procedure document</iof-av:example>
+    <rdfs:label>MediaObject</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>the physical manifestation of an information object (i.e., a image on a server, text on a page)</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Tool">
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:PhysicalObject that  may have some OMPD:ResourceRole</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:PhysicalObject that  may have some OMPD:ResourceRole</rdfs:comment>
+    <iof-av:example>a wrench, a hammer, a screwdriver</iof-av:example>
+    <rdfs:label>Tool</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a physical object designed to perform a specific function involved in a maintenance task, usually hand-held</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b91">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b92"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b55">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b86">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b87"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasPatient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#patientOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b38">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b39"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b46">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#requirementOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Animation">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "Animation"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "Animation"</rdfs:comment>
+    <iof-av:example>an animated sequence describing which way to twist a bolt when torquing it (that can be accessed when viewing a procedure)</iof-av:example>
+    <rdfs:label>Animation</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b83">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/c"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/p"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b44">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b46"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b69">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b70"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/RealizableEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b87">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/p"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b13">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b15"/>
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>An OMPD:MaintenanceProcess that is represented in some OMPD:MaintenanceProcedureDocument and has activity part some OMPD:MaintenanceTask</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>An OMPD:MaintenanceProcess that is represented in some OMPD:MaintenanceProcedureDocument and has activity part some OMPD:MaintenanceTask</rdfs:comment>
+    <iof-av:example>engine replacement process</iof-av:example>
+    <rdfs:label>MaintenanceProcedureProcess</rdfs:label>
+    <iof-av:subjectMatterExpertExplanation>a process containing the steps described in the maintenance procedure as activity parts</iof-av:subjectMatterExpertExplanation>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasIndirectActivityPart"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#isInstructional">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalDataProperty"/>
+    <rdfs:domain rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label>isInstructional</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#agentOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasAgent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b71">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b72"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b84">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b85"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b21">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Qualification"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b48">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b49"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b60">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b61"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardRealizationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b12">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b13"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b35">
+    <owl:onClass rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directlyBefore"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/roleOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Video">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "Video"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "Video"</rdfs:comment>
+    <iof-av:example>a video of a technician finding and uncrewing the bolts from an engine (that can be accessed when viewing the procedure via a link)</iof-av:example>
+    <rdfs:label>Video</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasAgent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#agentOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directlyBefore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyBefore"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directlyAfter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasMediaLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <rdfs:label>hasMediaLocation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/p">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b73">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b74"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b92">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/z"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/x"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTaskDescription"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#representedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b58">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b10">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#isInstructional"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b57">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b58"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b72">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b73"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b54">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b55"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b36">
+    <owl:onClass rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b63">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b25">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b66">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b59"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b56">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b57"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#Text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b71"/>
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MediaObject"/>
+    <iof-av:semiFormalNaturalLanguageAxioms>A LIS:MediaObject of type "Text"</iof-av:semiFormalNaturalLanguageAxioms>
+    <iof-av:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    <rdfs:comment>A LIS:MediaObject of type "Text"</rdfs:comment>
+    <iof-av:example>the text "unscrew the bolts" or "check the tank"</iof-av:example>
+    <rdfs:label>Text</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</iof-av:isPrimitive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#requirementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasRequirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b47">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b48"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b32">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b30"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b33"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b16">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b17"/>
+    <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b80">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b81"/>
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b82"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b85">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/p"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b90">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns1:propertyPredicate rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart"/>
+    <ns1:argument1 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/y"/>
+    <ns1:argument2 rdf:resource="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/x"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b3">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b4"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b42">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b43"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasTextValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b40">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b37"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b89">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b90"/>
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b91"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/concretizedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#requirementOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b9">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b10"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b1">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directlyAfter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectlyAfter"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directlyBefore"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b11">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b2">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b3"/>
+    <rdf:first rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b50">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+    <owl:onProperty rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#isInstructional"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b49">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b50"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b68">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b69"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b43">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b44"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b45"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#patientOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasPatient"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#ResourceRole"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/x">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/z">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b59">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b60"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b67">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#HazardRealizationProcess"/>
+    <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b8">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b15">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b16"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasRequirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    <owl:inverseOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#requirementOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b78">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b79"/>
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b80"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#representedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b34">
+    <rdf:rest rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b32"/>
+    <rdf:first rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b36"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b41">
+    <owl:intersectionOf rdf:nodeID="n6ce86854f3404c5e90b3b572c870c473b42"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#reasoningSupport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Activity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///Users/caitlinwoods/Desktop/PhD%20Data%20and%20Code/Ontology/repositiories/quokka/config/consistency/imports/y">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

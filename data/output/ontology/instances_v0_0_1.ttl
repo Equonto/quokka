@@ -56,17 +56,7 @@
         owl:versionInfo  "0.0.1" ;
         owl:imports      <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology> .
 
-_:b0    rdf:type     owl:AllDisjointClasses ;
-        owl:members  _:b1 .
-
-_:b1    rdf:rest   rdf:nil ;
-        rdf:first  proc:MaintenaceTaskIn_Proc_1 .
-
-proc:MaintenaceTaskIn_Proc_1
-        rdfs:subClassOf  ompd:MaintenanceTask .
-
 proc:Task_1  owl:differentFrom  proc:Task_2 ;
-        owl:differentFrom  proc:Task_3 ;
         rdf:type           proc:MaintenaceTaskIn_Proc_1 .
 
 ompd:hasDirectActivityPart
@@ -86,7 +76,6 @@ ompd:indirectActivityPartOf
 proc:Task_1  ompd:directActivityPartOf  proc:Proc_1 .
 
 proc:Task_2  owl:differentFrom  proc:Task_1 ;
-        owl:differentFrom  proc:Task_3 ;
         rdf:type           proc:MaintenaceTaskIn_Proc_1 .
 
 ompd:hasDirectActivityPart
@@ -100,38 +89,21 @@ ompd:directActivityPartOf
 ompd:hasIndirectActivityPart
         rdf:type  owl:ObjectProperty .
 
-proc:Task_2  ompd:directlyAfter  proc:Task_1 .
-
 ompd:indirectActivityPartOf
         rdf:type  owl:ObjectProperty .
 
 proc:Task_2  ompd:directActivityPartOf  proc:Proc_1 .
 
-proc:Task_3  owl:differentFrom  proc:Task_1 ;
-        owl:differentFrom  proc:Task_2 ;
-        rdf:type           proc:MaintenaceTaskIn_Proc_1 .
-
-ompd:hasDirectActivityPart
-        rdf:type  owl:ObjectProperty .
-
-proc:Task_3  rdfs:label  "task_Task_3" .
-
-ompd:directActivityPartOf
-        rdf:type  owl:ObjectProperty .
-
-ompd:hasIndirectActivityPart
-        rdf:type  owl:ObjectProperty .
-
-proc:Task_3  ompd:directlyAfter  proc:Task_1 .
-
-ompd:indirectActivityPartOf
-        rdf:type  owl:ObjectProperty .
-
-proc:Task_3  ompd:directActivityPartOf  proc:Proc_1 .
-
 proc:Proc_1_document  rdf:type  ompd:MaintenanceProcedureDocument ;
         proc:hasTitle  "Test Procedure 1" ;
         rdfs:label     "documentLabel_Proc_1" .
+
+proc:hasTitle  rdf:type  owl:DatatypeProperty ;
+        rdfs:label  "hasTitle" .
+
+proc:Proc_2_document  rdf:type  ompd:MaintenanceProcedureDocument ;
+        proc:hasTitle  "Test Procedure 2" ;
+        rdfs:label     "documentLabel_Proc_2" .
 
 proc:hasTitle  rdf:type  owl:DatatypeProperty ;
         rdfs:label  "hasTitle" .
@@ -141,3 +113,18 @@ proc:Proc_1  rdf:type  ompd:MaintenanceProcedureProcess .
 proc:Proc_1_document  lis:isAbout  proc:Proc_1 .
 
 proc:Proc_1  rdfs:label  "Test Procedure 1" .
+
+proc:Proc_2  rdf:type  ompd:MaintenanceProcedureProcess .
+
+proc:Proc_2_document  lis:isAbout  proc:Proc_2 .
+
+proc:Proc_2  rdfs:label  "Test Procedure 2" .
+
+_:b0    rdf:type     owl:AllDisjointClasses ;
+        owl:members  _:b1 .
+
+_:b1    rdf:rest   rdf:nil ;
+        rdf:first  proc:MaintenaceTaskIn_Proc_1 .
+
+proc:MaintenaceTaskIn_Proc_1
+        rdfs:subClassOf  ompd:MaintenanceTask .

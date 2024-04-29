@@ -7,23 +7,27 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasIndirectActivityPart">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_1">
     <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_2"/>
-    <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_3"/>
     <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1"/>
     <rdfs:label>task_Task_1</rdfs:label>
     <ompd:directActivityPartOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_3">
-    <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_1"/>
-    <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_2"/>
-    <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1"/>
-    <rdfs:label>task_Task_3</rdfs:label>
-    <ompd:directlyAfter rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_1"/>
-    <ompd:directActivityPartOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1"/>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_2">
+    <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureProcess"/>
+    <rdfs:label>Test Procedure 2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_2_document">
+    <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureDocument"/>
+    <proc:hasTitle>Test Procedure 2</proc:hasTitle>
+    <rdfs:label>documentLabel_Proc_2</rdfs:label>
+    <lis:isAbout rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1_document">
     <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureDocument"/>
@@ -31,45 +35,40 @@
     <rdfs:label>documentLabel_Proc_1</rdfs:label>
     <lis:isAbout rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectActivityPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_2">
     <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_1"/>
-    <owl:differentFrom rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_3"/>
     <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1"/>
     <rdfs:label>task_Task_2</rdfs:label>
-    <ompd:directlyAfter rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Task_1"/>
     <ompd:directActivityPartOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndb1244b6ec6e4289a1e90557a3ccbeb5b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="ndb1244b6ec6e4289a1e90557a3ccbeb5b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#hasTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasTitle</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <owl:versionInfo>0.0.1</owl:versionInfo>
     <owl:imports rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#hasTitle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label>hasTitle</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1">
-    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#indirectActivityPartOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#Proc_1">
     <rdf:type rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceProcedureProcess"/>
     <rdfs:label>Test Procedure 1</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nc15d587277c24bf1b01fc9405408152fb2">
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasIndirectActivityPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndb1244b6ec6e4289a1e90557a3ccbeb5b2">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     <rdf:first rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nc15d587277c24bf1b01fc9405408152fb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="nc15d587277c24bf1b01fc9405408152fb2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#directActivityPartOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#hasDirectActivityPart">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#MaintenaceTaskIn_Proc_1">
+    <rdfs:subClassOf rdf:resource="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#MaintenanceTask"/>
   </rdf:Description>
 </rdf:RDF>

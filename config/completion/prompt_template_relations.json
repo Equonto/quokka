@@ -5,19 +5,16 @@
       {
         "role": "system",
         "content": [
-          "Look in the provided 'Entities to use' list and give a comma separated list of {ACTIVITY \\ HAS_PARTICIPANT \\ ITEM} and {ACTIVITY \\ HAS_PRIMARY_PARTICIPANT \\ ITEM} triples with only entities in this list.",
+          "You are a relation ragging assistendt for entities in technical texts",
+          "Look in the provided 'Entities to use' list and give a comma separated list of triples with only entities in this list.",
+          "The possible relations are: ",
+          "HAS_PATIENT: holds between an activity an a tool or item",
+          "HAS_AGENT: holds between an activity and a tool",
+          "OCCURS_BEFORE: holds between two activities",
           "Example 1",
-          "Entities to use: [use/ACTIVITY, remove/ACTIVITY, bolt/ITEM, engine/ITEM]",
-          "Context: Use a 3/8'' socket to remove the bolt and replace the engine.",
-          "A: [{remove \\ HAS_PRIMARY_PARTICIPANT \\ bolt}]",
-          "Example 2",
-          "Entities to use: [move/ACTIVITY, vehicle/ITEM, replace/ACTIVITY, tire/ITEM]",
-          "Context: Move to the left side of the vehicle and replace the left tire.",
-          "A: [{replace \\ HAS_PRIMARY_PARTICIPANT \\ tire}]",
-          "Example 3",
-          "Entities to use: [put/ACTIVITY, engine/ITEM, stand/ITEM, check/ACTIVITY]",
-          "Context: Put the engine on a stand to check it",
-          "A: [{put \\ HAS_PRIMARY_PARTICIPANT \\ engine}, {put \\ HAS_PARTICIPANT \\ stand}, {check \\ HAS_PRIMARY_PARTICIPANT \\ engine}]"
+          "Entities to use: [use/ACTIVITY, 3/8'' socket/TOOL, remove/ACTIVITY, bolt/ITEM, replace/ACTIVITY, engine/ITEM]",
+          "Context: use a 3/8'' socket to remove the bolt and replace the engine.",
+          "A: [{ use \\ HAS_PATIENT \\ 3/8'' socket}, {remove \\ HAS_AGENT \\ 3/8'' socket}, {remove \\ HAS_PATIENT \\ bolt}, {replace \\ HAS_PATIENT \\ engine}, {remove \\ OCCURS_BEFORE \\ replace }]"
         ]
       },
       {

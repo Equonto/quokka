@@ -144,6 +144,17 @@ ompd-tpl:ItemInMaintenanceProcess[
     ottr:Triple(?iri, lis:participantIn, ?participantIn) # why is participant in going to annotation
 } .
 
+ompd-tpl:Resource[
+    ottr:IRI ?iri,
+    ? xsd:string ?name,
+    ? ottr:IRI ?participantIn,
+    ? List<owl:Class> ?type
+] :: {
+    cross | o-rdf:Type(?iri, ++?type),
+    ottr:Triple(?iri, rdfs:label, ?name),
+    ottr:Triple(?iri, lis:participantIn, ?participantIn)
+} .
+
 ompd-tpl:MaintenanceAction[
     ottr:IRI ?iri,
     ? xsd:string ?activity_name,
@@ -153,31 +164,4 @@ ompd-tpl:MaintenanceAction[
     cross | o-rdf:Type(?iri, ++?type),
     ottr:Triple(?iri, rdfs:label, ?activity_name),
     ottr:Triple(?iri, lis:activityPartOf, ?activity_of)
-} .
-
-
-## OLD TEMPLATES
-
-## TOOLS / EXTRACTED AND NOT
-## NEW RELATIONS
-
-## ADD REASONER TO MODULE
-
-ompd-tpl:Resource[
-    ottr:IRI ?iri,
-    ? xsd:string ?resource_name,
-    ? ottr:IRI ?participantIn,
-    ? List<owl:Class> ?type
-] :: {
-    cross | o-rdf:Type(?iri, ++?type),
-    ottr:Triple(?iri, rdfs:label, ?resource_name),
-    ottr:Triple(?iri, lis:participantIn, ?participantIn)
-} .
-
-ompd-tpl:HasPrimaryParticipant[
-    ottr:IRI ?source,
-    ottr:IRI ?target
-] :: {
-    ottr:Triple(?source, proc:hasPrimaryParticipant, ?target),
-    o-owl-ax:SubObjectPropertyOf(proc:hasPrimaryParticipant, lis:hasParticipant)
 } .

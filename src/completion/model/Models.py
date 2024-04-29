@@ -81,6 +81,7 @@ class InformationExtractionDetails:
         if Utils.attribute_exists(json, "relationship_model"):
             relationship_model = InformationExtractionModel.from_json(json["relationship_model"])
         text_field = None
+        entity_linking_models = None
         if Utils.attribute_exists(json, "entity_linking_models"):
             entity_linking_models = []
             for item in json["entity_linking_models"]:

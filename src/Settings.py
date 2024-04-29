@@ -8,3 +8,6 @@ class Settings:
         version_number = self.settings['ontology_version'].replace(".", "_")
         filename = self.settings['ontology_filename']
         return f"{filename}_v{version_number}.{extension}"
+    
+    def get_imports_list(self):
+        return self.settings['imported_ontologies']

@@ -138,6 +138,21 @@ ottr:argumentMaps (
       [ ottr:type (rdf:List owl:Class) ]
 ) .
 
+# extracted tools
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, name, participantIn, type
+from CSVREAD('staging/tool_extracted.csv')
+""" ;
+ottr:template ompd-tpl:Resource;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
 # extracted maintenance action
 [] a ottr:InstanceMap ;
     ottr:source [ a ottr:H2Source ] ;
@@ -151,4 +166,32 @@ ottr:argumentMaps (
       [ ottr:type xsd:string ]
       [ ottr:type ottr:IRI ]
       [ ottr:type (rdf:List owl:Class) ]
+) .
+
+# hasPatient relation
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+    select sourceIri, relation, targetIri
+    from CSVREAD('staging/action_item_relationship_hasPatient.csv')
+""" ;
+ottr:template ottr:Triple;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
+) .
+
+# hasAgent relation
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+    select sourceIri, relation, targetIri
+    from CSVREAD('staging/action_item_relationship_hasAgent.csv')
+""" ;
+ottr:template ottr:Triple;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
 ) .

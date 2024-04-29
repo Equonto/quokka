@@ -69,9 +69,8 @@ class OutputSerializer:
                                                                             , extracted_relation.get_target()
                                                                             , index + 1)
                                 output_list.append(output)
-                self.output_dict[data_structure.filename] = Utils.make_objects_in_list_unique(output_list)
+        self.output_dict[data_structure.filename] = Utils.make_objects_in_list_unique(output_list)
                                 
-
     def populate_non_extractable_data_structure(self, data_structure: OutputSchema) -> None:
         output_list = []
         for index, row in self.input_data.iterrows():
@@ -101,7 +100,6 @@ class OutputSerializer:
                     return self.prefix + val if (val != None) else None # todo: consider if I want a different prefix
             else:
                 raise ValueError("Unknown column type: " + str(columnType)) 
-            
             
     def create_constructed_value(self, row: Series, template: str, extracted_item: Union[TaggedNgram, str], column: OutputColumn, extracted_item_number = None):
         

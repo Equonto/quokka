@@ -109,9 +109,9 @@ class FileIo:
                 f.write(tagged_ngram_string + "\n\n")
 
         # also write to csv where column 1 is preprocessed text and column 2 is tagged ngrams
-        with open(file_path + ".csv", 'w', newline='') as csvfile:
+        with open(file_path.replace(".txt", ".csv"), 'w', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
-            csv_writer.writerow(["Preprocessed Text", "Tagged Ngrams"])
+            csv_writer.writerow(["preprocessed_text", "tagged_ngrams"])
             for item in list:
                 tagged_ngram_string = ""
                 for ngram in item.get_tagged_ngrams():
@@ -128,6 +128,16 @@ class FileIo:
                 for relation in item.get_relations(): # todo: remove hardcoding
                     tagged_relation_string += str(relation) + ", "
                 f.write(tagged_relation_string + "\n\n")
+
+        # also write to csv where column 1 is preprocessed text and column 2 is tagged relations
+        with open(file_path.replace(".txt", ".csv"), 'w', newline='') as csvfile:
+            csv_writer = csv.writer(csvfile)
+            csv_writer.writerow(["preprocessed_text", "tagged_relations"])
+            for item in list:
+                tagged_relation_string = ""
+                for relation in item.get_relations():
+                    tagged_relation_string += str(relation) + ", "
+                csv_writer.writerow([item.get_preprocessed_text(), tagged_relation_string])        
 
     @staticmethod
     def write_preprocessed_txt_to_txt_file(list: List[TaggedSentence], file_path: str):

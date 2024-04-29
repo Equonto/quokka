@@ -18,14 +18,6 @@
       "type": "OPENAI_RELATIONS",
       "template_path": "config/completion/prompt_template_relations.json"
     },
-    "entity_linking_models": [
-      {
-        "entity": "ACTIVITY",
-        "name": "gpt-3.5-turbo",
-        "type": "OPENAI_ENTITY_LINKING",
-        "template_path": "config/completion/prompt_template_entity_linking.json"
-      }
-    ],
     "text_field": "text_value"
   },
   "output_schema": [
@@ -112,7 +104,7 @@
         {
           "name": "iri",
           "type": "CONSTRUCTED_IRI",
-          "template": "{task_id}_Item_{EXTRACTED(F)}"
+          "template": "{task_id}_object_{EXTRACTED(F)}"
         },
         {
           "name": "type",
@@ -132,29 +124,34 @@
       ]
     },
     {
-      "filename": "action_item_relationship_primary_participant.csv",
-      "extractable_from_relation": "HAS_PRIMARY_PARTICIPANT",
+      "filename": "tool_extracted.csv",
+      "extractable_from_entity": "TOOL",
       "columns": [
         {
-          "name": "sourceIri",
+          "name": "iri",
           "type": "CONSTRUCTED_IRI",
-          "template": "{task_id}_action_{EXTRACTED(F)}"
+          "template": "{task_id}_object_{EXTRACTED(F)}"
         },
         {
-          "name": "relation",
+          "name": "type",
           "type": "LITERAL",
-          "template": "proc:hasPrimaryParticipant"
+          "template": "ompd:Tool, proc:Extracted"
         },
         {
-          "name": "targetIri",
-          "type": "CONSTRUCTED_IRI",
-          "template": "{task_id}_Item_{EXTRACTED(F)}"
+          "name": "name",
+          "type": "CONSTRUCTED_TEXT",
+          "template": "{EXTRACTED}"
+        },
+        {
+          "name": "participantIn",
+          "type": "IRI",
+          "template": "task_id"
         }
       ]
     },
     {
-      "filename": "action_item_relationship_participant.csv",
-      "extractable_from_relation": "HAS_PARTICIPANT",
+      "filename": "action_item_relationship_hasAgent.csv",
+      "extractable_from_relation": "HAS_AGENT",
       "columns": [
         {
           "name": "sourceIri",
@@ -164,12 +161,54 @@
         {
           "name": "relation",
           "type": "LITERAL",
-          "template": "proc:hasParticipant"
+          "template": "ompd:hasAgent"
         },
         {
           "name": "targetIri",
           "type": "CONSTRUCTED_IRI",
-          "template": "{task_id}_Item_{EXTRACTED(F)}"
+          "template": "{task_id}_object_{EXTRACTED(F)}"
+        }
+      ]
+    },
+    {
+      "filename": "action_item_relationship_hasPatient.csv",
+      "extractable_from_relation": "HAS_PATIENT",
+      "columns": [
+        {
+          "name": "sourceIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
+        },
+        {
+          "name": "relation",
+          "type": "LITERAL",
+          "template": "ompd:hasPatient"
+        },
+        {
+          "name": "targetIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_object_{EXTRACTED(F)}"
+        }
+      ]
+    },
+    {
+      "filename": "action_item_relationship_occursBefore.csv",
+      "extractable_from_relation": "OCCURS_BEFORE",
+      "columns": [
+        {
+          "name": "sourceIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
+        },
+        {
+          "name": "relation",
+          "type": "LITERAL",
+          "template": "lis:before"
+        },
+        {
+          "name": "targetIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{task_id}_action_{EXTRACTED(F)}"
         }
       ]
     }

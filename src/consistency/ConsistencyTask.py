@@ -4,8 +4,9 @@ from consistency.Reasoner import Reasoner
 
 class ConsistencyTask:
 
-    def __init__(self, ontology_name):
+    def __init__(self, ontology_name, imports_list):
         self.ontology_name = ontology_name
+        self.imports_list = imports_list
         pass
 
     def execute(self):
@@ -18,7 +19,8 @@ class ConsistencyTask:
         print("Running lurta")
         lutra.run_lutra_process(self.ontology_name)
         print("Running reasoner on generated ontology")
-        result = Reasoner(self.ontology_name).run_pellet_reasoner()
+
+        result = Reasoner(self.ontology_name, self.imports_list).run_pellet_reasoner()
         if (result):
             print("\033[92m" + "Ontology is consistent" + "\033[0m") # todo: move these colors out to class
         else:

@@ -1,0 +1,4 @@
+task_id,procedure_id,raw_text,parent_process_id,after_task_id
+Task_1,Proc_1,Test Task 1,Proc_1,
+Task_2,Proc_1,Test Task 2,Proc_1,Task_1
+Task_3,Proc_1,Test Task 3,Proc_1,Task_1

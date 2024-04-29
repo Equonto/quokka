@@ -15,6 +15,6 @@ class TaskFactory:
         elif task_type == TaskType.CORRECTION:
             return CorrectionTask()
         elif task_type == TaskType.POPULATION:
-            return ConsistencyTask(self.settings.get_ontology_name())
+            return ConsistencyTask(self.settings.get_ontology_name(), self.settings.get_imports_list())
         else:
             raise ValueError("Invalid task type: " + task_type)

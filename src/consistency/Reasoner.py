@@ -51,7 +51,7 @@ class Reasoner:
     def run_pellet_reasoner(self):
         try:
             with default_world:
-                sync_reasoner_pellet(infer_property_values = True, infer_data_property_values=True)
+                sync_reasoner_pellet(infer_property_values = True, infer_data_property_values = True)
             return True
         except OwlReadyInconsistentOntologyError as e:
             return False

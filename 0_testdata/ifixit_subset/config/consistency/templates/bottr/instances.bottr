@@ -138,17 +138,34 @@ ottr:argumentMaps (
       [ ottr:type (rdf:List owl:Class) ]
 ) .
 
+# structured tools
+[] a ottr:InstanceMap ;
+    ottr:source [ a ottr:H2Source ] ;
+    ottr:query """
+select iri, toolLabel, processIri, resourceRoleIri, type
+from CSVREAD('staging/tools.csv')
+""" ;
+ottr:template ompd-tpl:Resource;
+ottr:argumentMaps (
+      [ ottr:type ottr:IRI ]
+      [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type ottr:IRI ]
+      [ ottr:type (rdf:List owl:Class) ]
+) .
+
 # extracted tools
 [] a ottr:InstanceMap ;
     ottr:source [ a ottr:H2Source ] ;
     ottr:query """
-select iri, name, participantIn, type
+select iri, name, participantIn, resourceRoleIri, type
 from CSVREAD('staging/tool_extracted.csv')
 """ ;
 ottr:template ompd-tpl:Resource;
 ottr:argumentMaps (
       [ ottr:type ottr:IRI ]
       [ ottr:type xsd:string ]
+      [ ottr:type ottr:IRI ]
       [ ottr:type ottr:IRI ]
       [ ottr:type (rdf:List owl:Class) ]
 ) .

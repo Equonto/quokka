@@ -143,6 +143,11 @@
           "template": "{EXTRACTED}"
         },
         {
+          "name": "resourceRoleIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "resource_role_{task_id}_object_{EXTRACTED(F)}"
+        },
+        {
           "name": "participantIn",
           "type": "IRI",
           "template": "task_id"

@@ -7,8 +7,8 @@
       "columns": [
         {
           "name": "iri",
-          "type": "IRI",
-          "template": "tool_id"
+          "type": "CONSTRUCTED_IRI",
+          "template": "{tool_id}_{procedure_id}"
         },
         {
           "name": "type",
@@ -19,6 +19,11 @@
           "name": "processIri",
           "type": "IRI",
           "template": "procedure_id"
+        },
+        {
+          "name": "resourceRoleIri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "resource_role_{tool_id}_{procedure_id}"
         },
         {
           "name": "toolLabel",

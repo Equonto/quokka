@@ -129,7 +129,7 @@ ompd-tpl:MantenanceTaskDescription[
     ottr:Triple(?iri, lis:concretizedBy, ?media_iri),
     ottr:Triple(?iri, rdfs:label, ?task_description_name),
     ottr:Triple(?iri, lis:isAbout, ?denotes),
-    ottr:Triple(?media_iri, ompd:text_value, ?text_value),
+    ottr:Triple(?media_iri, ompd:hasTextValue, ?text_value),
     ottr:Triple(?media_iri, ompd:hasMediaLocation, ?media_location)
 } .
 
@@ -148,11 +148,14 @@ ompd-tpl:Resource[
     ottr:IRI ?iri,
     ? xsd:string ?name,
     ? ottr:IRI ?participantIn,
+    ? ottr:IRI ?resourceRoleIri,
     ? List<owl:Class> ?type
 ] :: {
     cross | o-rdf:Type(?iri, ++?type),
     ottr:Triple(?iri, rdfs:label, ?name),
-    ottr:Triple(?iri, lis:participantIn, ?participantIn)
+    ottr:Triple(?iri, lis:participantIn, ?participantIn),
+    ottr:Triple(?resourceRoleIri, rdf:type, ompd:ResourceRole),
+    ottr:Triple(?iri, lis:hasRole, ?resourceRoleIri)
 } .
 
 ompd-tpl:MaintenanceAction[

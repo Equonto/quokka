@@ -56,19 +56,9 @@
         owl:versionInfo  "0.0.1" ;
         owl:imports      <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology> .
 
-proc:Proc_1_document  rdf:type  ompd:MaintenanceProcedureDocument ;
-        proc:hasTitle  "Test Procedure 1" ;
-        rdfs:label     "documentLabel_Proc_1" .
-
-proc:hasTitle  rdf:type  owl:DatatypeProperty ;
-        rdfs:label  "hasTitle" .
-
-proc:Proc_2_document  rdf:type  ompd:MaintenanceProcedureDocument ;
-        proc:hasTitle  "Test Procedure 2" ;
-        rdfs:label     "documentLabel_Proc_2" .
-
-proc:hasTitle  rdf:type  owl:DatatypeProperty ;
-        rdfs:label  "hasTitle" .
+proc:Hazard_1_Proc_1  rdf:type  ompd:Hazard ;
+        rdfs:label          "This is a hazard" ;
+        lis:hasParticipant  proc:Proc_1 .
 
 proc:Proc_1  rdf:type  ompd:MaintenanceProcedureProcess .
 
@@ -85,11 +75,11 @@ proc:Proc_2  rdfs:label  "Test Procedure 2" .
 _:b0    rdf:type     owl:AllDisjointClasses ;
         owl:members  _:b1 .
 
-_:b2    rdf:rest   rdf:nil ;
-        rdf:first  proc:MaintenaceTaskIn_Proc_2 .
-
 _:b1    rdf:rest   _:b2 ;
         rdf:first  proc:MaintenaceTaskIn_Proc_1 .
+
+_:b2    rdf:rest   rdf:nil ;
+        rdf:first  proc:MaintenaceTaskIn_Proc_2 .
 
 proc:MaintenaceTaskIn_Proc_1
         rdfs:subClassOf  ompd:MaintenanceTask .
@@ -105,6 +95,20 @@ _:b5    rdf:rest   rdf:nil ;
 
 proc:MaintenaceTaskIn_Proc_2
         rdfs:subClassOf  ompd:MaintenanceTask .
+
+proc:Proc_1_document  rdf:type  ompd:MaintenanceProcedureDocument ;
+        proc:hasTitle  "Test Procedure 1" ;
+        rdfs:label     "documentLabel_Proc_1" .
+
+proc:hasTitle  rdf:type  owl:DatatypeProperty ;
+        rdfs:label  "hasTitle" .
+
+proc:Proc_2_document  rdf:type  ompd:MaintenanceProcedureDocument ;
+        proc:hasTitle  "Test Procedure 2" ;
+        rdfs:label     "documentLabel_Proc_2" .
+
+proc:hasTitle  rdf:type  owl:DatatypeProperty ;
+        rdfs:label  "hasTitle" .
 
 proc:Task_1  rdf:type  proc:MaintenaceTaskIn_Proc_1 .
 
@@ -141,11 +145,3 @@ ompd:indirectActivityPartOf
         rdf:type  owl:ObjectProperty .
 
 proc:Task_2  ompd:directActivityPartOf  proc:Proc_2 .
-
-proc:Tool_1_Proc_1  rdf:type  lis:Activity ;
-        lis:participantIn  proc:Proc_1 ;
-        lis:hasRole        proc:resource_role_Tool_1_Proc_1 ;
-        rdfs:label         "phillips 2 screwdriver" .
-
-proc:resource_role_Tool_1_Proc_1
-        rdf:type  ompd:ResourceRole .

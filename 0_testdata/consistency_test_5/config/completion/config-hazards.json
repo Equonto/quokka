@@ -1,0 +1,31 @@
+{
+  "config_name": "hazards",
+  "prefix": "proc:",
+  "output_schema": [
+    {
+      "filename": "hazards.csv",
+      "columns": [
+        {
+          "name": "iri",
+          "type": "CONSTRUCTED_IRI",
+          "template": "{hazard_id}_{process_id}"
+        },
+        {
+          "name": "type",
+          "type": "LITERAL",
+          "template": "ompd:Hazard"
+        },
+        {
+          "name": "processIri",
+          "type": "IRI",
+          "template": "process_id"
+        },
+        {
+          "name": "hazardLabel",
+          "type": "TEXT",
+          "template": "hazard_description"
+        }
+      ]
+    }
+  ]
+}

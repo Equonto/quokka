@@ -141,8 +141,8 @@ ompd-tpl:ItemInMaintenanceProcess[
 ] :: {
     cross | o-rdf:Type(?iri, ++?type),
     ottr:Triple(?iri, rdfs:label, ?name),
-    ottr:Triple(?iri, lis:participantIn, ?participantIn) # why is participant in going to annotation
-} .
+    ottr:Triple(?iri, lis:hasParticipant, ?participantIn)
+}
 
 ompd-tpl:Resource[
     ottr:IRI ?iri,

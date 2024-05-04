@@ -8,8 +8,12 @@ from completion.model.Enums import TextPreprocessingTaskType
 class TextPreprocessor:
 
     def __init__(self, tasks):
-        nltk.download('punkt') # todo: check if this downloaded before downloading
-        nltk.download('wordnet') # todo: check if this downloaded before downloading
+        try:
+            nltk.data.find('tokenizers/punkt')
+            nltk.data.find('corpora/wordnet')
+        except LookupError:
+            nltk.download('punkt') 
+            nltk.download('wordnet') 
         self.tasks : List[TextPreprocessingTaskType] = tasks
 
     def preprocess_text(self, text: str) -> str:

@@ -111,7 +111,7 @@ class FileIo:
         # also write to csv where column 1 is preprocessed text and column 2 is tagged ngrams
         with open(file_path.replace(".txt", ".csv"), 'w', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
-            csv_writer.writerow(["preprocessed_text", "tagged_ngrams"])
+            csv_writer.writerow(["preprocessed_text", "tagged_text"])
             for item in list:
                 tagged_ngram_string = ""
                 for ngram in item.get_tagged_ngrams():

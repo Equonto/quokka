@@ -58,6 +58,8 @@ proc:ActivityWithNoItem
 .
 
 
+
+
 proc:NotAMaintenanceTaskShape a sh:NodeShape ;
   sh:target [
     a sh:SPARQLTarget ;

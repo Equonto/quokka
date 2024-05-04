@@ -41,7 +41,7 @@ proc:TaskWithoutSequence a sh:NodeShape ;
   sh:target [
     a sh:SPARQLTarget ;
     sh:select """
-    PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
+    PREFIX ompd: <http://www.example.org/static-procedure-ontology#> 
     SELECT ?this
     WHERE {
     ?this a ompd:MaintenanceTask .

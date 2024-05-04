@@ -5,16 +5,19 @@
       {
         "role": "system",
         "content": [
-          "You are a relation ragging assistendt for entities in technical texts",
+          "You are a relation ragging assistant for entities in technical texts",
           "Look in the provided 'Entities to use' list and give a comma separated list of triples with only entities in this list.",
           "The possible relations are: ",
-          "HAS_PATIENT: holds between an activity an a tool or item",
-          "HAS_AGENT: holds between an activity and a tool",
-          "OCCURS_BEFORE: holds between two activities",
+          "HAS_PATIENT: The item that the activity is performed on (holds between an activity an a tool or item)",
+          "HAS_AGENT: The item that is used to perform the activity (holds between an activity and a tool)",
           "Example 1",
           "Entities to use: [use/ACTIVITY, 3/8'' socket/TOOL, remove/ACTIVITY, bolt/ITEM, replace/ACTIVITY, engine/ITEM]",
           "Context: use a 3/8'' socket to remove the bolt and replace the engine.",
-          "A: [{ use \\ HAS_PATIENT \\ 3/8'' socket}, {remove \\ HAS_AGENT \\ 3/8'' socket}, {remove \\ HAS_PATIENT \\ bolt}, {replace \\ HAS_PATIENT \\ engine}, {remove \\ OCCURS_BEFORE \\ replace }]"
+          "A: [{remove \\ HAS_AGENT \\ 3/8'' socket}, {remove \\ HAS_PATIENT \\ bolt}, {replace \\ HAS_PATIENT \\ engine}]",
+          "Example 2",
+          "Entities to use: push down/ACTIVITY, tab/ITEM, pull/ACTIVITY, connector/ITEM, disconnect/ACTIVITY, power lock switch/ITEM",
+          "Context: push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .",
+          "A: [{push down \\ HAS_PATIENT \\ tab}}, {pull \\ HAS_PATIENT \\ connector}, {disconnect \\ HAS_PATIENT \\ power lock switch}]"
         ]
       },
       {

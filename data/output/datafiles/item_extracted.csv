@@ -1,0 +1,156 @@
+iri,type,name,participantIn
+proc:Task_14461_object_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",screw,proc:Task_14461
+proc:Task_14462_object_rubber_gasket,"ompd:ItemInMaintenanceProcess, proc:Extracted",rubber gasket,proc:Task_14462
+proc:Task_14462_object_rain_tray,"ompd:ItemInMaintenanceProcess, proc:Extracted",rain tray,proc:Task_14462
+proc:Task_14463_object_tray,"ompd:ItemInMaintenanceProcess, proc:Extracted",tray,proc:Task_14463
+proc:Task_14475_object_cap,"ompd:ItemInMaintenanceProcess, proc:Extracted",cap,proc:Task_14475
+proc:Task_14475_object_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",windshield wiper,proc:Task_14475
+proc:Task_14476_object_windshield_wiper_locking_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",windshield wiper locking nut,proc:Task_14476
+proc:Task_14477_object_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",windshield wiper,proc:Task_14477
+proc:Task_14478_object_windshield_wiper,"ompd:ItemInMaintenanceProcess, proc:Extracted",windshield wiper,proc:Task_14478
+proc:Task_14479_object_plastic_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic cover,proc:Task_14479
+proc:Task_14481_object_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",screw,proc:Task_14481
+proc:Task_14481_object_tool,"ompd:ItemInMaintenanceProcess, proc:Extracted",tool,proc:Task_14481
+proc:Task_14482_object_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",screw,proc:Task_14482
+proc:Task_14483_object_automatic_transmission_control_unit,"ompd:ItemInMaintenanceProcess, proc:Extracted",automatic transmission control unit,proc:Task_14483
+proc:Task_16999_object_plastic_phillips_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic phillips screw,proc:Task_16999
+proc:Task_16999_object_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",screw,proc:Task_16999
+proc:Task_16999_object_plastic_clip,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic clip,proc:Task_16999
+proc:Task_17000_object_phillips_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",phillips screw,proc:Task_17000
+proc:Task_17000_object_cup,"ompd:ItemInMaintenanceProcess, proc:Extracted",cup,proc:Task_17000
+proc:Task_17000_object_door_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",door panel,proc:Task_17000
+proc:Task_17001_object_plastic_screw_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic screw cover,proc:Task_17001
+proc:Task_17001_object_door_handle,"ompd:ItemInMaintenanceProcess, proc:Extracted",door handle,proc:Task_17001
+proc:Task_17001_object_phillips_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",phillips screw,proc:Task_17001
+proc:Task_17002_object_plastic_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic cover,proc:Task_17002
+proc:Task_17002_object_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",cover,proc:Task_17002
+proc:Task_17002_object_metal_clip,"ompd:ItemInMaintenanceProcess, proc:Extracted",metal clip,proc:Task_17002
+proc:Task_17002_object_two_small_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",two small tab,proc:Task_17002
+proc:Task_17002_object_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",tab,proc:Task_17002
+proc:Task_17003_object_door_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",door panel,proc:Task_17003
+proc:Task_17003_object_multiple_clip,"ompd:ItemInMaintenanceProcess, proc:Extracted",multiple clip,proc:Task_17003
+proc:Task_17003_object_clip,"ompd:ItemInMaintenanceProcess, proc:Extracted",clip,proc:Task_17003
+proc:Task_17004_object_entire_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",entire panel,proc:Task_17004
+proc:Task_17004_object_electrical_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",electrical connector,proc:Task_17004
+proc:Task_17005_object_small_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",small tab,proc:Task_17005
+proc:Task_17005_object_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",connector,proc:Task_17005
+proc:Task_17005_object_power_lock_switch,"ompd:ItemInMaintenanceProcess, proc:Extracted",power lock switch,proc:Task_17005
+proc:Task_17005_object_tweeter,"ompd:ItemInMaintenanceProcess, proc:Extracted",tweeter,proc:Task_17005
+proc:Task_17005_object_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",tab,proc:Task_17005
+proc:Task_17005_object_larger_green_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",larger green connector,proc:Task_17005
+proc:Task_17005_object_side-view_mirror_control,"ompd:ItemInMaintenanceProcess, proc:Extracted",side-view mirror control,proc:Task_17005
+proc:Task_17006_object_power_window_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",power window connector,proc:Task_17006
+proc:Task_17006_object_entire_door_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",entire door panel,proc:Task_17006
+proc:Task_23031_object_debris,"ompd:ItemInMaintenanceProcess, proc:Extracted",debris,proc:Task_23031
+proc:Task_23032_object_ignition_coil_electrical_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",ignition coil electrical connector,proc:Task_23032
+proc:Task_23032_object_plastic_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",plastic tab,proc:Task_23032
+proc:Task_23032_object_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",connector,proc:Task_23032
+proc:Task_23032_object_ignition_coil,"ompd:ItemInMaintenanceProcess, proc:Extracted",ignition coil,proc:Task_23032
+proc:Task_23033_object_ignition_coil_mounting_bolt,"ompd:ItemInMaintenanceProcess, proc:Extracted",ignition coil mounting bolt,proc:Task_23033
+proc:Task_23033_object_bolt,"ompd:ItemInMaintenanceProcess, proc:Extracted",bolt,proc:Task_23033
+proc:Task_23034_object_ignition_coil,"ompd:ItemInMaintenanceProcess, proc:Extracted",ignition coil,proc:Task_23034
+proc:Task_23034_object_spark_plug_boot,"ompd:ItemInMaintenanceProcess, proc:Extracted",spark plug boot,proc:Task_23034
+proc:Task_23034_object_coil,"ompd:ItemInMaintenanceProcess, proc:Extracted",coil,proc:Task_23034
+proc:Task_23034_object_boot,"ompd:ItemInMaintenanceProcess, proc:Extracted",boot,proc:Task_23034
+proc:Task_23034_object_existing_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",existing spark plug,proc:Task_23034
+proc:Task_23035_object_existing_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",existing spark plug,proc:Task_23035
+proc:Task_23035_object_rubber_end,"ompd:ItemInMaintenanceProcess, proc:Extracted",rubber end,proc:Task_23035
+proc:Task_23036_object_ribbed_portion,"ompd:ItemInMaintenanceProcess, proc:Extracted",ribbed portion,proc:Task_23036
+proc:Task_23036_object_insulator,"ompd:ItemInMaintenanceProcess, proc:Extracted",insulator,proc:Task_23036
+proc:Task_23036_object_spark_plug_boot,"ompd:ItemInMaintenanceProcess, proc:Extracted",spark plug boot,proc:Task_23036
+proc:Task_23036_object_rib,"ompd:ItemInMaintenanceProcess, proc:Extracted",rib,proc:Task_23036
+proc:Task_23036_object_two_piece,"ompd:ItemInMaintenanceProcess, proc:Extracted",two piece,proc:Task_23036
+proc:Task_23036_object_layer,"ompd:ItemInMaintenanceProcess, proc:Extracted",layer,proc:Task_23036
+proc:Task_23037_object_new_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",new spark plug,proc:Task_23037
+proc:Task_23037_object_spark_plug_socket,"ompd:ItemInMaintenanceProcess, proc:Extracted",spark plug socket,proc:Task_23037
+proc:Task_23037_object_thread,"ompd:ItemInMaintenanceProcess, proc:Extracted",thread,proc:Task_23037
+proc:Task_23037_object_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",spark plug,proc:Task_23037
+proc:Task_23038_object_new_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",new spark plug,proc:Task_23038
+proc:Task_23038_object_cylinder_head,"ompd:ItemInMaintenanceProcess, proc:Extracted",cylinder head,proc:Task_23038
+proc:Task_23038_object_spark_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",spark plug,proc:Task_23038
+proc:Task_23039_object_ignition_coil,"ompd:ItemInMaintenanceProcess, proc:Extracted",ignition coil,proc:Task_23039
+proc:Task_23039_object_dust_boot,"ompd:ItemInMaintenanceProcess, proc:Extracted",dust boot,proc:Task_23039
+proc:Task_23039_object_electrical_connector,"ompd:ItemInMaintenanceProcess, proc:Extracted",electrical connector,proc:Task_23039
+proc:Task_27942_object_hood_release_latch,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood release latch,proc:Task_27942
+proc:Task_27942_object_hood,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood,proc:Task_27942
+proc:Task_27943_object_hood_prop_bar,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood prop bar,proc:Task_27943
+proc:Task_27944_object_each_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",each tab,proc:Task_27944
+proc:Task_27944_object_top_of_the_engine_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",top of the engine panel,proc:Task_27944
+proc:Task_27944_object_engine_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",engine panel,proc:Task_27944
+proc:Task_27945_object_drain_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",drain plug,proc:Task_27945
+proc:Task_27945_object_17_mm_hex_bolt,"ompd:ItemInMaintenanceProcess, proc:Extracted",17 mm hex bolt,proc:Task_27945
+proc:Task_27945_object_oil_drain_pan,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil drain pan,proc:Task_27945
+proc:Task_27946_object_drain_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",drain plug,proc:Task_27946
+proc:Task_27946_object_oil_pan,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil pan,proc:Task_27946
+proc:Task_27947_object_drain_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",drain plug,proc:Task_27947
+proc:Task_27947_object_old_drain_plug_gasket,"ompd:ItemInMaintenanceProcess, proc:Extracted",old drain plug gasket,proc:Task_27947
+proc:Task_27947_object_new_gasket,"ompd:ItemInMaintenanceProcess, proc:Extracted",new gasket,proc:Task_27947
+proc:Task_27948_object_drain_plug,"ompd:ItemInMaintenanceProcess, proc:Extracted",drain plug,proc:Task_27948
+proc:Task_27948_object_thread,"ompd:ItemInMaintenanceProcess, proc:Extracted",thread,proc:Task_27948
+proc:Task_27948_object_oil_pan,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil pan,proc:Task_27948
+proc:Task_27949_object_oil_drain_pan,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil drain pan,proc:Task_27949
+proc:Task_27949_object_oil_filter,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil filter,proc:Task_27949
+proc:Task_27949_object_filter,"ompd:ItemInMaintenanceProcess, proc:Extracted",filter,proc:Task_27949
+proc:Task_27950_object_oil_filter,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil filter,proc:Task_27950
+proc:Task_27950_object_gasket,"ompd:ItemInMaintenanceProcess, proc:Extracted",gasket,proc:Task_27950
+proc:Task_27950_object_oil_filter_thread,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil filter thread,proc:Task_27950
+proc:Task_27950_object_engine,"ompd:ItemInMaintenanceProcess, proc:Extracted",engine,proc:Task_27950
+proc:Task_27950_object_new_oil_filter,"ompd:ItemInMaintenanceProcess, proc:Extracted",new oil filter,proc:Task_27950
+proc:Task_27951_object_oil_filler_cap,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil filler cap,proc:Task_27951
+proc:Task_27951_object_valve_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",valve cover,proc:Task_27951
+proc:Task_27952_object_funnel,"ompd:ItemInMaintenanceProcess, proc:Extracted",funnel,proc:Task_27952
+proc:Task_27952_object_oil_filler_cap,"ompd:ItemInMaintenanceProcess, proc:Extracted",oil filler cap,proc:Task_27952
+proc:Task_27953_object_dipstick,"ompd:ItemInMaintenanceProcess, proc:Extracted",dipstick,proc:Task_27953
+proc:Task_27954_object_engine_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",engine panel,proc:Task_27954
+proc:Task_27954_object_retaining_tab,"ompd:ItemInMaintenanceProcess, proc:Extracted",retaining tab,proc:Task_27954
+proc:Task_27954_object_panel,"ompd:ItemInMaintenanceProcess, proc:Extracted",panel,proc:Task_27954
+proc:Task_27955_object_hood,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood,proc:Task_27955
+proc:Task_27955_object_hood_prop,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood prop,proc:Task_27955
+proc:Task_27955_object_hood_latch,"ompd:ItemInMaintenanceProcess, proc:Extracted",hood latch,proc:Task_27955
+proc:Task_38904_object_middle_console,"ompd:ItemInMaintenanceProcess, proc:Extracted",middle console,proc:Task_38904
+proc:Task_38907_object_bolt,"ompd:ItemInMaintenanceProcess, proc:Extracted",bolt,proc:Task_38907
+proc:Task_38907_object_air_conditioning_control,"ompd:ItemInMaintenanceProcess, proc:Extracted",air conditioning control,proc:Task_38907
+proc:Task_38907_object_7_mm,"ompd:ItemInMaintenanceProcess, proc:Extracted",7 mm,proc:Task_38907
+proc:Task_38908_object_corner,"ompd:ItemInMaintenanceProcess, proc:Extracted",corner,proc:Task_38908
+proc:Task_39034_object_center_console,"ompd:ItemInMaintenanceProcess, proc:Extracted",center console,proc:Task_39034
+proc:Task_132385_object_7.9_mm_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",7.9 mm nut,proc:Task_132385
+proc:Task_132385_object_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",nut,proc:Task_132385
+proc:Task_132385_object_l-bracket,"ompd:ItemInMaintenanceProcess, proc:Extracted",l-bracket,proc:Task_132385
+proc:Task_132385_object_circled_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",circled nut,proc:Task_132385
+proc:Task_132385_object_remaining_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",remaining nut,proc:Task_132385
+proc:Task_132386_object_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",cover,proc:Task_132386
+proc:Task_132386_object_body,"ompd:ItemInMaintenanceProcess, proc:Extracted",body,proc:Task_132386
+proc:Task_132386_object_alternator,"ompd:ItemInMaintenanceProcess, proc:Extracted",alternator,proc:Task_132386
+proc:Task_132186_object_alternator_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",alternator cover,proc:Task_132186
+proc:Task_132186_object_6_mm_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",6 mm screw,proc:Task_132186
+proc:Task_132186_object_brush_cover,"ompd:ItemInMaintenanceProcess, proc:Extracted",brush cover,proc:Task_132186
+proc:Task_132186_object_brush_cover_assembly,"ompd:ItemInMaintenanceProcess, proc:Extracted",brush cover assembly,proc:Task_132186
+proc:Task_132186_object_alternator,"ompd:ItemInMaintenanceProcess, proc:Extracted",alternator,proc:Task_132186
+proc:Task_132186_object_brush,"ompd:ItemInMaintenanceProcess, proc:Extracted",brush,proc:Task_132186
+proc:Task_132186_object_rotor,"ompd:ItemInMaintenanceProcess, proc:Extracted",rotor,proc:Task_132186
+proc:Task_132550_object_6_mm_screw,"ompd:ItemInMaintenanceProcess, proc:Extracted",6 mm screw,proc:Task_132550
+proc:Task_132560_object_copper_lead,"ompd:ItemInMaintenanceProcess, proc:Extracted",copper lead,proc:Task_132560
+proc:Task_132560_object_stator,"ompd:ItemInMaintenanceProcess, proc:Extracted",stator,proc:Task_132560
+proc:Task_132560_object_bridge_assembly,"ompd:ItemInMaintenanceProcess, proc:Extracted",bridge assembly,proc:Task_132560
+proc:Task_132560_object_lead,"ompd:ItemInMaintenanceProcess, proc:Extracted",lead,proc:Task_132560
+proc:Task_132560_object_bridge,"ompd:ItemInMaintenanceProcess, proc:Extracted",bridge,proc:Task_132560
+proc:Task_132560_object_alternator,"ompd:ItemInMaintenanceProcess, proc:Extracted",alternator,proc:Task_132560
+proc:Task_132562_object_top_of_the_bridge_assembly,"ompd:ItemInMaintenanceProcess, proc:Extracted",top of the bridge assembly,proc:Task_132562
+proc:Task_132562_object_alternator,"ompd:ItemInMaintenanceProcess, proc:Extracted",alternator,proc:Task_132562
+proc:Task_132562_object_bridge_assembly,"ompd:ItemInMaintenanceProcess, proc:Extracted",bridge assembly,proc:Task_132562
+proc:Task_132562_object_cut_end,"ompd:ItemInMaintenanceProcess, proc:Extracted",cut end,proc:Task_132562
+proc:Task_132562_object_copper_lead,"ompd:ItemInMaintenanceProcess, proc:Extracted",copper lead,proc:Task_132562
+proc:Task_132563_object_lower_section,"ompd:ItemInMaintenanceProcess, proc:Extracted",lower section,proc:Task_132563
+proc:Task_132563_object_bridge_assembly,"ompd:ItemInMaintenanceProcess, proc:Extracted",bridge assembly,proc:Task_132563
+proc:Task_132516_object_7.5_mm_bolt,"ompd:ItemInMaintenanceProcess, proc:Extracted",7.5 mm bolt,proc:Task_132516
+proc:Task_132630_object_fixture,"ompd:ItemInMaintenanceProcess, proc:Extracted",fixture,proc:Task_132630
+proc:Task_132630_object_pulley,"ompd:ItemInMaintenanceProcess, proc:Extracted",pulley,proc:Task_132630
+proc:Task_132630_object_clamp,"ompd:ItemInMaintenanceProcess, proc:Extracted",clamp,proc:Task_132630
+proc:Task_132631_object_25_mm_hex_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",25 mm hex nut,proc:Task_132631
+proc:Task_132631_object_pulley,"ompd:ItemInMaintenanceProcess, proc:Extracted",pulley,proc:Task_132631
+proc:Task_132632_object_nut,"ompd:ItemInMaintenanceProcess, proc:Extracted",nut,proc:Task_132632
+proc:Task_132632_object_pulley,"ompd:ItemInMaintenanceProcess, proc:Extracted",pulley,proc:Task_132632
+proc:Task_132633_object_pulley,"ompd:ItemInMaintenanceProcess, proc:Extracted",pulley,proc:Task_132633
+proc:Task_132633_object_rotor,"ompd:ItemInMaintenanceProcess, proc:Extracted",rotor,proc:Task_132633
+proc:Task_132633_object_stator,"ompd:ItemInMaintenanceProcess, proc:Extracted",stator,proc:Task_132633
+proc:Task_132634_object_stator,"ompd:ItemInMaintenanceProcess, proc:Extracted",stator,proc:Task_132634

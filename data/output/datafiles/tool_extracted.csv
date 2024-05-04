@@ -1,0 +1,36 @@
+iri,type,name,resourceRoleIri,participantIn
+proc:Task_14461_object_2_phillips_screwdriver,"ompd:Tool, proc:Extracted",2 phillips screwdriver,proc:resource_role_Task_14461_object_2_phillips_screwdriver,proc:Task_14461
+proc:Task_14475_object_flathead_screwdriver,"ompd:Tool, proc:Extracted",flathead screwdriver,proc:resource_role_Task_14475_object_flathead_screwdriver,proc:Task_14475
+proc:Task_14476_object_socket_wrench,"ompd:Tool, proc:Extracted",socket wrench,proc:resource_role_Task_14476_object_socket_wrench,proc:Task_14476
+proc:Task_14481_object_offset_phillips_screwdriver,"ompd:Tool, proc:Extracted",offset phillips screwdriver,proc:resource_role_Task_14481_object_offset_phillips_screwdriver,proc:Task_14481
+proc:Task_14481_object_phillips_driver_bit,"ompd:Tool, proc:Extracted",phillips driver bit,proc:resource_role_Task_14481_object_phillips_driver_bit,proc:Task_14481
+proc:Task_14481_object_end_wrench,"ompd:Tool, proc:Extracted",end wrench,proc:resource_role_Task_14481_object_end_wrench,proc:Task_14481
+proc:Task_14482_object_2_phillips_screwdriver,"ompd:Tool, proc:Extracted",2 phillips screwdriver,proc:resource_role_Task_14482_object_2_phillips_screwdriver,proc:Task_14482
+proc:Task_16999_object_flathead_screwdriver,"ompd:Tool, proc:Extracted",flathead screwdriver,proc:resource_role_Task_16999_object_flathead_screwdriver,proc:Task_16999
+proc:Task_17001_object_thin_flathead_screwdriver_blade,"ompd:Tool, proc:Extracted",thin flathead screwdriver blade,proc:resource_role_Task_17001_object_thin_flathead_screwdriver_blade,proc:Task_17001
+proc:Task_23031_object_compressed_air,"ompd:Tool, proc:Extracted",compressed air,proc:resource_role_Task_23031_object_compressed_air,proc:Task_23031
+proc:Task_23033_object_8_mm_deep_socket,"ompd:Tool, proc:Extracted",8 mm deep socket,proc:resource_role_Task_23033_object_8_mm_deep_socket,proc:Task_23033
+proc:Task_23035_object_ratcheting_socket_wrench,"ompd:Tool, proc:Extracted",ratcheting socket wrench,proc:resource_role_Task_23035_object_ratcheting_socket_wrench,proc:Task_23035
+proc:Task_23035_object_extender,"ompd:Tool, proc:Extracted",extender,proc:resource_role_Task_23035_object_extender,proc:Task_23035
+proc:Task_23035_object_5_or_8_spark_plug_socket,"ompd:Tool, proc:Extracted",5 or 8 spark plug socket,proc:resource_role_Task_23035_object_5_or_8_spark_plug_socket,proc:Task_23035
+proc:Task_23038_object_torque_wrench,"ompd:Tool, proc:Extracted",torque wrench,proc:resource_role_Task_23038_object_torque_wrench,proc:Task_23038
+proc:Task_27945_object_17_mm_box_end_wrench,"ompd:Tool, proc:Extracted",17 mm box end wrench,proc:resource_role_Task_27945_object_17_mm_box_end_wrench,proc:Task_27945
+proc:Task_27948_object_17_mm_box_end_wrench,"ompd:Tool, proc:Extracted",17 mm box end wrench,proc:resource_role_Task_27948_object_17_mm_box_end_wrench,proc:Task_27948
+proc:Task_27949_object_oil_filter_wrench,"ompd:Tool, proc:Extracted",oil filter wrench,proc:resource_role_Task_27949_object_oil_filter_wrench,proc:Task_27949
+proc:Task_27950_object_gloved_finger,"ompd:Tool, proc:Extracted",gloved finger,proc:resource_role_Task_27950_object_gloved_finger,proc:Task_27950
+proc:Task_27952_object_funnel,"ompd:Tool, proc:Extracted",funnel,proc:resource_role_Task_27952_object_funnel,proc:Task_27952
+proc:Task_38907_object_basic_socket_wrench,"ompd:Tool, proc:Extracted",basic socket wrench,proc:resource_role_Task_38907_object_basic_socket_wrench,proc:Task_38907
+proc:Task_38908_object_spudger,"ompd:Tool, proc:Extracted",spudger,proc:resource_role_Task_38908_object_spudger,proc:Task_38908
+proc:Task_38908_object_plastic_opening_tool,"ompd:Tool, proc:Extracted",plastic opening tool,proc:resource_role_Task_38908_object_plastic_opening_tool,proc:Task_38908
+proc:Task_132385_object_7.9_mm_socket_driver_head,"ompd:Tool, proc:Extracted",7.9 mm socket driver head,proc:resource_role_Task_132385_object_7.9_mm_socket_driver_head,proc:Task_132385
+proc:Task_132186_object_2_phillips_screwdriver,"ompd:Tool, proc:Extracted",2 phillips screwdriver,proc:resource_role_Task_132186_object_2_phillips_screwdriver,proc:Task_132186
+proc:Task_132186_object_needle,"ompd:Tool, proc:Extracted",needle,proc:resource_role_Task_132186_object_needle,proc:Task_132186
+proc:Task_132550_object_2_phillips_screwdriver,"ompd:Tool, proc:Extracted",2 phillips screwdriver,proc:resource_role_Task_132550_object_2_phillips_screwdriver,proc:Task_132550
+proc:Task_132560_object_wire_cutter,"ompd:Tool, proc:Extracted",wire cutter,proc:resource_role_Task_132560_object_wire_cutter,proc:Task_132560
+proc:Task_132562_object_pry_bar,"ompd:Tool, proc:Extracted",pry bar,proc:resource_role_Task_132562_object_pry_bar,proc:Task_132562
+proc:Task_132563_object_pry_bar,"ompd:Tool, proc:Extracted",pry bar,proc:resource_role_Task_132563_object_pry_bar,proc:Task_132563
+proc:Task_132516_object_phillips_2_screwdriver,"ompd:Tool, proc:Extracted",phillips 2 screwdriver,proc:resource_role_Task_132516_object_phillips_2_screwdriver,proc:Task_132516
+proc:Task_132516_object_7.5_mm_socket_driver,"ompd:Tool, proc:Extracted",7.5 mm socket driver,proc:resource_role_Task_132516_object_7.5_mm_socket_driver,proc:Task_132516
+proc:Task_132630_object_c-clamp,"ompd:Tool, proc:Extracted",c-clamp,proc:resource_role_Task_132630_object_c-clamp,proc:Task_132630
+proc:Task_132631_object_ratchet,"ompd:Tool, proc:Extracted",ratchet,proc:resource_role_Task_132631_object_ratchet,proc:Task_132631
+proc:Task_132631_object_25_mm_socket,"ompd:Tool, proc:Extracted",25 mm socket,proc:resource_role_Task_132631_object_25_mm_socket,proc:Task_132631

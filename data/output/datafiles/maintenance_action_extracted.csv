@@ -1,0 +1,158 @@
+iri,type,actionName,actionOf
+proc:Task_14461_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14461
+proc:Task_14462_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14462
+proc:Task_14463_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_14463
+proc:Task_14475_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14475
+proc:Task_14476_action_release,"ompd:MaintenanceAction, proc:Extracted",release,proc:Task_14476
+proc:Task_14477_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_14477
+proc:Task_14478_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14478
+proc:Task_14479_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_14479
+proc:Task_14481_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14481
+proc:Task_14481_action_make,"ompd:MaintenanceAction, proc:Extracted",make,proc:Task_14481
+proc:Task_14482_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_14482
+proc:Task_14483_action_unplug,"ompd:MaintenanceAction, proc:Extracted",unplug,proc:Task_14483
+proc:Task_14483_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_14483
+proc:Task_16999_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_16999
+proc:Task_17000_action_unscrew,"ompd:MaintenanceAction, proc:Extracted",unscrew,proc:Task_17000
+proc:Task_17000_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_17000
+proc:Task_17001_action_insert,"ompd:MaintenanceAction, proc:Extracted",insert,proc:Task_17001
+proc:Task_17001_action_unscrew,"ompd:MaintenanceAction, proc:Extracted",unscrew,proc:Task_17001
+proc:Task_17002_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_17002
+proc:Task_17002_action_pulling,"ompd:MaintenanceAction, proc:Extracted",pulling,proc:Task_17002
+proc:Task_17002_action_force,"ompd:MaintenanceAction, proc:Extracted",force,proc:Task_17002
+proc:Task_17002_action_free,"ompd:MaintenanceAction, proc:Extracted",free,proc:Task_17002
+proc:Task_17002_action_gently_lift,"ompd:MaintenanceAction, proc:Extracted",gently lift,proc:Task_17002
+proc:Task_17003_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_17003
+proc:Task_17004_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_17004
+proc:Task_17004_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_17004
+proc:Task_17005_action_push_down,"ompd:MaintenanceAction, proc:Extracted",push down,proc:Task_17005
+proc:Task_17005_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_17005
+proc:Task_17005_action_disconnect,"ompd:MaintenanceAction, proc:Extracted",disconnect,proc:Task_17005
+proc:Task_17005_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_17005
+proc:Task_17005_action_press,"ompd:MaintenanceAction, proc:Extracted",press,proc:Task_17005
+proc:Task_17006_action_disconnect,"ompd:MaintenanceAction, proc:Extracted",disconnect,proc:Task_17006
+proc:Task_17006_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_17006
+proc:Task_23031_action_use,"ompd:MaintenanceAction, proc:Extracted",use,proc:Task_23031
+proc:Task_23031_action_clear,"ompd:MaintenanceAction, proc:Extracted",clear,proc:Task_23031
+proc:Task_23032_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23032
+proc:Task_23032_action_depressing,"ompd:MaintenanceAction, proc:Extracted",depressing,proc:Task_23032
+proc:Task_23032_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_23032
+proc:Task_23032_action_detach,"ompd:MaintenanceAction, proc:Extracted",detach,proc:Task_23032
+proc:Task_23032_action_repeat_this_procedure,"ompd:MaintenanceAction, proc:Extracted",repeat this procedure,proc:Task_23032
+proc:Task_23033_action_loosen,"ompd:MaintenanceAction, proc:Extracted",loosen,proc:Task_23033
+proc:Task_23033_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23033
+proc:Task_23034_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_23034
+proc:Task_23034_action_lifting,"ompd:MaintenanceAction, proc:Extracted",lifting,proc:Task_23034
+proc:Task_23034_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23034
+proc:Task_23034_action_avoid_rocking,"ompd:MaintenanceAction, proc:Extracted",avoid rocking,proc:Task_23034
+proc:Task_23035_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23035
+proc:Task_23035_action_make_sure,"ompd:MaintenanceAction, proc:Extracted",make sure,proc:Task_23035
+proc:Task_23035_action_loosening,"ompd:MaintenanceAction, proc:Extracted",loosening,proc:Task_23035
+proc:Task_23036_action_apply,"ompd:MaintenanceAction, proc:Extracted",apply,proc:Task_23036
+proc:Task_23036_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_23036
+proc:Task_23036_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_23036
+proc:Task_23036_action_even_out,"ompd:MaintenanceAction, proc:Extracted",even out,proc:Task_23036
+proc:Task_23037_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_23037
+proc:Task_23037_action_apply,"ompd:MaintenanceAction, proc:Extracted",apply,proc:Task_23037
+proc:Task_23038_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_23038
+proc:Task_23038_action_tighten,"ompd:MaintenanceAction, proc:Extracted",tighten,proc:Task_23038
+proc:Task_23039_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_23039
+proc:Task_23039_action_pushing_down,"ompd:MaintenanceAction, proc:Extracted",pushing down,proc:Task_23039
+proc:Task_23039_action_twisting,"ompd:MaintenanceAction, proc:Extracted",twisting,proc:Task_23039
+proc:Task_23039_action_reconnect,"ompd:MaintenanceAction, proc:Extracted",reconnect,proc:Task_23039
+proc:Task_23039_action_snapping_it_back_into_place,"ompd:MaintenanceAction, proc:Extracted",snapping it back into place,proc:Task_23039
+proc:Task_27942_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_27942
+proc:Task_27942_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_27942
+proc:Task_27943_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_27943
+proc:Task_27943_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27943
+proc:Task_27944_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_27944
+proc:Task_27944_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_27944
+proc:Task_27944_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_27944
+proc:Task_27944_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27944
+proc:Task_27945_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27945
+proc:Task_27945_action_catch,"ompd:MaintenanceAction, proc:Extracted",catch,proc:Task_27945
+proc:Task_27945_action_loosen,"ompd:MaintenanceAction, proc:Extracted",loosen,proc:Task_27945
+proc:Task_27946_action_loosen,"ompd:MaintenanceAction, proc:Extracted",loosen,proc:Task_27946
+proc:Task_27947_action_wipe_off,"ompd:MaintenanceAction, proc:Extracted",wipe off,proc:Task_27947
+proc:Task_27947_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27947
+proc:Task_27947_action_replace,"ompd:MaintenanceAction, proc:Extracted",replace,proc:Task_27947
+proc:Task_27948_action_wipe_down,"ompd:MaintenanceAction, proc:Extracted",wipe down,proc:Task_27948
+proc:Task_27948_action_reinstall,"ompd:MaintenanceAction, proc:Extracted",reinstall,proc:Task_27948
+proc:Task_27948_action_tighten,"ompd:MaintenanceAction, proc:Extracted",tighten,proc:Task_27948
+proc:Task_27948_action_over-tighten,"ompd:MaintenanceAction, proc:Extracted",over-tighten,proc:Task_27948
+proc:Task_27949_action_move,"ompd:MaintenanceAction, proc:Extracted",move,proc:Task_27949
+proc:Task_27949_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27949
+proc:Task_27949_action_turning,"ompd:MaintenanceAction, proc:Extracted",turning,proc:Task_27949
+proc:Task_27949_action_by_hand,"ompd:MaintenanceAction, proc:Extracted",by hand,proc:Task_27949
+proc:Task_27949_action_loosen,"ompd:MaintenanceAction, proc:Extracted",loosen,proc:Task_27949
+proc:Task_27949_action_continue,"ompd:MaintenanceAction, proc:Extracted",continue,proc:Task_27949
+proc:Task_27949_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27949
+proc:Task_27949_action_allow,"ompd:MaintenanceAction, proc:Extracted",allow,proc:Task_27949
+proc:Task_27949_action_drain_out,"ompd:MaintenanceAction, proc:Extracted",drain out,proc:Task_27949
+proc:Task_27950_action_dip,"ompd:MaintenanceAction, proc:Extracted",dip,proc:Task_27950
+proc:Task_27950_action_spread,"ompd:MaintenanceAction, proc:Extracted",spread,proc:Task_27950
+proc:Task_27950_action_wipe_off,"ompd:MaintenanceAction, proc:Extracted",wipe off,proc:Task_27950
+proc:Task_27950_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27950
+proc:Task_27950_action_turn,"ompd:MaintenanceAction, proc:Extracted",turn,proc:Task_27950
+proc:Task_27951_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_27951
+proc:Task_27951_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27951
+proc:Task_27952_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27952
+proc:Task_27952_action_hold,"ompd:MaintenanceAction, proc:Extracted",hold,proc:Task_27952
+proc:Task_27952_action_pour,"ompd:MaintenanceAction, proc:Extracted",pour,proc:Task_27952
+proc:Task_27952_action_reinstall,"ompd:MaintenanceAction, proc:Extracted",reinstall,proc:Task_27952
+proc:Task_27952_action_turn,"ompd:MaintenanceAction, proc:Extracted",turn,proc:Task_27952
+proc:Task_27953_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27953
+proc:Task_27953_action_wipe,"ompd:MaintenanceAction, proc:Extracted",wipe,proc:Task_27953
+proc:Task_27953_action_reinsert,"ompd:MaintenanceAction, proc:Extracted",reinsert,proc:Task_27953
+proc:Task_27953_action_reinsert_the_dipstick,"ompd:MaintenanceAction, proc:Extracted",reinsert the dipstick,proc:Task_27953
+proc:Task_27953_action_add_or_remove,"ompd:MaintenanceAction, proc:Extracted",add or remove,proc:Task_27953
+proc:Task_27954_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27954
+proc:Task_27954_action_go_through,"ompd:MaintenanceAction, proc:Extracted",go through,proc:Task_27954
+proc:Task_27954_action_secure,"ompd:MaintenanceAction, proc:Extracted",secure,proc:Task_27954
+proc:Task_27954_action_pulling,"ompd:MaintenanceAction, proc:Extracted",pulling,proc:Task_27954
+proc:Task_27954_action_turning,"ompd:MaintenanceAction, proc:Extracted",turning,proc:Task_27954
+proc:Task_27955_action_hold,"ompd:MaintenanceAction, proc:Extracted",hold,proc:Task_27955
+proc:Task_27955_action_use,"ompd:MaintenanceAction, proc:Extracted",use,proc:Task_27955
+proc:Task_27955_action_return,"ompd:MaintenanceAction, proc:Extracted",return,proc:Task_27955
+proc:Task_27955_action_close,"ompd:MaintenanceAction, proc:Extracted",close,proc:Task_27955
+proc:Task_38904_action_open,"ompd:MaintenanceAction, proc:Extracted",open,proc:Task_38904
+proc:Task_38906_action_grip,"ompd:MaintenanceAction, proc:Extracted",grip,proc:Task_38906
+proc:Task_38906_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_38906
+proc:Task_38906_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_38906
+proc:Task_38907_action_locate,"ompd:MaintenanceAction, proc:Extracted",locate,proc:Task_38907
+proc:Task_38907_action_loosen,"ompd:MaintenanceAction, proc:Extracted",loosen,proc:Task_38907
+proc:Task_38908_action_wedge,"ompd:MaintenanceAction, proc:Extracted",wedge,proc:Task_38908
+proc:Task_38908_action_apply_pressure,"ompd:MaintenanceAction, proc:Extracted",apply pressure,proc:Task_38908
+proc:Task_39034_action_inspect,"ompd:MaintenanceAction, proc:Extracted",inspect,proc:Task_39034
+proc:Task_132385_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132385
+proc:Task_132385_action_attempting_to_remove,"ompd:MaintenanceAction, proc:Extracted",attempting to remove,proc:Task_132385
+proc:Task_132386_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_132386
+proc:Task_132186_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132186
+proc:Task_132186_action_insert,"ompd:MaintenanceAction, proc:Extracted",insert,proc:Task_132186
+proc:Task_132186_action_separate,"ompd:MaintenanceAction, proc:Extracted",separate,proc:Task_132186
+proc:Task_132186_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_132186
+proc:Task_132186_action_avoid_disconnecting_wire,"ompd:MaintenanceAction, proc:Extracted",avoid disconnecting wire,proc:Task_132186
+proc:Task_132550_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132550
+proc:Task_132560_action_locate,"ompd:MaintenanceAction, proc:Extracted",locate,proc:Task_132560
+proc:Task_132560_action_connecting,"ompd:MaintenanceAction, proc:Extracted",connecting,proc:Task_132560
+proc:Task_132560_action_cut,"ompd:MaintenanceAction, proc:Extracted",cut,proc:Task_132560
+proc:Task_132560_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132560
+proc:Task_132560_action_soldered,"ompd:MaintenanceAction, proc:Extracted",soldered,proc:Task_132560
+proc:Task_132560_action_reassembly,"ompd:MaintenanceAction, proc:Extracted",reassembly,proc:Task_132560
+proc:Task_132562_action_use,"ompd:MaintenanceAction, proc:Extracted",use,proc:Task_132562
+proc:Task_132562_action_raise,"ompd:MaintenanceAction, proc:Extracted",raise,proc:Task_132562
+proc:Task_132562_action_make,"ompd:MaintenanceAction, proc:Extracted",make,proc:Task_132562
+proc:Task_132562_action_pull_off,"ompd:MaintenanceAction, proc:Extracted",pull off,proc:Task_132562
+proc:Task_132563_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132563
+proc:Task_132516_action_unscrew,"ompd:MaintenanceAction, proc:Extracted",unscrew,proc:Task_132516
+proc:Task_132630_action_use,"ompd:MaintenanceAction, proc:Extracted",use,proc:Task_132630
+proc:Task_132630_action_hold,"ompd:MaintenanceAction, proc:Extracted",hold,proc:Task_132630
+proc:Task_132630_action_bend,"ompd:MaintenanceAction, proc:Extracted",bend,proc:Task_132630
+proc:Task_132631_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132631
+proc:Task_132632_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132632
+proc:Task_132633_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132633
+proc:Task_132633_action_separate,"ompd:MaintenanceAction, proc:Extracted",separate,proc:Task_132633
+proc:Task_132634_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_132634
+proc:Task_132634_action_examine,"ompd:MaintenanceAction, proc:Extracted",examine,proc:Task_132634
+proc:Task_132634_action_replace,"ompd:MaintenanceAction, proc:Extracted",replace,proc:Task_132634
+proc:Task_132634_action_look_for_scoring_mark,"ompd:MaintenanceAction, proc:Extracted",look for scoring mark,proc:Task_132634

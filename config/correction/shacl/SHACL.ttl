@@ -9,68 +9,8 @@
 @prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
 @prefix proc: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#>
 
-proc:NoTasksInProcedureShape
-    a sh:NodeShape ;
-    sh:targetClass ompd:MaintenanceProcedureProcess ; 
-    sh:property [           
-        sh:path ompd:hasDirectActivityPart ;    
-        sh:minCount 1 ;
-    ] ;
-    sh:closed false;
-    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
-.
-
-proc:OrphanedTask 
-    a sh:NodeShape ;
-    sh:targetClass ompd:MaintenanceTask ; 
-    sh:property [           
-        sh:path ompd:directActivityPartOf ;    
-        sh:minCount 1 ;
-        sh:or (
-         [
-           sh:class ompd:MaintenanceTask  ]
-         [
-           sh:class ompd:MaintenanceProcedureProcess  ]
-        )
-    ] ;
-    sh:closed false;
-    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
-.
-
-proc:TaskWithoutSequence a sh:NodeShape ;
-  sh:target [
-    a sh:SPARQLTarget ;
-    sh:select """
-    PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
-    SELECT ?this
-    WHERE {
-    ?this a ompd:MaintenanceTask .
-    ?this ompd:directActivityPartOf ?parent .
-    {
-        SELECT ?parent (COUNT(?this) AS ?taskCount)
-        WHERE {
-            ?this a ompd:MaintenanceTask .
-            ?this ompd:directActivityPartOf ?parent .
-    }
-    GROUP BY ?parent
-    HAVING (COUNT(?this) > 1)
-  }
-}""" ;
-  ] ;
-sh:or (
-		[
-			sh:path lis:before ;
-			sh:minCount 1 ;
-		]
-		[
-			sh:path lis:after ;
-			sh:minCount 1 ;
-		]
-) .
-
-
-proc:NoMaintainableItemShape a sh:NodeShape ;
-sh:targetClass ompd:MaintenanceProcedureProcess ;
+proc:NotAnInstructionalMaintenanceTask a sh:NodeShape ;
+sh:targetClass ompd:InstructionalMaintenanceTask ;
 sh:closed false;
 sh:sparql [
   sh:message "Procedure does not have a maintainable item.";
@@ -79,11 +19,10 @@ sh:sparql [
  	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
  	SELECT ?this 
    	  WHERE { 
-            ?this a ompd:MaintenanceProcedureProcess . 
+           ?this a ompd:InstructionalMaintenanceTask . 
            FILTER NOT EXISTS {
-            ?this lis:hasParticipant ?item .
-            ?item a ompd:MaintainableItem .
+            ?this lis:hasActivityPart ?item .
+            ?item a ompd:MaintenanceAction .
          }
-
    }""" ;
   ] ;

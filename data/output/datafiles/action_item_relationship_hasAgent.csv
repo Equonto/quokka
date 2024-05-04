@@ -1,0 +1,4 @@
+sourceIri,relation,targetIri
+proc:Task_27950_action_dip,ompd:hasAgent,proc:Task_27950_object_gloved_finger
+proc:Task_27950_action_spread,ompd:hasAgent,proc:Task_27950_object_gloved_finger
+proc:Task_132562_action_make,ompd:hasAgent,proc:Task_132562_object_copper_lead

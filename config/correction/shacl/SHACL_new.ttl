@@ -106,3 +106,35 @@ sh:sparql [
          }
    }""" ;
   ] ;
+
+
+proc:MaintenanceActionWithNoItem
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceAction ; 
+    sh:property [           
+        sh:path ompd:hasPatient ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.
+
+# TODO: check this one
+proc:ToolWithoutActivity a sh:NodeShape ;
+sh:targetClass ompd:Tool;
+sh:closed false;
+sh:sparql [
+  sh:message "Tool at task level exists with no agent";
+  sh:select """
+ 	PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
+ 	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
+ 	SELECT ?this 
+   	  WHERE { 
+           ?this a ompd:Tool . 
+           ?this a ompd:Extracted .
+           FILTER NOT EXISTS {
+              ?this lis:agentOf ?activity .
+              ?item a ompd:MaintenanceAction .
+          }
+   }""" ;
+  ] ;

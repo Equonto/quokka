@@ -9,20 +9,3 @@
 @prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
 @prefix proc: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#>
 
-proc:NotAnInstructionalMaintenanceTask a sh:NodeShape ;
-sh:targetClass ompd:InstructionalMaintenanceTask ;
-sh:closed false;
-sh:sparql [
-  sh:message "Procedure does not have a maintainable item.";
-  sh:select """
- 	PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
- 	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
- 	SELECT ?this 
-   	  WHERE { 
-           ?this a ompd:InstructionalMaintenanceTask . 
-           FILTER NOT EXISTS {
-            ?this lis:hasActivityPart ?item .
-            ?item a ompd:MaintenanceAction .
-         }
-   }""" ;
-  ] ;

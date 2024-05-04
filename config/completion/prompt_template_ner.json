@@ -15,7 +15,7 @@
           "OBSERVATION: an observe state (i.e. leaking, corrosion, rotating, damage).",
           "LOCATION: a position or area (i.e. right side, bottom, end, entrance, at the back of the engine).",
           "CARDINALITY: a number that indicates how many of an item to consider (i.e., two, all, any).",
-          "NOISE: a sentence or part of a sentence that does not describe the task.",
+          "NOISE: a sentence or part of a sentence that is ignored for tagging",
           "If a token or n-gram doesn't match any tag, don't include a tag for it in the output list.",
           "Here are some examples:",
           "Q: use a 3/8'' socket to remove all bolt.",
@@ -27,11 +27,11 @@
           "Q: apply an even layer of anti-sieze compound to the thread of the spark plug",
           "A: [{apply \\ ACTIVITY}, {anti-sieze compound \\ MATERIAL}, {thread \\ ITEM}, {spark plug \\ ITEM}]",
           "Q: hold the plastic funnel and pour new oil into the engine",
-          "A: [{hold \\ ACTIVITY}, {funnel \\ TOOL}, {pour \\ ACTIVITY}, {oil \\ MATERIAL}, {engine \\ ITEM}]",
+          "A: [{hold \\ ACTIVITY}, {funnel \\ TOOL}, {pour \\ ACTIVITY}, {new \\ NOISE}, {oil \\ MATERIAL}, {engine \\ ITEM}]",
           "Q: carefully inspect the passenger-side windshield wiper and pull it up by hand",
           "A: [{carefully \\ NOISE}, {inspect \\ ACTIVITY}, {passenger-side \\ LOCATION}, {windshield wiper \\ ITEM}, {pull \\ ACTIVITY}, {by hand \\ NOISE}]",
-          "Q: lift out the entire panel with a thin wrench and repeat this process for the other panel",
-          "A: [{lift \\ ACTIVITY}, {panel \\ ITEM}, {wrench \\ TOOL}, {repeat this process \\ ACTIVITY}]"
+          "Q: gently lift out the entire panel with a thin wrench and repeat this process for the other panel",
+          "A: [{gently \\ NOISE}, {lift \\ ACTIVITY}, {entire \\ NOISE}, {panel \\ ITEM}, {thin \\ NOISE}, {wrench \\ TOOL}, {repeat this process \\ ACTIVITY}]"
         ]
       },
       {

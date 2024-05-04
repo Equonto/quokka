@@ -19,12 +19,15 @@ class OpenAIEntityRecognition:
     
     def interperet_string_as_list_of_tuples(self, input: str) -> List[tuple]:
         if (input == "" or input == "[]" or "[" not in input):
+            print(input)
             return []
         input = input.strip()
         input = input.replace("\n", "")
         input = input.replace("[", "")
         input = input.replace("]", "")
-        input_list = input.split(",")
+
+        input_list = input.split("},")
+        input_list = [x + "}" for x in input_list] # re-add the closing bracket
         input_list = [tuple(x.split("\\")) for x in input_list]
         try:
             input_list = [(self.remove_symbols(x[0]), self.remove_symbols(x[1])) for x in input_list]

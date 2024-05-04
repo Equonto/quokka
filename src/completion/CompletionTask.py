@@ -48,7 +48,6 @@ class CompletionTask:
                         text = row[ie_details.text_field] # warn dynamic code
                         # if the row is a candidate for extraction, then extract entities
                         if self.pass_condition(ie_details.extraction_conditional_on_field, row):
-                            print(row)
                             
                             if (ie_details.text_preprocessing_tasks != None):
                                  text = self.run_preprocessing_tasks(text, ie_details.text_preprocessing_tasks)

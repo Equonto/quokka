@@ -20,16 +20,19 @@ class OpenAIRelationExtraction():
     def interperet_string_as_list_of_relations(self, input:str) -> List[Relation]:
         relations = []
         if (input == "" or input == "[]" or "[" not in input):
+            print(input)
             return []
         input = input.strip()
         input = input.replace("\n", "")
         input = input.replace("[", "")
         input = input.replace("]", "")
-        input_list = input.split(",")
+        input_list = input.split("},")
+        input_list = [x + "}" for x in input_list] # re-add the closing bracket
         for item in input_list:
             triple = item.split("\\")
             if (len(triple) != 3):
                 print("Invalid triple: " + item)
+                print(input)
                 return []
             processed_triple = [self.remove_symbols(node).strip() for node in triple]
             relation = Relation(processed_triple[0], processed_triple[1], processed_triple[2])

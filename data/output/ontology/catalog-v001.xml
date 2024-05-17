@@ -3,7 +3,7 @@
     <uri id="Imports Wizard Entry" name="http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology" uri="StaticProcedureOntology_v0_0_2.ttl"/>
     <uri id="Imports Wizard Entry" name="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="AnnotationVocabulary.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1714724818931" name="http://rds.posccaesar.org/ontology/lis14/ont/core" uri="iso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1714724818931" name="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="AnnotationVocabulary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1714374833058" name="http://rds.posccaesar.org/ontology/lis14/ont/core" uri="iso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1714374833058" name="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="AnnotationVocabulary.rdf"/>
     </group>
 </catalog>

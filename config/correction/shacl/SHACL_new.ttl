@@ -87,25 +87,28 @@ sh:sparql [
 
    }""" ;
   ] ;
+  .
+
 
 
 proc:NotAMaintenanceTask a sh:NodeShape ;
-sh:targetClass ompd:InstructionalMaintenanceTask ;
+sh:targetClass ompd:MaintenanceTask ;
 sh:closed false;
 sh:sparql [
-  sh:message "Procedure does not have a maintainable item.";
+  sh:message "Maintenance Task ({?this}) does not contain a maintenance action.";
   sh:select """
  	PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
  	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
  	SELECT ?this 
-   	  WHERE { 
-           ?this a ompd:InstructionalMaintenanceTask . 
+   	WHERE { 
+           ?this a ompd:MaintenanceTask . 
            FILTER NOT EXISTS {
             ?this lis:hasActivityPart ?item .
             ?item a ompd:MaintenanceAction .
-         }
-   }""" ;
+           }
+   	}""" ;
   ] ;
+  .
 
 
 proc:MaintenanceActionWithNoItem
@@ -138,3 +141,4 @@ sh:sparql [
           }
    }""" ;
   ] ;
+  .

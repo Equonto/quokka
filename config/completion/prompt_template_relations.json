@@ -17,13 +17,16 @@
           "Context: use a 3/8'' socket to remove the bolt and replace the engine.",
           "A: [{remove \\ HAS_AGENT \\ 3/8'' socket}, {remove \\ HAS_PATIENT \\ bolt}, {replace \\ HAS_PATIENT \\ engine}]",
           "Example 2:",
-          "Entities to use: push down/ACTIVITY, tab/ITEM, pull/ACTIVITY, connector/ITEM, disconnect/ACTIVITY, power lock switch/ITEM",
+          "Entities to use: push down/ACTIVITY, tab/ITEM, pull/ACTIVITY, ignition coil/ITEM, connector/ITEM, disconnect/ACTIVITY, power lock switch/ITEM",
           "Context: push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .",
           "A: [{push down \\ HAS_PATIENT \\ tab}, {pull \\ HAS_PATIENT \\ connector}, {disconnect \\ HAS_PATIENT \\ power lock switch}]",
           "Example 3:",
           "Entities to use: flathead screwdriver/TOOL, remove/ACTIVITY, cap/ITEM, windshield wiper/ITEM",
           "Context: use a flathead screwdriver to remove the cap from the windshield wiper .",
-          "A: [{remove \\ HAS_AGENT \\ flathead screwdriver }, {remove \\ HAS_PATIENT \\ cap}, {remove \\ HAS_PARTICIPANT \\ windshield wiper}]"
+          "A: [{remove \\ HAS_AGENT \\ flathead screwdriver }, {remove \\ HAS_PATIENT \\ cap}, {remove \\ HAS_PARTICIPNT \\ windshield wiper}]",
+          "Entities to use: 8 mm deep socket/TOOL, loosen/ACTIVITY, ignition coil/ITEM, mounting bolt/ITEM",
+          "Context: use an 8 mm deep socket to loosen the four ignition coil mounting bolt .",
+          "A: [{loosen/HAS_AGENT/8 mm deep socket}, {loosen/HAS_PARTICIPANT/ignition coil}, {loosen/HAS_PATIENT/mounting bolt}]"
         ]
       },
       {

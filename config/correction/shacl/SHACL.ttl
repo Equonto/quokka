@@ -9,3 +9,14 @@
 @prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
 @prefix proc: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#>
 
+
+proc:MaintenanceActionWithNoItem
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceAction ; 
+    sh:property [           
+        sh:path ompd:hasPatient ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.

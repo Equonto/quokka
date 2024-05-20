@@ -11,19 +11,15 @@ in a pinch , you can make this tool with a phillips driver bit and end wrench .
 use a 2 phillips screwdriver to remove the front two screw .
 gently unplug and lift out the automatic transmission control unit .
 remove the plastic phillips screw towards the front of the door panel .
-this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
 use a flathead screwdriver to remove the plastic clip that hold the screw .
 unscrew the phillips screw in the bottom of the door panel cup .
 lift the cup out of the the door panel .
 insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .
 unscrew the phillips screw underneath the screw cover .
 remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
-the cover is held in place by a metal clip , so some force will be required to free it .
 in addition to the metal clip , two small tab at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tab from their respective hole in the door .
 using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
-multiple clip hold the door panel in place . the door panel will jerk a each clip is freed from it position .
 pull the bottom of the door panel away from the door , and lift the entire panel off the door .
-do not try to completely remove the door panel yet , a it is still attached by a number of electrical connector .
 push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .
 use the same method described above to remove the connector for the tweeter .
 press the tab on the bottom of the larger green connector to disconnect the side-view mirror control .
@@ -36,7 +32,6 @@ repeat this procedure for the remaining three ignition coil .
 use an 8 mm deep socket to loosen the four ignition coil mounting bolt .
 once the bolt are loose , they can be removed by hand .
 twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
-avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
 use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
 apply dielectric grease to the ribbed portion of the insulator .
 gently place the spark plug boot over the rib and twist the two piece back and forth to even out the layer of dielectric grease .
@@ -60,7 +55,6 @@ remove the old drain plug gasket and replace it , making sure that the new gaske
 wipe down the area around the drain plug with a clean rag or towel .
 reinstall the drain plug and tighten it a much a you can by hand .
 use a 17 mm box end wrench to tighten the drain plug until it is snug .
-do not over-tighten the drain plug . doing so may strip the thread or crack the oil pan . you can always come back later and tighten the drain plug more if needed .
 move the oil drain pan so that it is directly under the oil filter .
 remove the oil filter by turning it counterclockwise until it come free .
 if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .
@@ -97,10 +91,7 @@ locate the copper lead connecting the stator to the bridge assembly . there are 
 these lead must be cut in order to remove the bridge from the alternator . these lead will have to be soldered back together on reassembly . keep the cut a clean a possible .
 use wire cutter to cut all 6 of the lead on the perimeter of the bridge .
 if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
-be extremely careful with the pry bar . excessive force will damage the bridge assembly .
-make sure the cut end of the copper lead are straight to make bridge assembly easier to pull off .
 remove the lower section of the bridge assembly
-use of a pry bar may be necessary . be gentle .
 use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolt running along the outer perimeter of the alternator
 use a c-clamp or another fixture to hold the pulley in place
 be gentle with the clamp . excessive force will bend the pulley out of shape

@@ -12,6 +12,7 @@
           "HAS_PATIENT: The object that the activity is performed on",
           "HAS_AGENT: The object that is used to perform the activity",
           "HAS_PARTICIPANT: An object that participtes in the activity but is not being acted on (holds between an activity and an item)",
+          "IMPORTANT: if there is an ACTIVITY in the entities to use list, there should be at least one HAS_PATIENT triple in the output",
           "Example 1:",
           "Entities to use: [use/ACTIVITY, 3/8'' socket/TOOL, remove/ACTIVITY, bolt/ITEM, replace/ACTIVITY, engine/ITEM]",
           "Context: use a 3/8'' socket to remove the bolt and replace the engine.",

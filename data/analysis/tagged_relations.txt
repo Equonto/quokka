@@ -4,7 +4,7 @@ remove/HAS_AGENT/2 phillips screwdriver, remove/HAS_PATIENT/screw,
 
 Raw Text:remove the rubber gasket from the rain tray .
 Preprocessed Text:remove the rubber gasket from the rain tray .
-remove/HAS_PATIENT/rubber gasket, remove/HAS_PARTICIPANT/rain tray, 
+remove/HAS_PATIENT/rubber gasket, 
 
 Raw Text:lift the tray upwards and away from the vehicle .
 Preprocessed Text:lift the tray upwards and away from the vehicle .
@@ -16,7 +16,7 @@ remove/HAS_AGENT/flathead screwdriver, remove/HAS_PATIENT/cap, remove/HAS_PARTIC
 
 Raw Text:use a socket wrench to release the passenger-side windshield wiper locking nut .
 Preprocessed Text:use a socket wrench to release the passenger-side windshield wiper locking nut .
-release/HAS_AGENT/socket wrench, release/HAS_PATIENT/locking nut, release/HAS_PARTICIPANT/windshield wiper, 
+release/HAS_AGENT/socket wrench, release/HAS_PATIENT/locking nut, 
 
 Raw Text:gently lift up the passenger-side windshield wiper .
 Preprocessed Text:gently lift up the passenger-side windshield wiper .
@@ -28,7 +28,7 @@ Preprocessed Text:remove the driver-side windshield wiper in the same fashion .
 
 Raw Text:lift up the plastic cover .
 Preprocessed Text:lift up the plastic cover .
-lift/HAS_PATIENT/plastic cover, 
+lift up/HAS_PATIENT/plastic cover, 
 
 Raw Text:use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .
 Preprocessed Text:use an offset phillips screwdriver to remove a screw in the back of the automatic control unit cover .
@@ -36,27 +36,23 @@ remove/HAS_AGENT/offset phillips screwdriver, remove/HAS_PATIENT/screw,
 
 Raw Text:in a pinch , you can make this tool with a phillips driver bit and end wrench .
 Preprocessed Text:in a pinch , you can make this tool with a phillips driver bit and end wrench .
-make/HAS_AGENT/phillips driver bit, make/HAS_PARTICIPANT/end wrench, make/HAS_PATIENT/tool, 
+make/HAS_PATIENT/tool, make/HAS_AGENT/phillips driver bit, make/HAS_PARTICIPANT/end wrench, 
 
 Raw Text:use a 2 phillips screwdriver to remove the front two screws .
 Preprocessed Text:use a 2 phillips screwdriver to remove the front two screw .
-remove/HAS_AGENT/2 phillips screwdriver, 
+remove/HAS_AGENT/2 phillips screwdriver, remove/HAS_PATIENT/screw, 
 
 Raw Text:gently unplug and lift out the automatic transmission control unit .
 Preprocessed Text:gently unplug and lift out the automatic transmission control unit .
-unplug/HAS_PATIENT/automatic transmission control unit, lift out/HAS_PATIENT/automatic transmission control unit, 
+unplug/HAS_PATIENT/automatic transmission control unit, lift/HAS_PATIENT/automatic transmission control unit, 
 
 Raw Text:remove the plastic phillips screw towards the front of the door panel .
 Preprocessed Text:remove the plastic phillips screw towards the front of the door panel .
 remove/HAS_PATIENT/plastic phillips screw, 
 
-Raw Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
-Preprocessed Text:this screw is part of a two-piece securing mechanism . do not apply force directly onto the screw head , because it will continue to slip into the plastic clip .
-do not apply/HAS_PATIENT/force, do not apply/HAS_PATIENT/screw head, continue/HAS_PATIENT/screw head, continue/HAS_AGENT/plastic clip, slip/HAS_PATIENT/screw head, slip/HAS_AGENT/plastic clip, this screw/HAS_PARTICIPANT/two-piece securing mechanism, 
-
 Raw Text:use a flathead screwdriver to remove the plastic clip that holds the screw .
 Preprocessed Text:use a flathead screwdriver to remove the plastic clip that hold the screw .
-remove/HAS_AGENT/flathead screwdriver, remove/HAS_PATIENT/plastic clip, hold/HAS_PARTICIPANT/screw, 
+remove/HAS_AGENT/flathead screwdriver, remove/HAS_PATIENT/plastic clip, hold/HAS_PATIENT/screw, 
 
 Raw Text:unscrew the phillips screw in the bottom of the door panel cup .
 Preprocessed Text:unscrew the phillips screw in the bottom of the door panel cup .
@@ -72,15 +68,11 @@ insert/HAS_AGENT/flathead screwdriver blade, insert/HAS_PATIENT/plastic screw co
 
 Raw Text:unscrew the phillips screw underneath the screw cover .
 Preprocessed Text:unscrew the phillips screw underneath the screw cover .
-unscrew/HAS_PATIENT/phillips screw, 
+unscrew/HAS_PATIENT/phillips screw, unscrew/HAS_PARTICIPANT/screw cover, 
 
 Raw Text:remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
 Preprocessed Text:remove the plastic cover at the base of the c-pillar by pulling it directly away from the window .
 remove/HAS_PATIENT/plastic cover, remove/HAS_PARTICIPANT/c-pillar, pulling it directly away from the window/HAS_PATIENT/plastic cover, 
-
-Raw Text:the cover is held in place by a metal clip , so some force will be required to free it .
-Preprocessed Text:the cover is held in place by a metal clip , so some force will be required to free it .
-free/HAS_AGENT/force, 
 
 Raw Text:in addition to the metal clip , two small tabs at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tabs from their respective holes in the door .
 Preprocessed Text:in addition to the metal clip , two small tab at the bottom of the cover keep it in place . gently lift the corner of the door panel to remove the tab from their respective hole in the door .
@@ -90,17 +82,9 @@ Raw Text:using firm pressure , pull the door panel away from the door . start at
 Preprocessed Text:using firm pressure , pull the door panel away from the door . start at the top right , and work down the side , across the bottom , and up the opposite side .
 pull/HAS_PATIENT/door panel, work down the side/HAS_PATIENT/door panel, 
 
-Raw Text:multiple clips hold the door panel in place . the door panel will jerk as each clip is freed from its position .
-Preprocessed Text:multiple clip hold the door panel in place . the door panel will jerk a each clip is freed from it position .
-hold/HAS_PATIENT/door panel, jerk/HAS_PATIENT/each clip, freed/HAS_PARTICIPANT/door panel, 
-
 Raw Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
 Preprocessed Text:pull the bottom of the door panel away from the door , and lift the entire panel off the door .
 pull/HAS_PATIENT/door panel, lift/HAS_PATIENT/panel, 
-
-Raw Text:do not try to completely remove the door panel yet , as it is still attached by a number of electrical connectors .
-Preprocessed Text:do not try to completely remove the door panel yet , a it is still attached by a number of electrical connector .
-
 
 Raw Text:push down on the small tab and pull the connector directly away from its socket to disconnect the power lock switch .
 Preprocessed Text:push down on the small tab and pull the connector directly away from it socket to disconnect the power lock switch .
@@ -112,7 +96,7 @@ remove/HAS_PATIENT/connector, remove/HAS_PARTICIPANT/tweeter,
 
 Raw Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror controls .
 Preprocessed Text:press the tab on the bottom of the larger green connector to disconnect the side-view mirror control .
-press/HAS_PATIENT/tab, disconnect/HAS_PATIENT/side-view mirror control, disconnect/HAS_AGENT/larger green connector, 
+press/HAS_PATIENT/tab, disconnect/HAS_PATIENT/larger green connector, disconnect/HAS_PARTICIPANT/side-view mirror control, 
 
 Raw Text:disconnect the power window connector .
 Preprocessed Text:disconnect the power window connector .
@@ -132,11 +116,11 @@ remove/HAS_PATIENT/ignition coil, remove/HAS_PATIENT/electrical connector, depre
 
 Raw Text:pull the connector straight away from the ignition coil to detach it .
 Preprocessed Text:pull the connector straight away from the ignition coil to detach it .
-pull/HAS_PATIENT/connector, detach/HAS_PATIENT/connector, 
+pull/HAS_PATIENT/connector, 
 
 Raw Text:repeat this procedure for the remaining three ignition coils .
 Preprocessed Text:repeat this procedure for the remaining three ignition coil .
-repeat this procedure/HAS_PATIENT/ignition coil, repeat this procedure/HAS_PATIENT/ignition coil, repeat this procedure/HAS_PATIENT/ignition coil, 
+repeat this procedure/HAS_PATIENT/ignition coil, 
 
 Raw Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolts .
 Preprocessed Text:use an 8 mm deep socket to loosen the four ignition coil mounting bolt .
@@ -144,35 +128,31 @@ loosen/HAS_AGENT/8 mm deep socket, loosen/HAS_PARTICIPANT/ignition coil, loosen/
 
 Raw Text:once the bolts are loose , they can be removed by hand .
 Preprocessed Text:once the bolt are loose , they can be removed by hand .
-removed/HAS_AGENT/hand, removed/HAS_PATIENT/bolt, 
+remove/HAS_AGENT/by hand, remove/HAS_PATIENT/bolt, 
 
 Raw Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
 Preprocessed Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
 twist/HAS_PATIENT/ignition coil, twist/HAS_PATIENT/spark plug boot, lifting/HAS_PATIENT/ignition coil, remove/HAS_PATIENT/ignition coil, 
 
-Raw Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
-Preprocessed Text:avoid rocking the coil and boot side-to-side , since this could break the existing spark plug .
-break/HAS_PATIENT/spark plug, 
-
 Raw Text:use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
 Preprocessed Text:use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
-remove/HAS_AGENT/ratcheting socket wrench, remove/HAS_AGENT/extender, remove/HAS_AGENT/5 or 8 spark plug socket, remove/HAS_PATIENT/existing spark plug, make sure/HAS_PARTICIPANT/rubber end, 
+remove/HAS_AGENT/ratcheting socket wrench, remove/HAS_AGENT/extender, remove/HAS_AGENT/5 or 8 spark plug socket, remove/HAS_PATIENT/existing spark plug, loosening/HAS_PARTICIPANT/rubber end, loosening/HAS_PATIENT/existing spark plug, 
 
 Raw Text:apply dielectric grease to the ribbed portion of the insulator .
 Preprocessed Text:apply dielectric grease to the ribbed portion of the insulator .
-apply/HAS_PATIENT/ribbed portion, apply/HAS_PARTICIPANT/insulator, 
+apply/HAS_PATIENT/ribbed portion, apply/HAS_AGENT/dielectric grease, apply/HAS_PARTICIPANT/insulator, 
 
 Raw Text:gently place the spark plug boot over the ribs and twist the two pieces back and forth to even out the layer of dielectric grease .
 Preprocessed Text:gently place the spark plug boot over the rib and twist the two piece back and forth to even out the layer of dielectric grease .
-place/HAS_PATIENT/spark plug boot, place/HAS_PARTICIPANT/rib, twist/HAS_PATIENT/two piece, even out/HAS_PARTICIPANT/layer, 
+place/HAS_PATIENT/spark plug boot, place/HAS_PARTICIPANT/rib, twist/HAS_PATIENT/two piece, even out/HAS_PATIENT/layer, even out/HAS_PARTICIPANT/dielectric grease, 
 
 Raw Text:place the new spark plug firmly in the spark plug socket so that the threaded end sticks out .
 Preprocessed Text:place the new spark plug firmly in the spark plug socket so that the threaded end stick out .
-place/HAS_PATIENT/new spark plug, place/HAS_AGENT/spark plug socket, stick out/HAS_PARTICIPANT/threaded end, 
+place/HAS_PATIENT/new spark plug, place/HAS_AGENT/spark plug socket, stick out/HAS_PATIENT/threaded end, 
 
 Raw Text:apply an even layer of anti-seize compound to the threads of the spark plug .
 Preprocessed Text:apply an even layer of anti-seize compound to the thread of the spark plug .
-apply/HAS_PATIENT/thread, apply/HAS_PARTICIPANT/spark plug, 
+apply/HAS_AGENT/anti-seize compound, apply/HAS_PATIENT/thread, apply/HAS_PARTICIPANT/spark plug, 
 
 Raw Text:place the new spark plug into the cylinder head and tighten it by hand as much as you can .
 Preprocessed Text:place the new spark plug into the cylinder head and tighten it by hand a much a you can .
@@ -188,7 +168,7 @@ place/HAS_PATIENT/ignition coil, place/HAS_PATIENT/dust boot, place/HAS_AGENT/pu
 
 Raw Text:reconnect the ignition coil electrical connector by snapping it back into place .
 Preprocessed Text:reconnect the ignition coil electrical connector by snapping it back into place .
-reconnect/HAS_PATIENT/ignition coil, reconnect/HAS_PARTICIPANT/electrical connector, snapping it back into place/HAS_AGENT/electrical connector, 
+reconnect/HAS_PATIENT/ignition coil, reconnect/HAS_PATIENT/electrical connector, snap/HAS_PATIENT/electrical connector, 
 
 Raw Text:pull the hood release latch at the front right of the tractor and lift the hood up .
 Preprocessed Text:pull the hood release latch at the front right of the tractor and lift the hood up .
@@ -204,7 +184,7 @@ pull/HAS_PATIENT/each tab, twist/HAS_PATIENT/each tab, fit/HAS_PATIENT/each tab,
 
 Raw Text:pull the top of the engine panel straight out until it is free from the tabs .
 Preprocessed Text:pull the top of the engine panel straight out until it is free from the tab .
-pull/HAS_PATIENT/top of the engine panel, 
+pull/HAS_PATIENT/engine panel, pull/HAS_PARTICIPANT/tab, 
 
 Raw Text:lift the engine panel up to remove it and set it aside .
 Preprocessed Text:lift the engine panel up to remove it and set it aside .
@@ -216,19 +196,19 @@ the drain plug/HAS_PATIENT/17 mm hex bolt,
 
 Raw Text:place an oil drain pan underneath the drain plug to catch the oil when it begins to drain .
 Preprocessed Text:place an oil drain pan underneath the drain plug to catch the oil when it begin to drain .
-place/HAS_PATIENT/oil drain pan, begin to drain/HAS_AGENT/oil drain pan, 
+place/HAS_PATIENT/oil drain pan, catch/HAS_PATIENT/oil, begin to drain/HAS_PATIENT/oil, 
 
 Raw Text:use a 17 mm box end wrench to loosen the drain plug 3 /4 of a turn .
 Preprocessed Text:use a 17 mm box end wrench to loosen the drain plug 3  or 4 of a turn .
-loosen/HAS_AGENT/17 mm box end wrench, loosen/HAS_PATIENT/drain plug, 
+loosen/HAS_AGENT/use a 17 mm box end wrench, loosen/HAS_PATIENT/drain plug, 
 
 Raw Text:loosen the drain plug by hand until it comes out and oil begins to drain from the oil pan .
 Preprocessed Text:loosen the drain plug by hand until it come out and oil begin to drain from the oil pan .
-loosen/HAS_AGENT/by hand, loosen/HAS_PATIENT/drain plug, come out/HAS_PATIENT/drain plug, drain/HAS_PARTICIPANT/oil pan, 
+loosen/HAS_AGENT/by hand, loosen/HAS_PATIENT/drain plug, come out/HAS_PATIENT/drain plug, begin/HAS_PATIENT/oil, drain/HAS_PARTICIPANT/oil pan, 
 
 Raw Text:while the oil is draining , wipe off the drain plug with a clean rag or towel .
 Preprocessed Text:while the oil is draining , wipe off the drain plug with a clean rag or towel .
-wipe/HAS_PATIENT/drain plug, 
+wipe/HAS_PATIENT/drain plug, wipe/HAS_AGENT/rag, wipe/HAS_AGENT/towel, 
 
 Raw Text:remove the old drain plug gasket and replace it , making sure that the new gasket fits over the threads of the drain plug .
 Preprocessed Text:remove the old drain plug gasket and replace it , making sure that the new gasket fit over the thread of the drain plug .
@@ -236,19 +216,15 @@ remove/HAS_PATIENT/old drain plug gasket, replace/HAS_PATIENT/new gasket,
 
 Raw Text:wipe down the area around the drain plug with a clean rag or towel .
 Preprocessed Text:wipe down the area around the drain plug with a clean rag or towel .
-
+wipe down/HAS_AGENT/towel, 
 
 Raw Text:reinstall the drain plug and tighten it as much as you can by hand .
 Preprocessed Text:reinstall the drain plug and tighten it a much a you can by hand .
-reinstall/HAS_PATIENT/drain plug, tighten/HAS_AGENT/hand, tighten/HAS_PATIENT/drain plug, 
+reinstall/HAS_PATIENT/drain plug, tighten/HAS_AGENT/by hand, tighten/HAS_PATIENT/drain plug, 
 
 Raw Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
 Preprocessed Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
 tighten/HAS_AGENT/17 mm box end wrench, tighten/HAS_PATIENT/drain plug, 
-
-Raw Text:do not over-tighten the drain plug . doing so may strip the threads or crack the oil pan . you can always come back later and tighten the drain plug more if needed .
-Preprocessed Text:do not over-tighten the drain plug . doing so may strip the thread or crack the oil pan . you can always come back later and tighten the drain plug more if needed .
-tighten/HAS_PATIENT/drain plug, tighten/HAS_PATIENT/drain plug, 
 
 Raw Text:move the oil drain pan so that it is directly under the oil filter .
 Preprocessed Text:move the oil drain pan so that it is directly under the oil filter .
@@ -256,31 +232,31 @@ move/HAS_PATIENT/oil drain pan,
 
 Raw Text:remove the oil filter by turning it counterclockwise until it comes free .
 Preprocessed Text:remove the oil filter by turning it counterclockwise until it come free .
-remove/HAS_PATIENT/oil filter, turning it counterclockwise/HAS_AGENT/remove, 
+remove/HAS_PATIENT/oil filter, turning/HAS_AGENT/oil filter, 
 
 Raw Text:if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .
 Preprocessed Text:if the filter is on too tightly to remove by hand , use an oil filter wrench to loosen it first , then continue to remove it by hand .
-remove/HAS_PATIENT/filter, loosen/HAS_AGENT/oil filter wrench, loosen/HAS_PATIENT/filter, continue/HAS_PATIENT/filter, 
+remove/HAS_AGENT/oil filter wrench, remove/HAS_PATIENT/filter, loosen/HAS_AGENT/oil filter wrench, loosen/HAS_PATIENT/filter, continue/HAS_PATIENT/filter, 
 
 Raw Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
 Preprocessed Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
-place/HAS_PATIENT/oil filter, place/HAS_PARTICIPANT/oil drain pan, allow/HAS_AGENT/oil filter, allow/HAS_PARTICIPANT/oil drain pan, 
+place/HAS_PATIENT/oil filter, place/HAS_PARTICIPANT/oil drain pan, allow/HAS_PATIENT/old oil, allow/HAS_AGENT/oil filter, allow/HAS_AGENT/oil drain pan, drain out/HAS_PATIENT/old oil, 
 
 Raw Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter's gasket .
 Preprocessed Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter 's gasket .
-dip/HAS_AGENT/gloved finger, spread/HAS_PATIENT/layer, spread/HAS_PARTICIPANT/new oil filter, spread/HAS_PARTICIPANT/gasket, 
+dip/HAS_AGENT/gloved finger, dip/HAS_PATIENT/fresh bottle of oil, spread/HAS_AGENT/gloved finger, spread/HAS_PATIENT/layer, spread/HAS_PARTICIPANT/new oil filter, spread/HAS_PARTICIPANT/gasket, 
 
 Raw Text:wipe off the oil filter threads and contact area on the engine with a clean rag or towel .
 Preprocessed Text:wipe off the oil filter thread and contact area on the engine with a clean rag or towel .
-wipe/HAS_PARTICIPANT/engine, 
+wipe/HAS_PATIENT/oil filter, wipe/HAS_PARTICIPANT/thread, wipe/HAS_PARTICIPANT/engine, wipe/HAS_AGENT/rag, wipe/HAS_AGENT/towel, 
 
 Raw Text:place the new oil filter over the threads and turn it clockwise until it is snug .
 Preprocessed Text:place the new oil filter over the thread and turn it clockwise until it is snug .
-place/HAS_PATIENT/oil filter, place/HAS_PARTICIPANT/thread, turn/HAS_PATIENT/oil filter, 
+place/HAS_PATIENT/oil filter, turn/HAS_PATIENT/oil filter, turn/HAS_AGENT/oil filter, turn/HAS_PATIENT/thread, 
 
 Raw Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
 Preprocessed Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
-twist/HAS_PATIENT/oil filler, remove/HAS_AGENT/twist, remove/HAS_PATIENT/cap, remove/HAS_PARTICIPANT/valve cover, 
+twist/HAS_PATIENT/oil filler cap, remove/HAS_AGENT/twist, remove/HAS_PATIENT/valve cover, 
 
 Raw Text:place a funnel in the oil filler hole .
 Preprocessed Text:place a funnel in the oil filler hole .
@@ -288,7 +264,7 @@ place/HAS_PATIENT/funnel,
 
 Raw Text:hold the funnel with one hand to steady it and pour 5.1 quarts of 15 w-40 oil into the funnel .
 Preprocessed Text:hold the funnel with one hand to steady it and pour 5.1 quart of 15 w-40 oil into the funnel .
-hold/HAS_PATIENT/funnel, pour/HAS_AGENT/funnel, 
+hold/HAS_PATIENT/funnel, pour/HAS_PATIENT/15 w-40 oil, 
 
 Raw Text:reinstall the oil filler cap and turn it clockwise until it is snug .
 Preprocessed Text:reinstall the oil filler cap and turn it clockwise until it is snug .
@@ -296,11 +272,11 @@ Preprocessed Text:reinstall the oil filler cap and turn it clockwise until it is
 
 Raw Text:remove the dipstick , wipe it off with a clean rag or towel , reinsert it , and remove it again .
 Preprocessed Text:remove the dipstick , wipe it off with a clean rag or towel , reinsert it , and remove it again .
-remove/HAS_PATIENT/dipstick, wipe/HAS_PATIENT/dipstick, reinsert/HAS_PATIENT/dipstick, remove/HAS_PATIENT/dipstick, 
+remove/HAS_PATIENT/dipstick, wipe/HAS_PATIENT/dipstick, wipe/HAS_AGENT/rag, wipe/HAS_AGENT/towel, reinsert/HAS_PATIENT/dipstick, remove/HAS_PATIENT/dipstick, 
 
 Raw Text:reinsert the dipstick and add or remove any oil , if necessary .
 Preprocessed Text:reinsert the dipstick and add or remove any oil , if necessary .
-
+reinsert/HAS_PATIENT/dipstick, add/HAS_PATIENT/oil, remove/HAS_PATIENT/oil, 
 
 Raw Text:place the engine panel back in its original location , making sure the two retaining tabs go through their respective slots in the panel .
 Preprocessed Text:place the engine panel back in it original location , making sure the two retaining tab go through their respective slot in the panel .
@@ -316,7 +292,7 @@ hold/HAS_PATIENT/hood, use/HAS_PATIENT/hood prop, return/HAS_PATIENT/hood prop,
 
 Raw Text:close the hood firmly and make sure that the hood latch engages .
 Preprocessed Text:close the hood firmly and make sure that the hood latch engages .
-close/HAS_PATIENT/hood, make sure/HAS_PATIENT/hood latch, make sure/HAS_AGENT/hood latch, make sure/HAS_PARTICIPANT/hood latch, engages/HAS_PATIENT/hood latch, 
+close/HAS_PATIENT/hood, make sure/HAS_PATIENT/hood latch, make sure/HAS_AGENT/hood latch, engages/HAS_PATIENT/hood latch, 
 
 Raw Text:open the rear part of the middle console .
 Preprocessed Text:open the rear part of the middle console .
@@ -324,7 +300,7 @@ open/HAS_PATIENT/rear part, open/HAS_PARTICIPANT/middle console,
 
 Raw Text:grip the right side of the console and pull up towards the passenger seat to remove it .
 Preprocessed Text:grip the right side of the console and pull up towards the passenger seat to remove it .
-pull/HAS_PATIENT/console, remove/HAS_AGENT/grip, remove/HAS_PARTICIPANT/pull, 
+pull/HAS_PATIENT/console, remove/HAS_PATIENT/console, 
 
 Raw Text:locate the two bolts under the air conditioning controls at the bottom of the face plate .
 Preprocessed Text:locate the two bolt under the air conditioning control at the bottom of the face plate .
@@ -336,11 +312,11 @@ loosen/HAS_AGENT/basic socket wrench, loosen/HAS_PATIENT/bolt,
 
 Raw Text:wedge a spudger or plastic opening tool ( in place of the screwdriver shown ) under the top of the face plate .
 Preprocessed Text:wedge a spudger or plastic opening tool ( in place of the screwdriver shown ) under the top of the face plate .
-wedge/HAS_AGENT/spudger, wedge/HAS_AGENT/plastic opening tool, wedge/HAS_PATIENT/face plate, 
+wedge/HAS_PATIENT/face plate, wedge/HAS_AGENT/spudger, wedge/HAS_AGENT/plastic opening tool, 
 
 Raw Text:apply pressure until the corners pop out of place .
 Preprocessed Text:apply pressure until the corner pop out of place .
-apply pressure/HAS_PATIENT/corner, pop out of place/HAS_AGENT/apply pressure, 
+apply pressure/HAS_PATIENT/corner, pop out of place/HAS_PATIENT/corner, 
 
 Raw Text:inspect the interior of the center console for damaged wires or other faulty components .
 Preprocessed Text:inspect the interior of the center console for damaged wire or other faulty component .
@@ -348,7 +324,7 @@ inspect/HAS_PATIENT/center console, inspect/HAS_PARTICIPANT/damaged wire, inspec
 
 Raw Text:remove 4 , 7.9 mm nuts using a 7.9 mm socket driver head
 Preprocessed Text:remove 4 , 7.9 mm nut using a 7.9 mm socket driver head
-remove/HAS_PATIENT/7.9 mm nut, remove/HAS_AGENT/7.9 mm socket driver head, 
+remove/HAS_PATIENT/4 7.9 mm nut, remove/HAS_AGENT/7.9 mm socket driver head, 
 
 Raw Text:one of the nuts is placed underneath the l-bracket . remove the l-bracket and the 3 circled nuts before attempting to remove the remaining nut
 Preprocessed Text:one of the nut is placed underneath the l-bracket . remove the l-bracket and the 3 circled nut before attempting to remove the remaining nut
@@ -364,7 +340,7 @@ remove/HAS_AGENT/2 phillips screwdriver, remove/HAS_PATIENT/6 mm screw, hold/HAS
 
 Raw Text:remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brushes from the rotor . pull it out without using much force to avoid damage .
 Preprocessed Text:remove the brush cover assembly from the alternator . you might need to insert a needle in the small hole to separate the brush from the rotor . pull it out without using much force to avoid damage .
-remove/HAS_PATIENT/brush cover assembly, insert/HAS_AGENT/needle, separate/HAS_PARTICIPANT/brush, separate/HAS_PATIENT/rotor, pull/HAS_AGENT/needle, pull/HAS_PATIENT/brush, 
+remove/HAS_PATIENT/brush cover assembly, insert/HAS_AGENT/needle, separate/HAS_PATIENT/brush, separate/HAS_PARTICIPANT/rotor, pull/HAS_PATIENT/brush, 
 
 Raw Text:avoid disconnecting wires unless otherwise specified !
 Preprocessed Text:avoid disconnecting wire unless otherwise specified !
@@ -376,39 +352,27 @@ remove/HAS_AGENT/2 phillips screwdriver, remove/HAS_PATIENT/6 mm screw,
 
 Raw Text:locate and unscrew the 3 , 6 mm screws holding the bridge assembly in place
 Preprocessed Text:locate and unscrew the 3 , 6 mm screw holding the bridge assembly in place
-locate/HAS_PATIENT/3 6 mm screw, unscrew/HAS_PATIENT/3 6 mm screw, 
+unscrew/HAS_PATIENT/3 6 mm screw, 
 
 Raw Text:locate the copper leads connecting the stator to the bridge assembly . there are 3 sets of 2 leads on the perimeter of the bridge , making 6 leads total .
 Preprocessed Text:locate the copper lead connecting the stator to the bridge assembly . there are 3 set of 2 lead on the perimeter of the bridge , making 6 lead total .
-locate/HAS_PATIENT/copper lead, connecting/HAS_PARTICIPANT/stator, connecting/HAS_PATIENT/bridge assembly, 
+locate/HAS_PATIENT/copper lead, connecting/HAS_PATIENT/copper lead, connecting/HAS_PATIENT/stator, connecting/HAS_PATIENT/bridge assembly, 
 
 Raw Text:these leads must be cut in order to remove the bridge from the alternator . these leads will have to be soldered back together on reassembly . keep the cut as clean as possible .
 Preprocessed Text:these lead must be cut in order to remove the bridge from the alternator . these lead will have to be soldered back together on reassembly . keep the cut a clean a possible .
-cut/HAS_PATIENT/lead, remove/HAS_PATIENT/bridge, remove/HAS_PATIENT/alternator, soldered/HAS_PATIENT/lead, reassembly/HAS_PATIENT/lead, keep/HAS_PATIENT/cut, 
+cut/HAS_PATIENT/these lead, remove/HAS_PATIENT/bridge, remove/HAS_PATIENT/alternator, soldered/HAS_PATIENT/these lead, reassembly/HAS_PATIENT/these lead, keep/HAS_PATIENT/cut, 
 
 Raw Text:use wire cutters to cut all 6 of the leads on the perimeter of the bridge .
 Preprocessed Text:use wire cutter to cut all 6 of the lead on the perimeter of the bridge .
-cut/HAS_PATIENT/lead, cut/HAS_PARTICIPANT/bridge, 
+cut/HAS_AGENT/wire cutter, cut/HAS_PATIENT/lead, 
 
 Raw Text:if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
 Preprocessed Text:if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
-raise/HAS_AGENT/pry bar, raise/HAS_PATIENT/top, raise/HAS_PARTICIPANT/bridge assembly, 
-
-Raw Text:be extremely careful with the pry bar . excessive force will damage the bridge assembly .
-Preprocessed Text:be extremely careful with the pry bar . excessive force will damage the bridge assembly .
-
-
-Raw Text:make sure the cut ends of the copper leads are straight to make bridge assembly easier to pull off .
-Preprocessed Text:make sure the cut end of the copper lead are straight to make bridge assembly easier to pull off .
-make sure the cut end of the copper lead are straight/HAS_PATIENT/bridge assembly, make sure the cut end of the copper lead are straight/HAS_PARTICIPANT/easier to pull off, 
+raise/HAS_AGENT/pry bar, raise/HAS_PATIENT/top of the bridge assembly, 
 
 Raw Text:remove the lower section of the bridge assembly
 Preprocessed Text:remove the lower section of the bridge assembly
 remove/HAS_PATIENT/lower section, remove/HAS_PARTICIPANT/bridge assembly, 
-
-Raw Text:use of a pry bar may be necessary . be gentle .
-Preprocessed Text:use of a pry bar may be necessary . be gentle .
-
 
 Raw Text:use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolts running along the outer perimeter of the alternator
 Preprocessed Text:use a phillips 2 screwdriver or a 7.5 mm socket driver to unscrew the 4 , 7.5 mm bolt running along the outer perimeter of the alternator

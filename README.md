@@ -32,3 +32,5 @@ To cite Quokka, please use the following:
 }
 ```
 
+Additional documentation containing details for how to re-configure the Quokka workflow for different use cases is under construction.
+

@@ -19,6 +19,13 @@ To run the quokka workflow using the configuration provided:
 
 1. Create a python virtual environment, and pip install the packages given in requirements.txt
 2. Run the src/ConsoleApp.py file.
+3. You will be presented with three options. Select ```completion``` to run the completion module, select ```consistency``` to run the consistency module, and select ```correctness``` to run the correctness module. The best way to work with the Quokka workflow is to run all three in order.
+
+### To run the Quokka workflow with one of the example sets given in the 0_testdata folder:
+
+1. Replace the ```config``` directory with the contents of the ```config``` folder in the test data
+2. Replace the ```data/input``` directory with the csv files given the in test data
+3. Run the Quokka workflow
 
 ## How to Cite this Work
 

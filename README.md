@@ -15,17 +15,24 @@ This repository contains six procedures from the [MyFixit Dataset](https://githu
 
 ## Starting the Quokka Workflow
 
-Prerequisites:
+#### Prerequisites:
+
 1. Ensure that you have an Open AI Account (https://openai.com/index/openai-api/) and create a new API key. Note, running the Quokka workflow over high-volume datasets will incur high costs in OpenAI.
 2. Ensure you have Python installed
 3. Clone this repository onto your device.
 
-To run the quokka workflow using the configuration provided:
+#### To run the quokka workflow using the configuration provided:
 
 1. Create a .env file in the root directory with the following value: ```OPENAI_API_KEY=<your OpenAI API key>```
 2. Create a python virtual environment, and pip install the packages given in requirements.txt
 3. Run the src/ConsoleApp.py file.
 4. You will be presented with three options. Select ```completion``` to run the completion module, select ```consistency``` to run the consistency module, and select ```correctness``` to run the correctness module. The best way to work with the Quokka workflow is to run all three in order.
+
+#### To view the outputs of the workflow
+
+- The output of the completion module can be found at ```data/output/datafiles``` 
+- The output of the consistencty module can be found at ```data/output/ontology```
+- The output of the correctness module can be found at ```data/output/suggestions```
 
 ### To run the Quokka workflow with one of the example sets given in the 0_testdata folder:
 

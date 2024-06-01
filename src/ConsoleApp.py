@@ -42,6 +42,7 @@ class ConsoleApplication:
             return None
 
 
+
 if __name__ == "__main__":
     app = ConsoleApplication()
     app.run()

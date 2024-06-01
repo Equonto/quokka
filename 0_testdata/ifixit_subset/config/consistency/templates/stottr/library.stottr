@@ -141,8 +141,8 @@ ompd-tpl:ItemInMaintenanceProcess[
 ] :: {
     cross | o-rdf:Type(?iri, ++?type),
     ottr:Triple(?iri, rdfs:label, ?name),
-    ottr:Triple(?iri, lis:hasParticipant, ?participantIn)
-}
+    ottr:Triple(?participantIn, lis:hasParticipant, ?iri)
+} .
 
 ompd-tpl:Resource[
     ottr:IRI ?iri,

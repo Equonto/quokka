@@ -1,19 +1,144 @@
+
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex:    <http://www.example.org/#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix ompd: <http://www.example.org/static-procedure-ontology#>
+@prefix ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
 @prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
-@prefix proc: <http://example.org/ontology/procedure_ontology_application#>
+@prefix proc: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#>
 
-proc:ActivityWithNoItem 
-  a sh:NodeShape ;
-    sh:targetClass proc:AtomicAction ;
+proc:NoTasksInProcedureShape
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceProcedureProcess ; 
     sh:property [           
-        sh:path proc:hasPrimaryParticipant ;    
+        sh:path ompd:hasDirectActivityPart ;    
         sh:minCount 1 ;
     ] ;
     sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
 .
+
+proc:OrphanedTask 
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceTask ; 
+    sh:property [           
+        sh:path ompd:directActivityPartOf ;    
+        sh:minCount 1 ;
+        sh:or (
+         [
+           sh:class ompd:MaintenanceTask  ]
+         [
+           sh:class ompd:MaintenanceProcedureProcess  ]
+        )
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.
+
+proc:TaskWithoutSequence a sh:NodeShape ;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:select """
+    PREFIX ompd: <http://www.example.org/static-procedure-ontology#> 
+    SELECT ?this
+    WHERE {
+    ?this a ompd:MaintenanceTask .
+    ?this ompd:directActivityPartOf ?parent .
+    {
+        SELECT ?parent (COUNT(?this) AS ?taskCount)
+        WHERE {
+            ?this a ompd:MaintenanceTask .
+            ?this ompd:directActivityPartOf ?parent .
+    }
+    GROUP BY ?parent
+    HAVING (COUNT(?this) > 1)
+  }
+}""" ;
+  ] ;
+sh:or (
+		[
+			sh:path lis:before ;
+			sh:minCount 1 ;
+		]
+		[
+			sh:path lis:after ;
+			sh:minCount 1 ;
+		]
+) .
+
+
+proc:NotAMaintenanceTask a sh:NodeShape ;
+sh:targetClass ompd:MaintenanceTask ;
+sh:closed false;
+sh:sparql [
+  sh:message "Maintenance Task ({?this}) does not contain a maintenance action.";
+  sh:select """
+ 	PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
+ 	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
+ 	SELECT ?this 
+   	WHERE { 
+           ?this a ompd:MaintenanceTask . 
+           FILTER NOT EXISTS {
+            ?this lis:hasActivityPart ?item .
+            ?item a ompd:MaintenanceAction .
+           }
+   	}""" ;
+  ] ;
+  .
+
+
+proc:MaintenanceActionWithNoItem
+    a sh:NodeShape ;
+    sh:targetClass ompd:MaintenanceAction ; 
+    sh:property [           
+        sh:path ompd:hasPatient ;    
+        sh:minCount 1 ;
+    ] ;
+    sh:closed false;
+    sh:ignoredProperties ( rdf:type owl:topDataProperty owl:topObjectProperty ) ;
+.
+
+
+proc:ToolWithoutActivity a sh:NodeShape ;
+sh:targetClass ompd:Tool;
+sh:closed false;
+sh:sparql [
+  sh:message "Tool at task level exists with no agent";
+  sh:select """
+ 	PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
+	PREFIX proc: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology/instances#>
+ 	PREFIX lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>
+ 	SELECT ?this 
+   	  WHERE { 
+           ?this a ompd:Tool . 
+           ?this a proc:Extracted .
+           FILTER NOT EXISTS {
+              ?activity ompd:hasAgent ?this .
+              ?activity a ompd:MaintenanceAction .
+          }
+   }""" ;
+  ] ;
+  .
+
+
+
+proc:UnknownActivity a sh:NodeShape ;
+sh:targetClass ompd:MaintenanceAction;
+sh:closed false;
+sh:sparql [
+  sh:message "Check {?label} is part of the accepted terms list";
+  sh:select """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ompd: <http://spec.equonto.org/ontology/maintenance-procedure/static-procedure-ontology#>
+SELECT $this ?label
+WHERE {
+  $this a ompd:MaintenanceAction .
+  $this rdfs:label ?label .
+  FILTER(?label NOT IN ("add", "adjust", "align", "amend", "confirm", "correct", "detension", "discharge", "fill", "free-up", "guide", "position", "program", "re-adjust", "re-align", "readjust", "realign", "regulate", "reposition", "review", "set", "shim", "straighten", "tension", "tighten", "tilt", "top up", "top-up", "torque", "track", "train", "tune", "turn", "calibrate", "re-calibrate", "analyse", "assess", "check", "check out", "detect", "fault find", "find", "identify", "investigate", "re-test", "test", "troubleshooot", "verify", "crack test", "measure", "monitor", "ndt", "read", "thermography", "thickness test", "build up", "fix", "free-up", "grind", "heat", "mount", "overhaul", "patch", "re-attach", "re-build", "re-clamp", "re-connect", "re-engage", "re-fit", "re-line", "re-mount", "re-route", "re-run", "re-seal", "re-seat", "re-secure", "re-splice", "re-tension", "re-torque", "re-track", "re-weld", "re-work", "reactivate", "rectify", "refurbish", "regas", "reinforce", "renew", "repair", "rerail", "reseal", "reset", "rewheel", "rewire", "seal", "un-bog", "unblock", "weld", "change", "change out", "change over", "connect", "fit", "install", "re-install", "re-instate", "reattach", "reinstate", "remove", "replace", "swap", "switch", "transition", "charge", "clean", "drain", "fill", "grease", "hose-out", "lubricate", "maintain", "purge", "re-charge", "re-fill", "rotate", "sample", "scan", "wash", "approve", "audit", "commission", "design", "label", "order", "print", "quote", "redesign", "report", "reschedule", "scope", "sign", "attach", "build", "create", "develop", "fabricate", "make", "make up", "manufacture", "pre fabricate", "rebuild", "set up", "deisolate", "buff", "clip", "correct", "cut", "cut off", "improve", "laminate", "refurbish", "resplice", "reweld", "trim", "upgrade", "demobilise", "drop", "drop down", "erect", "guide", "life", "locate", "mobilise", "pack up", "pop out", "position", "pull", "push", "put", "raise", "rearrange", "relocate", "remove", "reposition", "reroute", "return", "suspend", "transfer", "unbog", "activate", "disable", "launch", "re-run", "reactivate", "reset", "reterminate", "run", "startup", "trip", "carry", "carry out", "collect", "compile", "complete", "conduct", "generate", "prepare", "rework", "work", "assist", "attend", "call", "call out", "follow up", "provide", "supply", "support", "train", "adjust", "calibrate", "diagnose", "inspect", "repair", "replace", "service", "admin", "assemble", "isolate", "modify", "move", "operate", "perform", "teamwork", "hold", "place", "loosen", "place", "clear", "pour", "disconnect", "list", "unscrew", "wipe off", "dip", "twist", "secure", "lift", "insert", "separate", "wipe", "examine", "apply", "make sure", "release", "reconnect", "reinstall", "grip", "press", "wedge", "detach", "close", "open", "reinsert", "bend", "unplug"))
+}""" ;
+  ] ;
+  .

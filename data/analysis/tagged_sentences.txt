@@ -4,7 +4,7 @@ use/NOISE, 2 phillips screwdriver/TOOL, remove/ACTIVITY, four/CARDINALITY, screw
 
 Raw Text:remove the rubber gasket from the rain tray .
 Preprocessed Text:remove the rubber gasket from the rain tray .
-remove/ACTIVITY, rubber gasket/ITEM, from the rain tray/LOCATION, 
+remove/ACTIVITY, rubber gasket/ITEM, rain tray/ITEM, 
 
 Raw Text:lift the tray upwards and away from the vehicle .
 Preprocessed Text:lift the tray upwards and away from the vehicle .
@@ -56,7 +56,7 @@ use/NOISE, flathead screwdriver/TOOL, remove/ACTIVITY, plastic clip/ITEM, hold/A
 
 Raw Text:unscrew the phillips screw in the bottom of the door panel cup .
 Preprocessed Text:unscrew the phillips screw in the bottom of the door panel cup .
-unscrew/ACTIVITY, phillips screw/ITEM, bottom/LOCATION, door panel cup/ITEM, 
+unscrew/ACTIVITY, phillips screw/ITEM, bottom of the door panel cup/LOCATION, 
 
 Raw Text:lift the cup out of the the door panel .
 Preprocessed Text:lift the cup out of the the door panel .
@@ -64,7 +64,7 @@ lift/ACTIVITY, cup/ITEM, out of the door panel/LOCATION,
 
 Raw Text:insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .
 Preprocessed Text:insert a very thin flathead screwdriver blade into the small gap towards the rear of the car on the plastic screw cover near the door handle .
-insert/ACTIVITY, thin/SPECIFIER, flathead screwdriver blade/TOOL, small gap/LOCATION, rear of the car/LOCATION, plastic screw cover/ITEM, door handle/ITEM, 
+insert/ACTIVITY, thin/SPECIFIER, flathead screwdriver blade/TOOL, gap/LOCATION, rear of the car/LOCATION, plastic screw cover/ITEM, door handle/ITEM, 
 
 Raw Text:unscrew the phillips screw underneath the screw cover .
 Preprocessed Text:unscrew the phillips screw underneath the screw cover .
@@ -108,7 +108,7 @@ remove/ACTIVITY, entire/SPECIFIER, door panel/ITEM,
 
 Raw Text:use compressed air to clear any debris from the area around the ignition coils on top of the engine .
 Preprocessed Text:use compressed air to clear any debris from the area around the ignition coil on top of the engine .
-use/ACTIVITY, compressed air/TOOL, clear/ACTIVITY, debris/ITEM, area around the ignition coil/LOCATION, on top of the engine/LOCATION, 
+use/ACTIVITY, compressed air/TOOL, clear/ACTIVITY, debris/ITEM, area around the ignition coil/LOCATION, top of the engine/LOCATION, 
 
 Raw Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
 Preprocessed Text:remove the ignition coil electrical connector by first depressing the plastic tab on top of the connector .
@@ -128,7 +128,7 @@ use/NOISE, 8 mm deep socket/TOOL, loosen/ACTIVITY, four/CARDINALITY, ignition co
 
 Raw Text:once the bolts are loose , they can be removed by hand .
 Preprocessed Text:once the bolt are loose , they can be removed by hand .
-once the bolt are loose/NOISE, remove/ACTIVITY, bolt/ITEM, by hand/TOOL, 
+once the bolt are loose/NOISE, remove/ACTIVITY, hand/TOOL, bolt/ITEM, cardinality/ALL, 
 
 Raw Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
 Preprocessed Text:twist the ignition coil and spark plug boot while lifting it straight up to remove it from the engine .
@@ -136,7 +136,7 @@ twist/ACTIVITY, ignition coil/ITEM, spark plug boot/ITEM, lifting/ACTIVITY, stra
 
 Raw Text:use a ratcheting socket wrench with an extender and a 5 /8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
 Preprocessed Text:use a ratcheting socket wrench with an extender and a 5  or 8 spark plug socket to remove the existing spark plug from the cylinder head . make sure that the spark plug is completely seated in the rubber end of the socket before loosening it .
-use/NOISE, ratcheting socket wrench/TOOL, extender/TOOL, 5 or 8 spark plug socket/TOOL, remove/ACTIVITY, existing spark plug/ITEM, cylinder head/LOCATION, make sure/NOISE, completely/SPECIFIER, seated/OBSERVATION, rubber end/ITEM, loosening/ACTIVITY, 
+use/NOISE, ratcheting socket wrench/TOOL, extender/TOOL, 5 or 8 spark plug socket/TOOL, remove/ACTIVITY, existing spark plug/ITEM, cylinder head/ITEM, make sure/NOISE, completely/SPECIFIER, seated/OBSERVATION, rubber end/ITEM, socket/ITEM, before loosening it/NOISE, 
 
 Raw Text:apply dielectric grease to the ribbed portion of the insulator .
 Preprocessed Text:apply dielectric grease to the ribbed portion of the insulator .
@@ -168,11 +168,11 @@ place/ACTIVITY, ignition coil/ITEM, dust boot/ITEM, back over the spark plug/LOC
 
 Raw Text:reconnect the ignition coil electrical connector by snapping it back into place .
 Preprocessed Text:reconnect the ignition coil electrical connector by snapping it back into place .
-reconnect/ACTIVITY, ignition coil/ITEM, electrical connector/ITEM, snap/ACTIVITY, back into place/LOCATION, 
+reconnect/ACTIVITY, ignition coil/ITEM, electrical connector/ITEM, snapping it back into place/ACTIVITY, 
 
 Raw Text:pull the hood release latch at the front right of the tractor and lift the hood up .
 Preprocessed Text:pull the hood release latch at the front right of the tractor and lift the hood up .
-pull/ACTIVITY, hood release latch/ITEM, front right/LOCATION, tractor/ITEM, lift/ACTIVITY, hood/ITEM, 
+pull/ACTIVITY, hood release latch/ITEM, front right of the tractor/LOCATION, lift/ACTIVITY, hood/ITEM, 
 
 Raw Text:lift the hood prop bar from its seat and place it in the hooks on the underside of the hood .
 Preprocessed Text:lift the hood prop bar from it seat and place it in the hook on the underside of the hood .
@@ -180,11 +180,11 @@ lift/ACTIVITY, hood prop bar/ITEM, seat/LOCATION, place/ACTIVITY, hook/ITEM, und
 
 Raw Text:pull each tab straight away from the panel and twist them 90 so that they fit through the slots in the panel .
 Preprocessed Text:pull each tab straight away from the panel and twist them 90 so that they fit through the slot in the panel .
-pull/ACTIVITY, each tab/ITEM, straight away from the panel/LOCATION, twist/ACTIVITY, 90/SPECIFIER, fit/ACTIVITY, slot/ITEM, panel/ITEM, 
+pull/ACTIVITY, each tab/ITEM, straight away from the panel/LOCATION, twist/ACTIVITY, 90/SPECIFIER, fit/ACTIVITY, slot/ITEM, in the panel/LOCATION, 
 
 Raw Text:pull the top of the engine panel straight out until it is free from the tabs .
 Preprocessed Text:pull the top of the engine panel straight out until it is free from the tab .
-pull/ACTIVITY, top/LOCATION, engine panel/ITEM, straight out/SPECIFIER, free/OBSERVATION, tab/ITEM, 
+pull/ACTIVITY, top of the engine panel/ITEM, straight out/LOCATION, free from the tab/LOCATION, 
 
 Raw Text:lift the engine panel up to remove it and set it aside .
 Preprocessed Text:lift the engine panel up to remove it and set it aside .
@@ -200,7 +200,7 @@ place/ACTIVITY, oil drain pan/ITEM, underneath the drain plug/LOCATION, catch/AC
 
 Raw Text:use a 17 mm box end wrench to loosen the drain plug 3 /4 of a turn .
 Preprocessed Text:use a 17 mm box end wrench to loosen the drain plug 3  or 4 of a turn .
-use a 17 mm box end wrench/TOOL, loosen/ACTIVITY, drain plug/ITEM, 3 or 4 of a turn/CARDINALITY, 
+use/NOISE, 17 mm box end wrench/TOOL, loosen/ACTIVITY, drain plug/ITEM, 3 or 4 of a turn/CARDINALITY, 
 
 Raw Text:loosen the drain plug by hand until it comes out and oil begins to drain from the oil pan .
 Preprocessed Text:loosen the drain plug by hand until it come out and oil begin to drain from the oil pan .
@@ -220,7 +220,7 @@ wipe down/ACTIVITY, area/LOCATION, drain plug/ITEM, clean/SPECIFIER, rag/MATERIA
 
 Raw Text:reinstall the drain plug and tighten it as much as you can by hand .
 Preprocessed Text:reinstall the drain plug and tighten it a much a you can by hand .
-reinstall/ACTIVITY, drain plug/ITEM, tighten/ACTIVITY, much/SPECIFIER, as you can/SPECIFIER, by hand/TOOL, 
+reinstall/ACTIVITY, drain plug/ITEM, tighten/ACTIVITY, much/SPECIFIER, as you can by hand/SPECIFIER, 
 
 Raw Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
 Preprocessed Text:use a 17 mm box end wrench to tighten the drain plug until it is snug .
@@ -240,7 +240,7 @@ filter/ITEM, remove/ACTIVITY, by hand/TOOL, oil filter wrench/TOOL, loosen/ACTIV
 
 Raw Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
 Preprocessed Text:place the oil filter with the open end facing down onto the oil drain pan to allow the old oil to drain out .
-place/ACTIVITY, oil filter/ITEM, open end/ITEM, facing down/SPECIFIER, oil drain pan/ITEM, allow/ACTIVITY, old oil/MATERIAL, drain out/ACTIVITY, 
+place/ACTIVITY, oil filter/ITEM, open end/ITEM, facing down/SPECIFIER, onto the oil drain pan/LOCATION, allow/ACTIVITY, old oil/MATERIAL, drain out/ACTIVITY, 
 
 Raw Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter's gasket .
 Preprocessed Text:dip a clean , gloved finger into a fresh bottle of oil and spread a thin layer of oil on the new oil filter 's gasket .
@@ -248,15 +248,15 @@ dip/ACTIVITY, clean/SPECIFIER, gloved finger/ITEM, fresh bottle of oil/MATERIAL,
 
 Raw Text:wipe off the oil filter threads and contact area on the engine with a clean rag or towel .
 Preprocessed Text:wipe off the oil filter thread and contact area on the engine with a clean rag or towel .
-wipe/ACTIVITY, oil filter/ITEM, thread/ITEM, contact area/LOCATION, engine/ITEM, clean/SPECIFIER, rag/MATERIAL, towel/MATERIAL, 
+wipe off/ACTIVITY, oil filter/ITEM, thread/ITEM, contact area/LOCATION, engine/ITEM, clean/SPECIFIER, rag/MATERIAL, towel/MATERIAL, 
 
 Raw Text:place the new oil filter over the threads and turn it clockwise until it is snug .
 Preprocessed Text:place the new oil filter over the thread and turn it clockwise until it is snug .
-place/ACTIVITY, new/SPECIFIER, oil filter/ITEM, thread/ITEM, turn/ACTIVITY, clockwise/SPECIFIER, snug/SPECIFIER, 
+place/ACTIVITY, new oil filter/ITEM, thread/ITEM, turn/ACTIVITY, clockwise/SPECIFIER, snug/SPECIFIER, 
 
 Raw Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
 Preprocessed Text:twist the oil filler cap counterclockwise and remove it from the valve cover .
-twist/ACTIVITY, oil filler cap/ITEM, counterclockwise/SPECIFIER, remove/ACTIVITY, valve cover/ITEM, 
+twist/ACTIVITY, oil filler/ITEM, cap/ITEM, counterclockwise/SPECIFIER, remove/ACTIVITY, valve cover/ITEM, 
 
 Raw Text:place a funnel in the oil filler hole .
 Preprocessed Text:place a funnel in the oil filler hole .
@@ -264,7 +264,7 @@ place/ACTIVITY, funnel/ITEM, oil filler hole/LOCATION,
 
 Raw Text:hold the funnel with one hand to steady it and pour 5.1 quarts of 15 w-40 oil into the funnel .
 Preprocessed Text:hold the funnel with one hand to steady it and pour 5.1 quart of 15 w-40 oil into the funnel .
-hold/ACTIVITY, funnel/ITEM, steady/SPECIFIER, pour/ACTIVITY, 5.1 quart/CARDINALITY, 15 w-40 oil/MATERIAL, into the funnel/LOCATION, 
+hold/ACTIVITY, funnel/ITEM, one hand/LOCATION, steady/SPECIFIER, pour/ACTIVITY, 5.1 quart/CARDINALITY, 15 w-40 oil/MATERIAL, into the funnel/LOCATION, 
 
 Raw Text:reinstall the oil filler cap and turn it clockwise until it is snug .
 Preprocessed Text:reinstall the oil filler cap and turn it clockwise until it is snug .
@@ -276,7 +276,7 @@ remove/ACTIVITY, dipstick/ITEM, wipe/ACTIVITY, clean/SPECIFIER, rag/MATERIAL, to
 
 Raw Text:reinsert the dipstick and add or remove any oil , if necessary .
 Preprocessed Text:reinsert the dipstick and add or remove any oil , if necessary .
-reinsert/ACTIVITY, dipstick/ITEM, add/ACTIVITY, remove/ACTIVITY, oil/MATERIAL, necessary/SPECIFIER, 
+reinsert/ACTIVITY, dipstick/ITEM, add or remove/ACTIVITY, oil/MATERIAL, necessary/SPECIFIER, 
 
 Raw Text:place the engine panel back in its original location , making sure the two retaining tabs go through their respective slots in the panel .
 Preprocessed Text:place the engine panel back in it original location , making sure the two retaining tab go through their respective slot in the panel .
@@ -288,7 +288,7 @@ secure/ACTIVITY, engine panel/ITEM, pulling/ACTIVITY, retaining tab/ITEM, straig
 
 Raw Text:hold the hood up with one hand and use the other hand to return the hood prop to its original location
 Preprocessed Text:hold the hood up with one hand and use the other hand to return the hood prop to it original location
-hold/ACTIVITY, hood/ITEM, up/LOCATION, one hand/LOCATION, use/ACTIVITY, other hand/LOCATION, return/ACTIVITY, hood prop/ITEM, to it original location/LOCATION, 
+hold/ACTIVITY, hood/ITEM, up/LOCATION, one hand/LOCATION, use/ACTIVITY, other hand/LOCATION, return/ACTIVITY, hood prop/ITEM, original location/LOCATION, 
 
 Raw Text:close the hood firmly and make sure that the hood latch engages .
 Preprocessed Text:close the hood firmly and make sure that the hood latch engages .
@@ -300,7 +300,7 @@ open/ACTIVITY, rear part/ITEM, middle console/ITEM,
 
 Raw Text:grip the right side of the console and pull up towards the passenger seat to remove it .
 Preprocessed Text:grip the right side of the console and pull up towards the passenger seat to remove it .
-grip/ACTIVITY, right side/LOCATION, console/ITEM, pull/ACTIVITY, up/SPECIFIER, passenger seat/LOCATION, remove/ACTIVITY, 
+grip/ACTIVITY, right side/LOCATION, console/ITEM, pull/ACTIVITY, up/LOCATION, passenger seat/LOCATION, remove/ACTIVITY, 
 
 Raw Text:locate the two bolts under the air conditioning controls at the bottom of the face plate .
 Preprocessed Text:locate the two bolt under the air conditioning control at the bottom of the face plate .
@@ -324,7 +324,7 @@ inspect/ACTIVITY, interior/LOCATION, center console/ITEM, damaged wire/ITEM, fau
 
 Raw Text:remove 4 , 7.9 mm nuts using a 7.9 mm socket driver head
 Preprocessed Text:remove 4 , 7.9 mm nut using a 7.9 mm socket driver head
-remove/ACTIVITY, 4 7.9 mm nut/ITEM, using/NOISE, 7.9 mm socket driver head/TOOL, 
+remove/ACTIVITY, 4/CARDINALITY, 7.9 mm nut/ITEM, 7.9 mm socket driver head/TOOL, 
 
 Raw Text:one of the nuts is placed underneath the l-bracket . remove the l-bracket and the 3 circled nuts before attempting to remove the remaining nut
 Preprocessed Text:one of the nut is placed underneath the l-bracket . remove the l-bracket and the 3 circled nut before attempting to remove the remaining nut
@@ -356,19 +356,19 @@ locate/ACTIVITY, unscrew/ACTIVITY, 3 6 mm screw/ITEM, holding the bridge assembl
 
 Raw Text:locate the copper leads connecting the stator to the bridge assembly . there are 3 sets of 2 leads on the perimeter of the bridge , making 6 leads total .
 Preprocessed Text:locate the copper lead connecting the stator to the bridge assembly . there are 3 set of 2 lead on the perimeter of the bridge , making 6 lead total .
-locate/ACTIVITY, copper lead/ITEM, connecting/ACTIVITY, stator/ITEM, bridge assembly/ITEM, 3 set of 2 lead/CARDINALITY, perimeter of the bridge/LOCATION, 6 lead total/CARDINALITY, 
+locate/ACTIVITY, copper lead/ITEM, connecting/ACTIVITY, stator/ITEM, bridge assembly/ITEM, 3 set of 2 lead on the perimeter of the bridge/CARDINALITY, 6 lead total/CARDINALITY, 
 
 Raw Text:these leads must be cut in order to remove the bridge from the alternator . these leads will have to be soldered back together on reassembly . keep the cut as clean as possible .
 Preprocessed Text:these lead must be cut in order to remove the bridge from the alternator . these lead will have to be soldered back together on reassembly . keep the cut a clean a possible .
-these lead/ITEM, cut/ACTIVITY, remove/ACTIVITY, bridge/ITEM, alternator/ITEM, soldered/ACTIVITY, reassembly/ACTIVITY, keep/ACTIVITY, clean/SPECIFIER, possible/SPECIFIER, 
+lead/ITEM, cut/ACTIVITY, remove/ACTIVITY, bridge/ITEM, alternator/ITEM, soldered back together/ACTIVITY, reassembly/ACTIVITY, keep/ACTIVITY, clean/SPECIFIER, possible/SPECIFIER, 
 
 Raw Text:use wire cutters to cut all 6 of the leads on the perimeter of the bridge .
 Preprocessed Text:use wire cutter to cut all 6 of the lead on the perimeter of the bridge .
-use/NOISE, wire cutter/TOOL, cut/ACTIVITY, all/CARDINALITY, 6/CARDINALITY, lead/ITEM, on the perimeter of the bridge/LOCATION, 
+use wire cutter/TOOL, cut/ACTIVITY, all/CARDINALITY, 6/CARDINALITY, lead/ITEM, perimeter/LOCATION, bridge/ITEM, 
 
 Raw Text:if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
 Preprocessed Text:if necessary , use a pry bar to gently raise the top of the bridge assembly off the alternator
-if necessary/NOISE, use/ACTIVITY, pry bar/TOOL, gently/SPECIFIER, raise/ACTIVITY, top of the bridge assembly/ITEM, off the alternator/LOCATION, 
+if necessary/NOISE, use/ACTIVITY, pry bar/TOOL, gently/SPECIFIER, raise/ACTIVITY, top/LOCATION, bridge assembly/ITEM, off the alternator/LOCATION, 
 
 Raw Text:remove the lower section of the bridge assembly
 Preprocessed Text:remove the lower section of the bridge assembly
@@ -384,7 +384,7 @@ use/NOISE, c-clamp/TOOL, another fixture/TOOL, hold/ACTIVITY, pulley/ITEM, in pl
 
 Raw Text:be gentle with the clamp . excessive force will bend the pulley out of shape
 Preprocessed Text:be gentle with the clamp . excessive force will bend the pulley out of shape
-be gentle with the clamp/NOISE, excessive force/SPECIFIER, bend/ACTIVITY, pulley/ITEM, out of shape/SPECIFIER, 
+be gentle with the clamp/NOISE, excessive force/SPECIFIER, bend/ACTIVITY, pulley/ITEM, out of shape/OBSERVATION, 
 
 Raw Text:use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley
 Preprocessed Text:use a ratchet with a 25 mm socket to remove the 25 mm hex nut from the pulley
@@ -404,5 +404,5 @@ pull/ACTIVITY, stator/ITEM, out of the remaining cover/LOCATION, examine/ACTIVIT
 
 Raw Text:if the stator is scratched or damaged , you will need to replace it . look for scoring marks or cut pieces of winding .
 Preprocessed Text:if the stator is scratched or damaged , you will need to replace it . look for scoring mark or cut piece of winding .
-if the stator is scratched or damaged/OBSERVATION, replace/ACTIVITY, look/ACTIVITY, scoring mark/OBSERVATION, cut piece of winding/OBSERVATION, 
+if the stator is scratched or damaged/OBSERVATION, replace/ACTIVITY, look for scoring mark or cut piece of winding/OBSERVATION, 
 

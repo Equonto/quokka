@@ -45,7 +45,6 @@ proc:Task_23034_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc
 proc:Task_23034_action_lifting,"ompd:MaintenanceAction, proc:Extracted",lifting,proc:Task_23034
 proc:Task_23034_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23034
 proc:Task_23035_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_23035
-proc:Task_23035_action_loosening,"ompd:MaintenanceAction, proc:Extracted",loosening,proc:Task_23035
 proc:Task_23036_action_apply,"ompd:MaintenanceAction, proc:Extracted",apply,proc:Task_23036
 proc:Task_23036_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_23036
 proc:Task_23036_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_23036
@@ -59,7 +58,7 @@ proc:Task_23039_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc
 proc:Task_23039_action_pushing_down,"ompd:MaintenanceAction, proc:Extracted",pushing down,proc:Task_23039
 proc:Task_23039_action_twisting,"ompd:MaintenanceAction, proc:Extracted",twisting,proc:Task_23039
 proc:Task_23039_action_reconnect,"ompd:MaintenanceAction, proc:Extracted",reconnect,proc:Task_23039
-proc:Task_23039_action_snap,"ompd:MaintenanceAction, proc:Extracted",snap,proc:Task_23039
+proc:Task_23039_action_snapping_it_back_into_place,"ompd:MaintenanceAction, proc:Extracted",snapping it back into place,proc:Task_23039
 proc:Task_27942_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_27942
 proc:Task_27942_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_27942
 proc:Task_27943_action_lift,"ompd:MaintenanceAction, proc:Extracted",lift,proc:Task_27943
@@ -93,7 +92,7 @@ proc:Task_27949_action_allow,"ompd:MaintenanceAction, proc:Extracted",allow,proc
 proc:Task_27949_action_drain_out,"ompd:MaintenanceAction, proc:Extracted",drain out,proc:Task_27949
 proc:Task_27950_action_dip,"ompd:MaintenanceAction, proc:Extracted",dip,proc:Task_27950
 proc:Task_27950_action_spread,"ompd:MaintenanceAction, proc:Extracted",spread,proc:Task_27950
-proc:Task_27950_action_wipe,"ompd:MaintenanceAction, proc:Extracted",wipe,proc:Task_27950
+proc:Task_27950_action_wipe_off,"ompd:MaintenanceAction, proc:Extracted",wipe off,proc:Task_27950
 proc:Task_27950_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27950
 proc:Task_27950_action_turn,"ompd:MaintenanceAction, proc:Extracted",turn,proc:Task_27950
 proc:Task_27951_action_twist,"ompd:MaintenanceAction, proc:Extracted",twist,proc:Task_27951
@@ -106,7 +105,7 @@ proc:Task_27952_action_turn,"ompd:MaintenanceAction, proc:Extracted",turn,proc:T
 proc:Task_27953_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_27953
 proc:Task_27953_action_wipe,"ompd:MaintenanceAction, proc:Extracted",wipe,proc:Task_27953
 proc:Task_27953_action_reinsert,"ompd:MaintenanceAction, proc:Extracted",reinsert,proc:Task_27953
-proc:Task_27953_action_add,"ompd:MaintenanceAction, proc:Extracted",add,proc:Task_27953
+proc:Task_27953_action_add_or_remove,"ompd:MaintenanceAction, proc:Extracted",add or remove,proc:Task_27953
 proc:Task_27954_action_place,"ompd:MaintenanceAction, proc:Extracted",place,proc:Task_27954
 proc:Task_27954_action_secure,"ompd:MaintenanceAction, proc:Extracted",secure,proc:Task_27954
 proc:Task_27954_action_pulling,"ompd:MaintenanceAction, proc:Extracted",pulling,proc:Task_27954
@@ -144,7 +143,7 @@ proc:Task_132560_action_locate,"ompd:MaintenanceAction, proc:Extracted",locate,p
 proc:Task_132560_action_connecting,"ompd:MaintenanceAction, proc:Extracted",connecting,proc:Task_132560
 proc:Task_132560_action_cut,"ompd:MaintenanceAction, proc:Extracted",cut,proc:Task_132560
 proc:Task_132560_action_remove,"ompd:MaintenanceAction, proc:Extracted",remove,proc:Task_132560
-proc:Task_132560_action_soldered,"ompd:MaintenanceAction, proc:Extracted",soldered,proc:Task_132560
+proc:Task_132560_action_soldered_back_together,"ompd:MaintenanceAction, proc:Extracted",soldered back together,proc:Task_132560
 proc:Task_132560_action_reassembly,"ompd:MaintenanceAction, proc:Extracted",reassembly,proc:Task_132560
 proc:Task_132560_action_keep,"ompd:MaintenanceAction, proc:Extracted",keep,proc:Task_132560
 proc:Task_132562_action_use,"ompd:MaintenanceAction, proc:Extracted",use,proc:Task_132562
@@ -159,4 +158,3 @@ proc:Task_132633_action_separate,"ompd:MaintenanceAction, proc:Extracted",separa
 proc:Task_132634_action_pull,"ompd:MaintenanceAction, proc:Extracted",pull,proc:Task_132634
 proc:Task_132634_action_examine,"ompd:MaintenanceAction, proc:Extracted",examine,proc:Task_132634
 proc:Task_132634_action_replace,"ompd:MaintenanceAction, proc:Extracted",replace,proc:Task_132634
-proc:Task_132634_action_look,"ompd:MaintenanceAction, proc:Extracted",look,proc:Task_132634

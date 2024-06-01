@@ -9,7 +9,7 @@ This repository contains six procedures from the [MyFixit Dataset](https://githu
 - 0_testdata: contains test configurations and input data for different cases described in the paper.
 - anonotated_dataset: contains six myFixit procedures, pre-annotated by two independant human annotators.
 - config: contains the configuration used to generate the results described in the paper.
-- data: contains the input data and output data generated when running the quokka workflow.
+- data: contains the input data and output data generated when running the quokka workflow using the configuration described in the paper.
 - libraries: contains two java libraries (lutra and a library for executing SHACL shapes)
 - src: quokka code
 

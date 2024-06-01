@@ -13,6 +13,3 @@ class OpenAIEntityLinking:
     def format_response(self, raw_text: str, response: str) -> str:
         if self.check_legal_linked_entity():
             return response
-    
-    def check_legal_linked_entity(self):
-        return True # todo: implement

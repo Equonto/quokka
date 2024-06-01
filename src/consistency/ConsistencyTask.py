@@ -22,7 +22,7 @@ class ConsistencyTask:
 
         result = Reasoner(self.ontology_name, self.imports_list).run_pellet_reasoner()
         if (result):
-            print("\033[92m" + "Ontology is consistent" + "\033[0m") # todo: move these colors out to class
+            print("\033[92m" + "Ontology is consistent" + "\033[0m") 
         else:
             print("\033[91m" + "Ontology is inconsistent, please check and try again" + "\033[0m")
         FileIo.move_files("config/consistency/output", "data/output/ontology")

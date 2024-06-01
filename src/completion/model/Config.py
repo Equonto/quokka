@@ -21,4 +21,3 @@ class Config:
     def load(self, config_path: str) -> CompletionConfig:
        return FileIo.read_json_config(config_path)
     
-    # todo: write config validation (and handle errors if configuration files don't exist)

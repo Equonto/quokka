@@ -53,7 +53,6 @@ class OutputSerializer:
                 extracted_relations = tagged_sentence.get_relations_of_type(data_structure.extractable_from_relation)
                 for (index, extracted_relation) in enumerate(extracted_relations):
                            output = {}
-                           # todo: clean this up (make more expressive)
                            for (index, column) in enumerate(data_structure.columns):
                                 if (index == 0):
                                     output[column.name] = self.create_value( tagged_sentence.get_raw_input_data()
@@ -97,7 +96,7 @@ class OutputSerializer:
                     return template
             elif (columnType == ColumnType.LINKED_IRI):
                     val = self.create_constructed_value(row, template, extracted_item, column)
-                    return self.prefix + val if (val != None) else None # todo: consider if I want a different prefix
+                    return self.prefix + val if (val != None) else None 
             else:
                 raise ValueError("Unknown column type: " + str(columnType)) 
             
@@ -111,8 +110,6 @@ class OutputSerializer:
                     template = template.replace("{" + temp + "}", val)
                 
             else:
-
-                # todo: fix repeated code here: it is here we can handle extracted items, relaitons and linked entities in the same place
                 if isinstance(extracted_item, str):
                     if temp == "EXTRACTED" and extracted_item != None:
                         template = template.replace("{" + temp + "}", 
@@ -140,7 +137,4 @@ class OutputSerializer:
     def get_tagged_value(self, extracted_item: str, formatted: bool, extracted_item_number = None):
         if formatted:
              extracted_item = extracted_item.replace(" ", "_").lower()
-        # todo: check if removing extracted item numbers is ok
-        #if (extracted_item_number != None): 
-        #    return extracted_item + "_" + str(extracted_item_number)
         return extracted_item

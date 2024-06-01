@@ -44,11 +44,13 @@ This repository contains six procedures from the [MyFixit Dataset](https://githu
 
 To cite Quokka, please use the following:
 
-```@article{woods2024quokka,
-  title={Semantic Quality Assurance for Industrial Maintenance Procedures},
-  author={Woods, Caitlin and French, Tim and Hodkiewicz, Melinda},
-  year={2024},
-  note={[in review]}
+```
+{
+  @article{woods2024quokka,
+    title={Semantic Quality Assurance for Industrial Maintenance Procedures},
+    author={Woods, Caitlin and French, Tim and Hodkiewicz, Melinda},
+    year={2024},
+    note={[in review]}
 }
 ```
 

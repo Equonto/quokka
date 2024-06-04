@@ -38,7 +38,7 @@ class OpenAIRunner:
                 messages = self.replace_template_with_input(prompt.messages, prompt.template, response_message.content)
     
     def perform_completion(self, messages) -> str:
-        json_messages = [message.get_json() for message in messages]
+        json_messages = [message.get_json() for message in messages] 
         try: 
             openai.api_key = self.load_api_key()
             response = openai.ChatCompletion.create(
@@ -47,6 +47,10 @@ class OpenAIRunner:
                     temperature = 0.001
             )
         except Exception as e:
+            if hasattr(e, 'http_status') and e.http_status == 401:
+                raise Exception("OpenAI API key is invalid")
+            if hasattr(e, 'user_message') and 'No API key provided' in e.user_message:
+                raise Exception("OpenAI API key is invalid")
             print('exception thrown on ChatCompletion')
             return TaggedSentence([])
         return response["choices"][0]["message"] # type: ignore
